@@ -388,19 +388,16 @@
       display: block;
     }
     .tac-img-wrap:hover { border-color: var(--gold); }
-    .tac-img-wrap img { width: 100%; display: block; transition: transform 0.3s; }
+    .tac-img-wrap img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s;
+      aspect-ratio: 16/7;
+      object-fit: cover;
+      background: var(--bg-card-2);
+    }
     .tac-img-wrap:hover img { transform: scale(1.015); }
 
-    .tac-img-placeholder {
-      width: 100%; aspect-ratio: 16/7; display: flex; flex-direction: column;
-      align-items: center; justify-content: center; gap: 10px;
-      background: repeating-linear-gradient(
-        45deg, var(--bg-card) 0, var(--bg-card) 10px,
-        var(--bg-card-2) 10px, var(--bg-card-2) 20px
-      );
-    }
-    .tac-img-placeholder .img-icon { font-size: 32px; opacity: 0.3; }
-    .tac-img-placeholder .img-name { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); letter-spacing: 0.1em; }
 
     .img-tap-hint {
       position: absolute; inset-x: 0; bottom: 0;
@@ -889,10 +886,13 @@
             <span class="tac-board-title" data-key="ph1.tac.title">Disposizione Iniziale — Testa di Ponte</span>
           </div>
           <div class="tac-img-wrap" onclick="openLightbox(this)" data-caption-key="ph1.tac.caption" aria-label="Tavola grafica Fase 1 - Inserzione">
-            <div class="tac-img-placeholder">
-              <div class="img-icon">🗺</div>
-              <div class="img-name" id="ph1-img-name">fase-1-inserzione-it.png</div>
-            </div>
+            <img
+              id="ph1-img"
+              data-base="fase-1-inserzione"
+              src="fase-1-inserzione-it.png"
+              alt="Tavola grafica Fase 1 - Inserzione e testa di ponte"
+              loading="lazy"
+            >
             <div class="img-tap-hint" data-key="tac.hint">↑ TAP PER INGRANDIRE ↑</div>
           </div>
           <div class="tac-caption" data-key="ph1.tac.caption">Disposizione delle basi sul territorio nemico: Anchor (scudo blu) entra per primo, Guard si posizionano a protezione, Alpha esegue la ricognizione del bersaglio (rosso), Beta attende in posizione protetta.</div>
@@ -938,10 +938,13 @@
             <span class="tac-board-title" data-key="ph2.tac.title">Schema Relazionale — Attacco e Copertura</span>
           </div>
           <div class="tac-img-wrap" onclick="openLightbox(this)" data-caption-key="ph2.tac.caption" aria-label="Tavola grafica Fase 2 - Attacco">
-            <div class="tac-img-placeholder">
-              <div class="img-icon">⚔</div>
-              <div class="img-name" id="ph2-img-name">fase-2-attacco-it.png</div>
-            </div>
+            <img
+              id="ph2-img"
+              data-base="fase-2-attacco"
+              src="fase-2-attacco-it.png"
+              alt="Tavola grafica Fase 2 - Attacco e copertura"
+              loading="lazy"
+            >
             <div class="img-tap-hint" data-key="tac.hint">↑ TAP PER INGRANDIRE ↑</div>
           </div>
           <div class="tac-caption" data-key="ph2.tac.caption">Schema relazionale: Alpha (rosso) attacca il target con Squadra 1 e prepara il rally. Linee blu = copertura di Beta, Guard 1, Guard 2 con Squadra 2. Linee arancioni = fill rally verso Alpha. Anchor (blu, scudo) fornisce supporto stabile.</div>
@@ -1032,10 +1035,13 @@
             <span class="tac-board-title" data-key="ph4.tac.title">Rush Finale — Schema di Estrazione</span>
           </div>
           <div class="tac-img-wrap" onclick="openLightbox(this)" data-caption-key="ph4.tac.caption" aria-label="Tavola grafica Fase 4 - Rush finale">
-            <div class="tac-img-placeholder">
-              <div class="img-icon">🚀</div>
-              <div class="img-name" id="ph4-img-name">fase-4-rush-it.png</div>
-            </div>
+            <img
+              id="ph4-img"
+              data-base="fase-4-rush"
+              src="fase-4-rush-it.png"
+              alt="Tavola grafica Fase 4 - Rush finale ed estrazione"
+              loading="lazy"
+            >
             <div class="img-tap-hint" data-key="tac.hint">↑ TAP PER INGRANDIRE ↑</div>
           </div>
           <div class="tac-caption" data-key="ph4.tac.caption">Schema Rush Finale: Alpha e Beta (rosso/arancio) attaccano con tutte le squadre. Le basi scudate (blu) forniscono protezione massima. A T−5 min il Coordinatore ordina l'estrazione. Anchor (blu) esce per ultimo garantendo il rientro di tutti.</div>
@@ -1864,21 +1870,10 @@
     // Update document title
     if (t['meta.title']) document.title = t['meta.title'];
 
-    // Update image names (placeholder text)
-    if (imgNames[lang]) {
-      const ph1el = document.getElementById('ph1-img-name');
-      const ph2el = document.getElementById('ph2-img-name');
-      const ph4el = document.getElementById('ph4-img-name');
-      if (ph1el) ph1el.textContent = imgNames[lang].ph1;
-      if (ph2el) ph2el.textContent = imgNames[lang].ph2;
-      if (ph4el) ph4el.textContent = imgNames[lang].ph4;
-    }
-
-    // Update image src if real images exist
+    // Update tactical board images
     document.querySelectorAll('.tac-img-wrap img').forEach(img => {
-      // If the img element has a data-base attribute, update src
       const base = img.getAttribute('data-base');
-      if (base) img.src = base + '-' + lang + '.png';
+      if (base) img.src = `${base}-${lang}.png`;
     });
 
     // Update html lang attribute
@@ -1911,8 +1906,8 @@
     const img = document.getElementById('lb-img');
     const cap = document.getElementById('lb-caption');
 
-    // Find the image (real or placeholder)
-    const realImg = wrap.querySelector('img:not(.tac-img-placeholder img)');
+    // Find the tactical board image
+    const realImg = wrap.querySelector('img');
     const capKey = wrap.getAttribute('data-caption-key');
 
     if (realImg && realImg.src && !realImg.src.includes('undefined')) {
