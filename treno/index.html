@@ -1,0 +1,1905 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda Treno 4ITA // Last War</title>
+  <meta name="description" content="Dashboard operativa 4ITA per la gestione dell'assegnazione Treno in Last War.">
+
+  <style>
+    /* =========================================================
+       AGENDA TRENO 4ITA
+       File unico, senza framework e pronto per GitHub Pages.
+       I dati vengono salvati nel browser tramite localStorage.
+       ========================================================= */
+
+    :root{
+      --bg:#0b0708;
+      --bg-deep:#060608;
+      --panel:#111017;
+      --panel-2:#18151f;
+      --card:#14121a;
+      --line:rgba(255,215,130,.16);
+      --line-strong:rgba(255,196,88,.32);
+      --text:#f8f2e8;
+      --soft:#d8c8b4;
+      --muted:#9d9081;
+      --gold:#f6c04d;
+      --gold-2:#ffe18a;
+      --amber:#e79c3c;
+      --bronze:#8e4f25;
+      --blue:#7fcaff;
+      --green:#86aa73;
+      --red:#ff1e1e;
+      --danger:#e15a4f;
+      --ok:#62c97c;
+      --warn:#f0a03a;
+      --shadow:0 24px 70px rgba(0,0,0,.55);
+      --radius:22px;
+      --radius-sm:14px;
+    }
+
+    *{box-sizing:border-box}
+
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      min-height:100vh;
+      color:var(--text);
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 20% -8%, rgba(246,192,77,.26), transparent 27%),
+        radial-gradient(circle at 83% 2%, rgba(126,61,30,.23), transparent 29%),
+        radial-gradient(circle at 52% 18%, rgba(105,80,128,.15), transparent 30%),
+        linear-gradient(180deg, #180d0a 0%, #0b0910 36%, #060608 100%);
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.22;
+      background-image:
+        linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+      background-size:46px 46px;
+      mask-image:linear-gradient(to bottom, black, transparent 78%);
+    }
+
+    button,input,select,textarea{font:inherit}
+
+    button{
+      cursor:pointer;
+      transition:transform .16s ease, filter .16s ease, border-color .16s ease;
+    }
+
+    button:hover{filter:brightness(1.08); transform:translateY(-1px)}
+    button:active{transform:translateY(0)}
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(10,8,10,.84);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .topbar-inner{
+      max-width:1420px;
+      margin:0 auto;
+      padding:13px 20px;
+      display:grid;
+      grid-template-columns:auto 1fr auto;
+      gap:16px;
+      align-items:center;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size:12px;
+      font-weight:950;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+
+    .brand-mark{
+      width:32px;
+      height:32px;
+      display:grid;
+      place-items:center;
+      border-radius:10px;
+      color:#160d04;
+      background:linear-gradient(135deg,var(--gold-2),var(--amber));
+      box-shadow:0 0 28px rgba(246,192,77,.22);
+      font-weight:1000;
+    }
+
+    .nav,.lang{
+      display:flex;
+      align-items:center;
+      gap:6px;
+      flex-wrap:wrap;
+    }
+
+    .nav{justify-content:center}
+    .lang{justify-content:flex-end}
+
+    .nav button,
+    .lang button{
+      border:1px solid transparent;
+      border-radius:999px;
+      padding:9px 12px;
+      background:transparent;
+      color:var(--soft);
+      font-size:12px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.06em;
+    }
+
+    .nav button.active,
+    .lang button.active{
+      color:#170f05;
+      background:linear-gradient(135deg,var(--gold-2),var(--amber));
+      border-color:rgba(255,255,255,.16);
+      box-shadow:0 0 24px rgba(246,192,77,.18);
+    }
+
+    .hero{
+      max-width:1420px;
+      margin:0 auto;
+      padding:38px 20px 22px;
+      display:grid;
+      grid-template-columns:minmax(230px, 440px) minmax(0,1fr);
+      gap:32px;
+      align-items:center;
+    }
+
+    .logo-card{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .alliance-logo{
+      width:min(34vw, 440px);
+      max-width:100%;
+      height:auto;
+      display:block;
+      border-radius:22px;
+      border:1px solid rgba(255,218,126,.25);
+      background:#140c0b;
+      box-shadow:
+        0 28px 80px rgba(0,0,0,.58),
+        0 0 58px rgba(246,192,77,.18);
+    }
+
+    body.page-history .hero,
+    body.page-directory .hero{
+      grid-template-columns:96px minmax(0,1fr);
+      gap:16px;
+      padding:14px 20px 10px;
+      align-items:center;
+    }
+
+    body.page-history .alliance-logo,
+    body.page-directory .alliance-logo{
+      width:96px;
+      border-radius:14px;
+      box-shadow:0 12px 30px rgba(0,0,0,.42), 0 0 24px rgba(246,192,77,.12);
+    }
+
+    body.page-history .hero-sub,
+    body.page-directory .hero-sub,
+    body.page-history .badges,
+    body.page-directory .badges,
+    body.page-history .kicker,
+    body.page-directory .kicker{
+      display:none;
+    }
+
+    body.page-history h1,
+    body.page-directory h1{
+      font-size:clamp(30px,4vw,54px);
+      line-height:.92;
+    }
+
+    body.page-history h1 span,
+    body.page-directory h1 span{
+      display:inline;
+      margin-right:.18em;
+    }
+
+    .kicker{
+      color:var(--gold-2);
+      font-size:12px;
+      font-weight:1000;
+      text-transform:uppercase;
+      letter-spacing:.22em;
+      margin-bottom:13px;
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(46px,8vw,112px);
+      line-height:.86;
+      letter-spacing:-.075em;
+      text-transform:uppercase;
+    }
+
+    h1 span{
+      display:block;
+      color:transparent;
+      -webkit-text-stroke:1px rgba(255,221,130,.72);
+      text-shadow:0 0 34px rgba(246,192,77,.14);
+    }
+
+    .hero-sub{
+      margin:18px 0 0;
+      max-width:900px;
+      color:var(--soft);
+      line-height:1.55;
+      font-size:clamp(15px,1.6vw,21px);
+    }
+
+    .badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:22px;
+    }
+
+    .badge{
+      border:1px solid rgba(255,255,255,.13);
+      background:rgba(255,255,255,.045);
+      color:var(--soft);
+      border-radius:999px;
+      padding:9px 12px;
+      font-size:12px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.06em;
+    }
+
+    .badge.gold{
+      color:#170f05;
+      background:linear-gradient(135deg,var(--gold-2),var(--amber));
+      border-color:transparent;
+    }
+
+    main{
+      max-width:1420px;
+      margin:0 auto;
+      padding:0 20px 44px;
+    }
+
+    .page{display:none}
+    .page.active{display:block; animation:fade .22s ease both}
+
+    @keyframes fade{
+      from{opacity:.25; transform:translateY(8px)}
+      to{opacity:1; transform:none}
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:390px minmax(0,1fr);
+      gap:18px;
+      align-items:start;
+    }
+
+    .stack{display:flex; flex-direction:column; gap:18px}
+
+    .pair{
+      display:grid;
+      grid-template-columns:390px minmax(0,1fr);
+      gap:18px;
+      align-items:start;
+    }
+
+    .card{
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.018)),
+        var(--panel);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .card-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      padding:17px 19px;
+      border-bottom:1px solid var(--line);
+      background:rgba(0,0,0,.13);
+    }
+
+    .card-head h2{
+      margin:0;
+      font-size:18px;
+      letter-spacing:-.02em;
+    }
+
+    .index{
+      color:var(--gold-2);
+      font-weight:1000;
+      font-size:13px;
+      letter-spacing:.18em;
+    }
+
+    .card-body{padding:18px 19px 20px}
+
+    .notice{
+      margin-bottom:14px;
+      border:1px solid rgba(246,192,77,.25);
+      background:rgba(246,192,77,.10);
+      color:#f7dda0;
+      border-radius:16px;
+      padding:13px 14px;
+      line-height:1.45;
+      font-size:13px;
+    }
+
+    label{
+      display:block;
+      margin:13px 0 7px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:950;
+      text-transform:uppercase;
+      letter-spacing:.09em;
+    }
+
+    input,select,textarea{
+      width:100%;
+      border:1px solid var(--line);
+      background:#09090f;
+      color:var(--text);
+      border-radius:14px;
+      padding:12px 13px;
+      outline:none;
+    }
+
+    textarea{min-height:86px; resize:vertical}
+
+    input:focus,select:focus,textarea:focus{
+      border-color:rgba(246,192,77,.75);
+      box-shadow:0 0 0 3px rgba(246,192,77,.12);
+    }
+
+    .row{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+
+    .buttons{display:flex; gap:8px; flex-wrap:wrap; margin-top:15px}
+
+    .btn{
+      border:1px solid transparent;
+      border-radius:14px;
+      padding:11px 13px;
+      font-weight:950;
+      letter-spacing:.02em;
+    }
+
+    .primary{
+      color:#160d04;
+      background:linear-gradient(135deg,var(--gold-2),var(--amber));
+      box-shadow:0 13px 30px rgba(246,192,77,.18);
+    }
+
+    .secondary{
+      background:#191825;
+      border-color:rgba(255,255,255,.10);
+      color:var(--text);
+    }
+
+    .danger{
+      background:rgba(225,90,79,.16);
+      border-color:rgba(225,90,79,.36);
+      color:#ffc6c2;
+    }
+
+    .ok{
+      background:rgba(98,201,124,.16);
+      border-color:rgba(98,201,124,.36);
+      color:#caffd6;
+    }
+
+    .small{padding:8px 10px; border-radius:11px; font-size:12px}
+
+    .toolbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:14px 17px;
+      border-bottom:1px solid var(--line);
+      background:rgba(0,0,0,.14);
+    }
+
+    .filters{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .filters input,.filters select{width:auto; min-width:150px}
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(5,minmax(110px,1fr));
+      gap:10px;
+      margin-bottom:16px;
+    }
+
+    .stat{
+      padding:14px;
+      border:1px solid rgba(255,255,255,.09);
+      border-radius:18px;
+      background:rgba(255,255,255,.045);
+    }
+
+    .stat b{
+      display:block;
+      color:var(--gold-2);
+      font-size:27px;
+      line-height:1;
+      letter-spacing:-.04em;
+    }
+
+    .stat span{
+      display:block;
+      margin-top:6px;
+      color:var(--muted);
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-weight:950;
+    }
+
+    .table-wrap{overflow:auto}
+
+    table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0 10px;
+      padding:0 14px 14px;
+      min-width:900px;
+    }
+
+    th{
+      color:var(--muted);
+      text-align:left;
+      padding:8px 10px;
+      font-size:11px;
+      font-weight:1000;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      white-space:nowrap;
+    }
+
+    td{
+      background:#0e0d15;
+      border-top:1px solid rgba(255,255,255,.08);
+      border-bottom:1px solid rgba(255,255,255,.08);
+      padding:11px 10px;
+      vertical-align:top;
+      font-size:14px;
+    }
+
+    td:first-child{border-left:1px solid rgba(255,255,255,.08); border-radius:16px 0 0 16px}
+    td:last-child{border-right:1px solid rgba(255,255,255,.08); border-radius:0 16px 16px 0}
+
+    .tiny{display:block; color:var(--muted); font-size:12px; line-height:1.35}
+    .strong{font-weight:950}
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:5px;
+      padding:5px 9px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      font-size:11px;
+      line-height:1;
+      font-weight:950;
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      white-space:nowrap;
+    }
+
+    .p-todo{background:rgba(240,160,58,.15); color:#ffd6a3}
+    .p-assigned{background:rgba(127,202,255,.13); color:#c9ebff}
+    .p-done{background:rgba(98,201,124,.14); color:#c9ffd5}
+    .p-issue{background:rgba(225,90,79,.16); color:#ffc4c0}
+
+    .rank-r4{background:rgba(231,156,60,.17); color:#ffc679}
+    .rank-r5{background:rgba(127,202,255,.17); color:#c8ecff}
+
+    .leader-r4{color:#ffbd67; font-weight:1000}
+    .leader-r5{color:#8cd6ff; font-weight:1000}
+
+    .name-active{color:var(--green); font-weight:850}
+    .name-blacklist{
+      color:var(--red);
+      font-weight:1000;
+      font-family:Georgia, "Times New Roman", serif;
+      letter-spacing:.03em;
+      text-shadow:0 0 14px rgba(255,30,30,.28);
+    }
+    .name-deleted{
+      color:#75716f;
+      font-weight:700;
+      opacity:.76;
+      text-decoration:line-through;
+    }
+
+    .priority-high{color:#ffe18a}
+    .priority-medium{color:#d5c7b2}
+    .priority-low{color:#9d9081}
+
+    .actions,.tools{
+      display:flex;
+      gap:6px;
+      flex-wrap:wrap;
+    }
+
+    .empty{
+      padding:34px 18px 42px;
+      text-align:center;
+      color:var(--muted);
+    }
+
+    .list{
+      display:flex;
+      flex-direction:column;
+      gap:9px;
+    }
+
+    .contact{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      gap:12px;
+      align-items:center;
+      padding:12px;
+      background:#0c0c13;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;
+    }
+
+    .contact small{
+      display:block;
+      margin-top:4px;
+      color:var(--muted);
+      line-height:1.35;
+    }
+
+    .candidate-grid{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      padding:0 19px 19px;
+    }
+
+    .candidate{
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.045);
+      border-radius:999px;
+      padding:7px 10px;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .log{
+      display:grid;
+      grid-template-columns:140px minmax(0,1fr) auto auto;
+      gap:12px;
+      align-items:start;
+      margin:0 17px 10px;
+      padding:13px 14px;
+      background:#0e0d15;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px;
+    }
+
+    .log h3{margin:0 0 4px; font-size:15px}
+    .log p{margin:0; color:var(--soft); font-size:13px; line-height:1.4}
+    .when{color:var(--muted); font-size:12px; line-height:1.4}
+
+    .footer{
+      padding:18px 20px 36px;
+      color:var(--muted);
+      text-align:center;
+      font-size:12px;
+      font-weight:850;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+
+    @media (max-width:1080px){
+      .topbar-inner{grid-template-columns:1fr; gap:10px}
+      .nav{justify-content:flex-start}
+      .lang{justify-content:flex-start}
+      .grid,.pair{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .toolbar{flex-direction:column; align-items:stretch}
+      .filters input,.filters select{width:100%; min-width:0}
+      .log{grid-template-columns:1fr}
+    }
+
+    @media (max-width:680px){
+      .hero{
+        grid-template-columns:1fr;
+        gap:16px;
+        text-align:center;
+        padding-top:28px;
+      }
+
+      .alliance-logo{width:min(90vw,360px)}
+
+      body.page-history .hero,
+      body.page-directory .hero{
+        grid-template-columns:76px minmax(0,1fr);
+        text-align:left;
+        padding:12px 16px 8px;
+      }
+
+      body.page-history .alliance-logo,
+      body.page-directory .alliance-logo{width:76px}
+
+      h1{font-size:clamp(40px,14vw,72px)}
+      .row{grid-template-columns:1fr}
+      .stats{grid-template-columns:1fr}
+      .contact{grid-template-columns:1fr}
+      .tools,.actions{justify-content:flex-start}
+      main,.hero,.topbar-inner{padding-left:14px; padding-right:14px}
+    }
+  </style>
+</head>
+
+<body class="page-agenda">
+  <!-- Topbar principale: navigazione e lingue -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">4</span>
+        <span>Last War // Agenda Treno</span>
+      </div>
+
+      <nav class="nav" aria-label="Navigazione principale">
+        <button class="active" type="button" data-page="agenda" data-i18n="navAgenda">Agenda</button>
+        <button type="button" data-page="history" data-i18n="navHistory">Storico</button>
+        <button type="button" data-page="directory" data-i18n="navDirectory">Rubrica Generale</button>
+      </nav>
+
+      <div class="lang" aria-label="Selezione lingua">
+        <button class="active" type="button" data-lang="it">IT</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero con logo 4ITA: grande in Agenda, compatto nelle altre pagine -->
+  <section class="hero">
+    <div class="logo-card">
+      <img class="alliance-logo" src="assets/4ita_logo.png" alt="Logo alleanza 4ITA">
+    </div>
+
+    <div>
+      <div class="kicker" data-i18n="heroKicker">Documento operativo interno</div>
+      <h1><span>Agenda</span>Treno</h1>
+      <p class="hero-sub" data-i18n="heroSub">Dashboard operativa per assegnare, controllare e storicizzare la gestione del Treno dell’alleanza 4ITA.</p>
+      <div class="badges">
+        <span class="badge gold">4ITA</span>
+        <span class="badge">R4/R5</span>
+        <span class="badge">Last War</span>
+        <span class="badge" data-i18n="badgeLocal">Salvataggio locale</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- =========================================================
+         PAGINA AGENDA
+         ========================================================= -->
+    <section id="page-agenda" class="page active">
+      <div class="grid">
+        <aside class="card">
+          <div class="card-head">
+            <h2 data-i18n="newAssignment">Nuova assegnazione</h2>
+            <span class="index">01</span>
+          </div>
+
+          <div class="card-body">
+            <div class="notice" data-i18n="agendaNotice">Compila il turno e indica quale R4/R5 assegna il Treno. Il record sarà visibile in agenda e nello storico.</div>
+
+            <label for="day" data-i18n="day">Giorno</label>
+            <input id="day" type="date">
+
+            <div class="row">
+              <div>
+                <label for="slot" data-i18n="slot">Ora / slot</label>
+                <input id="slot" type="time">
+              </div>
+              <div>
+                <label for="priority" data-i18n="priority">Priorità</label>
+                <select id="priority"></select>
+              </div>
+            </div>
+
+            <label for="assignedBy" data-i18n="assignedBy">Assegnato da R4/R5</label>
+            <select id="assignedBy"></select>
+
+            <label for="playerName" data-i18n="assignedPlayer">Giocatore assegnato</label>
+            <input id="playerName" list="playersList" placeholder="Es. Lukino" data-i18n-placeholder="playerPlaceholder">
+            <datalist id="playersList"></datalist>
+
+            <div class="row">
+              <div>
+                <label for="role" data-i18n="role">Ruolo operativo</label>
+                <select id="role"></select>
+              </div>
+              <div>
+                <label for="status" data-i18n="status">Stato</label>
+                <select id="status"></select>
+              </div>
+            </div>
+
+            <label for="notes" data-i18n="notes">Note</label>
+            <textarea id="notes" placeholder="Es. cambio player, slot evento, priorità alleanza..." data-i18n-placeholder="notesPlaceholder"></textarea>
+
+            <div class="buttons">
+              <button id="saveAssignmentBtn" class="btn primary" type="button" data-i18n="saveAssignment">Salva turno</button>
+              <button id="resetAssignmentBtn" class="btn secondary" type="button" data-i18n="clean">Pulisci</button>
+            </div>
+          </div>
+        </aside>
+
+        <section class="card">
+          <div class="toolbar">
+            <div class="filters">
+              <input id="agendaSearch" placeholder="Cerca giocatore, R4/R5, note..." data-i18n-placeholder="searchPlaceholder">
+              <select id="agendaStatusFilter"></select>
+              <select id="agendaDayFilter"></select>
+            </div>
+            <div class="buttons" style="margin:0">
+              <button id="exportJsonBtn" class="btn secondary small" type="button" data-i18n="exportJson">Esporta JSON</button>
+              <button id="importJsonBtn" class="btn secondary small" type="button" data-i18n="importJson">Importa</button>
+              <button id="clearAgendaBtn" class="btn danger small" type="button" data-i18n="clearAgenda">Svuota agenda</button>
+              <input id="importFile" type="file" accept="application/json" style="display:none">
+            </div>
+          </div>
+
+          <div class="card-body" style="padding-bottom:0">
+            <div class="stats">
+              <div class="stat"><b id="statTotal">0</b><span data-i18n="statTotal">Turni totali</span></div>
+              <div class="stat"><b id="statOpen">0</b><span data-i18n="statOpen">Da fare</span></div>
+              <div class="stat"><b id="statDone">0</b><span data-i18n="statDone">Completati</span></div>
+              <div class="stat"><b id="statIssue">0</b><span data-i18n="statIssue">Problemi</span></div>
+              <div class="stat"><b id="statLeaders">0</b><span>R4/R5</span></div>
+            </div>
+          </div>
+
+          <div class="card-head" style="border-bottom:0;padding-bottom:4px">
+            <h2 data-i18n="activeAssignments">Assegnazioni operative</h2>
+            <span id="agendaCount" class="index">00</span>
+          </div>
+
+          <div id="agendaTable"></div>
+
+          <div class="card-head" style="border-bottom:0;padding-bottom:4px">
+            <h2 data-i18n="candidates">Candidati visibili</h2>
+            <span class="index">4ITA</span>
+          </div>
+          <div id="candidateStrip" class="candidate-grid"></div>
+        </section>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PAGINA STORICO
+         ========================================================= -->
+    <section id="page-history" class="page">
+      <div class="stack">
+        <section class="card">
+          <div class="card-head">
+            <h2 data-i18n="historyTitle">Storico assegnazioni</h2>
+            <span class="index">02</span>
+          </div>
+
+          <div class="toolbar">
+            <div class="filters">
+              <input id="historySearch" placeholder="Cerca nello storico..." data-i18n-placeholder="historySearchPlaceholder">
+              <input id="historyFrom" type="date">
+              <input id="historyTo" type="date">
+              <select id="historyLeaderFilter"></select>
+            </div>
+            <button id="exportCsvBtn" class="btn secondary small" type="button" data-i18n="exportCsv">Esporta CSV</button>
+          </div>
+
+          <div id="historyTable"></div>
+        </section>
+
+        <section class="card">
+          <div class="card-head">
+            <h2 data-i18n="auditTitle">Registro modifiche</h2>
+            <span class="index">03</span>
+          </div>
+          <div id="auditList" style="padding-top:10px"></div>
+        </section>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PAGINA RUBRICA GENERALE
+         ========================================================= -->
+    <section id="page-directory" class="page">
+      <div class="stack">
+        <div class="pair">
+          <aside class="card">
+            <div class="card-head">
+              <h2 data-i18n="directoryTitle">RUBRICA GENERALE</h2>
+              <span class="index">04</span>
+            </div>
+
+            <div class="card-body">
+              <div class="notice" data-i18n="leadersNotice">Gestisci gli R4/R5 autorizzati ad assegnare il Treno.</div>
+
+              <label for="leaderName" data-i18n="name">Nome giocatore</label>
+              <input id="leaderName" placeholder="Nome R4/R5" data-i18n-placeholder="leaderPlaceholder">
+
+              <div class="row">
+                <div>
+                  <label for="leaderRank">Rank</label>
+                  <select id="leaderRank">
+                    <option value="R4">R4</option>
+                    <option value="R5">R5</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="leaderSex" data-i18n="sex">Sesso</label>
+                  <select id="leaderSex"></select>
+                </div>
+              </div>
+
+              <label for="leaderDuty" data-i18n="duty">Ruolo / incarico</label>
+              <select id="leaderDuty"></select>
+
+              <label for="leaderContact" data-i18n="contact">Contatto</label>
+              <input id="leaderContact" placeholder="Discord, Line, Telegram..." data-i18n-placeholder="contactPlaceholder">
+
+              <label for="leaderNote" data-i18n="notes">Note</label>
+              <textarea id="leaderNote" placeholder="Es. referente mattina, referente sera..." data-i18n-placeholder="leaderNotePlaceholder"></textarea>
+
+              <div class="buttons">
+                <button id="saveLeaderBtn" class="btn primary" type="button" data-i18n="saveContact">Salva contatto</button>
+                <button id="resetLeaderBtn" class="btn secondary" type="button" data-i18n="clean">Pulisci</button>
+              </div>
+            </div>
+          </aside>
+
+          <section class="card">
+            <div class="card-head">
+              <h2 data-i18n="leadersList">Elenco R4/R5</h2>
+              <span class="index">05</span>
+            </div>
+            <div class="card-body">
+              <div id="leadersList" class="list"></div>
+            </div>
+          </section>
+        </div>
+
+        <div class="pair">
+          <aside class="card">
+            <div class="card-head">
+              <h2 data-i18n="playersTitle">Rubrica giocatori</h2>
+              <span class="index">06</span>
+            </div>
+
+            <div class="card-body">
+              <div class="notice" data-i18n="playersNotice">Gestisci i candidati al Treno: attivi, in Black list o eliminati.</div>
+
+              <label for="playerBookName" data-i18n="name">Nome giocatore</label>
+              <input id="playerBookName" placeholder="Nome player" data-i18n-placeholder="playerBookPlaceholder">
+
+              <div class="row">
+                <div>
+                  <label for="playerSex" data-i18n="sex">Sesso</label>
+                  <select id="playerSex"></select>
+                </div>
+                <div>
+                  <label for="playerStatus" data-i18n="playerStatus">Stato giocatore</label>
+                  <select id="playerStatus"></select>
+                </div>
+              </div>
+
+              <div class="buttons">
+                <button id="savePlayerBtn" class="btn primary" type="button" data-i18n="savePlayer">Salva giocatore</button>
+                <button id="resetPlayerBtn" class="btn secondary" type="button" data-i18n="clean">Pulisci</button>
+              </div>
+            </div>
+          </aside>
+
+          <section class="card">
+            <div class="card-head">
+              <h2 data-i18n="playersList">Elenco giocatori</h2>
+              <span class="index">07</span>
+            </div>
+            <div class="card-body">
+              <div id="playersBookList" class="list"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">4ITA // LAST WAR // AGENDA TRENO // ALLIANCE OPERATIONS</footer>
+
+  <script>
+    /* =========================================================
+       CONFIGURAZIONE E TRADUZIONI
+       ========================================================= */
+
+    const PASSWORD_DELETE = "0000";
+
+    // Chiavi nuove: versione definitiva e pulita.
+    const KEYS = {
+      assignments: "agenda_treno_assignments_v_definitiva_1",
+      leaders: "agenda_treno_leaders_v_definitiva_1",
+      players: "agenda_treno_players_v_definitiva_1",
+      audit: "agenda_treno_audit_v_definitiva_1",
+      lang: "agenda_treno_lang_v_definitiva_1"
+    };
+
+    const R4_DUTIES = ["Signore della guerra", "Recruiter", "Musa", "Maggiordomo", "Non definito"];
+    const R5_DUTY = "Leader";
+
+    const VALUES = {
+      priorities: ["high", "medium", "low"],
+      statuses: ["todo", "assigned", "done", "issue"],
+      roles: ["trainLead", "support", "slotControl", "reserve"],
+      sexes: ["notSet", "male", "female"],
+      playerStatuses: ["active", "blacklist", "deleted"],
+      dayFilters: ["all", "today", "tomorrow", "week"]
+    };
+
+    const I18N = {
+      it:{
+        navAgenda:"Agenda", navHistory:"Storico", navDirectory:"Rubrica Generale",
+        heroKicker:"Documento operativo interno", heroSub:"Dashboard operativa per assegnare, controllare e storicizzare la gestione del Treno dell’alleanza 4ITA.", badgeLocal:"Salvataggio locale",
+        newAssignment:"Nuova assegnazione", agendaNotice:"Compila il turno e indica quale R4/R5 assegna il Treno. Il record sarà visibile in agenda e nello storico.",
+        day:"Giorno", slot:"Ora / slot", priority:"Priorità", assignedBy:"Assegnato da R4/R5", assignedPlayer:"Giocatore assegnato", role:"Ruolo operativo", status:"Stato", notes:"Note",
+        saveAssignment:"Salva turno", updateAssignment:"Aggiorna turno", clean:"Pulisci", searchPlaceholder:"Cerca giocatore, R4/R5, note...",
+        exportJson:"Esporta JSON", importJson:"Importa", clearAgenda:"Svuota agenda", exportCsv:"Esporta CSV",
+        statTotal:"Turni totali", statOpen:"Da fare", statDone:"Completati", statIssue:"Problemi", activeAssignments:"Assegnazioni operative", candidates:"Candidati visibili",
+        historyTitle:"Storico assegnazioni", historySearchPlaceholder:"Cerca nello storico...", auditTitle:"Registro modifiche",
+        directoryTitle:"RUBRICA GENERALE", leadersNotice:"Gestisci gli R4/R5 autorizzati ad assegnare il Treno.", leadersList:"Elenco R4/R5",
+        name:"Nome giocatore", sex:"Sesso", duty:"Ruolo / incarico", contact:"Contatto", saveContact:"Salva contatto",
+        playersTitle:"Rubrica giocatori", playersNotice:"Gestisci i candidati al Treno: attivi, in Black list o eliminati.", playersList:"Elenco giocatori", playerStatus:"Stato giocatore", savePlayer:"Salva giocatore",
+        leaderPlaceholder:"Nome R4/R5", contactPlaceholder:"Discord, Line, Telegram...", leaderNotePlaceholder:"Es. referente mattina, referente sera...", playerPlaceholder:"Es. Lukino", notesPlaceholder:"Es. cambio player, slot evento, priorità alleanza...", playerBookPlaceholder:"Nome player",
+        high:"Alta", medium:"Media", low:"Bassa", todo:"Da assegnare", assigned:"Assegnato", done:"Completato", issue:"Problema",
+        trainLead:"Responsabile Treno", support:"Supporto", slotControl:"Controllo slot", reserve:"Riserva",
+        notSet:"Non indicato", male:"Maschile", female:"Femminile", active:"Attivo", blacklist:"Black list", deleted:"Eliminato",
+        all:"Tutti i giorni", today:"Oggi", tomorrow:"Domani", week:"Prossimi 7 giorni", allStatuses:"Tutti gli stati", allLeaders:"Tutti gli R4/R5", selectLeader:"Seleziona R4/R5",
+        edit:"Modifica", complete:"OK", delete:"Elimina", deleteRecord:"Elimina record", deleteLog:"Elimina log", putBlacklist:"Metti in Black list", restore:"Ripristino", softDelete:"Elimina dalla lista", readmit:"Riammetti", deleteForever:"Elimina definitivamente",
+        emptyAgenda:"Nessuna assegnazione trovata.", emptyAudit:"Nessuna modifica registrata.", emptyLeaders:"Nessun R4/R5 in rubrica.", emptyPlayers:"Nessun giocatore salvato.", emptyCandidates:"Nessun candidato attivo o in Black list.",
+        missingDay:"Inserisci il giorno.", missingName:"Inserisci il nome.", confirmDelete:"Eliminare questo turno?", confirmClear:"Svuotare tutta l’agenda?", passwordPrompt:"Password per eliminare", wrongPassword:"Password errata", confirmProtectedDelete:"Confermi eliminazione del record selezionato?", confirmForever:"Eliminare definitivamente questo giocatore dal database?", importDone:"Import completato.", invalidFile:"File non valido.",
+        created:"Creato", updated:"Aggiornato", completed:"Completato", removed:"Eliminato", contactSaved:"Contatto salvato", playerSaved:"Giocatore salvato", agendaCleared:"Agenda svuotata", actions:"Azioni", update:"Aggiornamento"
+      },
+      en:{
+        navAgenda:"Agenda", navHistory:"History", navDirectory:"General Directory",
+        heroKicker:"Internal operating document", heroSub:"Operational dashboard to assign, control and archive Treno management for alliance 4ITA.", badgeLocal:"Local save",
+        newAssignment:"New assignment", agendaNotice:"Fill the turn and select which R4/R5 assigns the Treno. The record will be visible in the agenda and history.",
+        day:"Day", slot:"Time / slot", priority:"Priority", assignedBy:"Assigned by R4/R5", assignedPlayer:"Assigned player", role:"Operational role", status:"Status", notes:"Notes",
+        saveAssignment:"Save turn", updateAssignment:"Update turn", clean:"Clear", searchPlaceholder:"Search player, R4/R5, notes...",
+        exportJson:"Export JSON", importJson:"Import", clearAgenda:"Clear agenda", exportCsv:"Export CSV",
+        statTotal:"Total turns", statOpen:"Open", statDone:"Completed", statIssue:"Issues", activeAssignments:"Operational assignments", candidates:"Visible candidates",
+        historyTitle:"Assignment history", historySearchPlaceholder:"Search history...", auditTitle:"Change log",
+        directoryTitle:"GENERAL DIRECTORY", leadersNotice:"Manage the R4/R5 members authorized to assign the Treno.", leadersList:"R4/R5 list",
+        name:"Player name", sex:"Gender", duty:"Role / assignment", contact:"Contact", saveContact:"Save contact",
+        playersTitle:"Player directory", playersNotice:"Manage Treno candidates: active, Black list or deleted.", playersList:"Player list", playerStatus:"Player status", savePlayer:"Save player",
+        leaderPlaceholder:"R4/R5 name", contactPlaceholder:"Discord, Line, Telegram...", leaderNotePlaceholder:"E.g. morning owner, evening owner...", playerPlaceholder:"E.g. Lukino", notesPlaceholder:"E.g. player change, event slot, alliance priority...", playerBookPlaceholder:"Player name",
+        high:"High", medium:"Medium", low:"Low", todo:"To assign", assigned:"Assigned", done:"Completed", issue:"Issue",
+        trainLead:"Responsabile Treno", support:"Support", slotControl:"Slot control", reserve:"Reserve",
+        notSet:"Not set", male:"Male", female:"Female", active:"Active", blacklist:"Black list", deleted:"Deleted",
+        all:"All days", today:"Today", tomorrow:"Tomorrow", week:"Next 7 days", allStatuses:"All statuses", allLeaders:"All R4/R5", selectLeader:"Select R4/R5",
+        edit:"Edit", complete:"OK", delete:"Delete", deleteRecord:"Delete record", deleteLog:"Delete log", putBlacklist:"Move to Black list", restore:"Restore", softDelete:"Remove from list", readmit:"Readmit", deleteForever:"Delete permanently",
+        emptyAgenda:"No assignments found.", emptyAudit:"No changes recorded.", emptyLeaders:"No R4/R5 saved.", emptyPlayers:"No player saved.", emptyCandidates:"No active or Black list candidate.",
+        missingDay:"Enter the day.", missingName:"Enter the name.", confirmDelete:"Delete this turn?", confirmClear:"Clear the whole agenda?", passwordPrompt:"Password to delete", wrongPassword:"Wrong password", confirmProtectedDelete:"Confirm deletion of the selected record?", confirmForever:"Permanently delete this player from the database?", importDone:"Import completed.", invalidFile:"Invalid file.",
+        created:"Created", updated:"Updated", completed:"Completed", removed:"Deleted", contactSaved:"Contact saved", playerSaved:"Player saved", agendaCleared:"Agenda cleared", actions:"Actions", update:"Update"
+      },
+      es:{
+        navAgenda:"Agenda", navHistory:"Historial", navDirectory:"Directorio General",
+        heroKicker:"Documento operativo interno", heroSub:"Dashboard operativa para asignar, controlar y archivar la gestión del Treno de la alianza 4ITA.", badgeLocal:"Guardado local",
+        newAssignment:"Nueva asignación", agendaNotice:"Completa el turno e indica qué R4/R5 asigna el Treno. El registro será visible en la agenda y el historial.",
+        day:"Día", slot:"Hora / slot", priority:"Prioridad", assignedBy:"Asignado por R4/R5", assignedPlayer:"Jugador asignado", role:"Rol operativo", status:"Estado", notes:"Notas",
+        saveAssignment:"Guardar turno", updateAssignment:"Actualizar turno", clean:"Limpiar", searchPlaceholder:"Buscar jugador, R4/R5, notas...",
+        exportJson:"Exportar JSON", importJson:"Importar", clearAgenda:"Vaciar agenda", exportCsv:"Exportar CSV",
+        statTotal:"Turnos totales", statOpen:"Pendientes", statDone:"Completados", statIssue:"Problemas", activeAssignments:"Asignaciones operativas", candidates:"Candidatos visibles",
+        historyTitle:"Historial de asignaciones", historySearchPlaceholder:"Buscar en historial...", auditTitle:"Registro de cambios",
+        directoryTitle:"DIRECTORIO GENERAL", leadersNotice:"Gestiona los R4/R5 autorizados para asignar el Treno.", leadersList:"Lista R4/R5",
+        name:"Nombre jugador", sex:"Sexo", duty:"Rol / encargo", contact:"Contacto", saveContact:"Guardar contacto",
+        playersTitle:"Directorio jugadores", playersNotice:"Gestiona candidatos al Treno: activos, Black list o eliminados.", playersList:"Lista jugadores", playerStatus:"Estado jugador", savePlayer:"Guardar jugador",
+        leaderPlaceholder:"Nombre R4/R5", contactPlaceholder:"Discord, Line, Telegram...", leaderNotePlaceholder:"Ej. responsable mañana, responsable noche...", playerPlaceholder:"Ej. Lukino", notesPlaceholder:"Ej. cambio de player, slot de evento, prioridad de alianza...", playerBookPlaceholder:"Nombre player",
+        high:"Alta", medium:"Media", low:"Baja", todo:"Por asignar", assigned:"Asignado", done:"Completado", issue:"Problema",
+        trainLead:"Responsabile Treno", support:"Soporte", slotControl:"Control slot", reserve:"Reserva",
+        notSet:"No indicado", male:"Masculino", female:"Femenino", active:"Activo", blacklist:"Black list", deleted:"Eliminado",
+        all:"Todos los días", today:"Hoy", tomorrow:"Mañana", week:"Próximos 7 días", allStatuses:"Todos los estados", allLeaders:"Todos los R4/R5", selectLeader:"Selecciona R4/R5",
+        edit:"Editar", complete:"OK", delete:"Eliminar", deleteRecord:"Eliminar registro", deleteLog:"Eliminar log", putBlacklist:"Poner en Black list", restore:"Restaurar", softDelete:"Eliminar de la lista", readmit:"Readmitir", deleteForever:"Eliminar definitivamente",
+        emptyAgenda:"No se encontraron asignaciones.", emptyAudit:"No hay cambios registrados.", emptyLeaders:"Ningún R4/R5 guardado.", emptyPlayers:"Ningún jugador guardado.", emptyCandidates:"Ningún candidato activo o en Black list.",
+        missingDay:"Introduce el día.", missingName:"Introduce el nombre.", confirmDelete:"¿Eliminar este turno?", confirmClear:"¿Vaciar toda la agenda?", passwordPrompt:"Contraseña para eliminar", wrongPassword:"Contraseña incorrecta", confirmProtectedDelete:"¿Confirmas la eliminación del registro seleccionado?", confirmForever:"¿Eliminar definitivamente este jugador de la base de datos?", importDone:"Importación completada.", invalidFile:"Archivo no válido.",
+        created:"Creado", updated:"Actualizado", completed:"Completado", removed:"Eliminado", contactSaved:"Contacto guardado", playerSaved:"Jugador guardado", agendaCleared:"Agenda vaciada", actions:"Acciones", update:"Actualización"
+      }
+    };
+
+    /* =========================================================
+       STATO E UTILITÀ
+       ========================================================= */
+
+    const $ = id => document.getElementById(id);
+    let lang = localStorage.getItem(KEYS.lang) || "it";
+    let currentPage = "agenda";
+    let editingAssignmentId = null;
+    let editingLeaderId = null;
+    let editingPlayerId = null;
+
+    function t(key){ return (I18N[lang] && I18N[lang][key]) || I18N.it[key] || key; }
+
+    function load(key, fallback){
+      try{
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      }catch(error){
+        return fallback;
+      }
+    }
+
+    function save(key, value){ localStorage.setItem(key, JSON.stringify(value)); }
+
+    function uid(){
+      return crypto && crypto.randomUUID ? crypto.randomUUID() : "id-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+    }
+
+    function todayISO(offset=0){
+      const date = new Date();
+      date.setDate(date.getDate() + offset);
+      return date.toISOString().slice(0,10);
+    }
+
+    function locale(){
+      return lang === "it" ? "it-IT" : lang === "es" ? "es-ES" : "en-GB";
+    }
+
+    function fmtDate(iso){
+      if(!iso) return "-";
+      return new Date(iso + "T00:00:00").toLocaleDateString(locale(), {weekday:"short", day:"2-digit", month:"2-digit", year:"numeric"});
+    }
+
+    function fmtDateTime(iso){
+      if(!iso) return "-";
+      return new Date(iso).toLocaleString(locale());
+    }
+
+    function escapeHtml(value=""){
+      return String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char]));
+    }
+
+    function csvEscape(value){
+      return '"' + String(value ?? "").replaceAll('"','""') + '"';
+    }
+
+    function optionHtml(values, selected, prefix=""){
+      return values.map(v => `<option value="${escapeHtml(v)}" ${v === selected ? "selected" : ""}>${escapeHtml(t(prefix + v))}</option>`).join("");
+    }
+
+    function getAssignments(){ return load(KEYS.assignments, []); }
+    function setAssignments(data){ save(KEYS.assignments, data); }
+
+    function getLeaders(){ return migrateLeaders(load(KEYS.leaders, [])); }
+    function setLeaders(data){ save(KEYS.leaders, migrateLeaders(data)); }
+
+    function getPlayers(){ return migratePlayers(load(KEYS.players, [])); }
+    function setPlayers(data){ save(KEYS.players, migratePlayers(data)); }
+
+    function getAudit(){ return load(KEYS.audit, []); }
+    function setAudit(data){ save(KEYS.audit, data); }
+
+    function normalizeDuty(rank, duty){
+      if(rank === "R5") return R5_DUTY;
+      return R4_DUTIES.includes(duty) ? duty : "Non definito";
+    }
+
+    function migrateLeaders(leaders){
+      if(!Array.isArray(leaders)) return [];
+      return leaders.map(item => {
+        const rank = item.rank === "R5" ? "R5" : "R4";
+        return {
+          id:item.id || uid(),
+          name:item.name || "",
+          rank,
+          sex:item.sex || "notSet",
+          duty:normalizeDuty(rank, item.duty || item.tasks || ""),
+          contact:item.contact || "",
+          note:item.note || ""
+        };
+      }).filter(item => item.name);
+    }
+
+    function migratePlayers(players){
+      if(!Array.isArray(players)) return [];
+      return players.map(item => {
+        if(typeof item === "string"){
+          return {id:uid(), name:item, sex:"notSet", status:"active", createdAt:new Date().toISOString(), updatedAt:new Date().toISOString()};
+        }
+        return {
+          id:item.id || uid(),
+          name:item.name || "",
+          sex:item.sex || "notSet",
+          status:item.status || "active",
+          createdAt:item.createdAt || new Date().toISOString(),
+          updatedAt:item.updatedAt || new Date().toISOString()
+        };
+      }).filter(item => item.name);
+    }
+
+    function addAudit(action, item={}, detail=""){
+      const list = getAudit();
+      list.unshift({
+        id:uid(),
+        action,
+        assignmentId:item.id || item.assignmentId || "",
+        player:item.player || item.name || "",
+        day:item.day || "",
+        slot:item.slot || "",
+        assignedByName:item.assignedByName || item.name || "",
+        assignedByRank:item.assignedByRank || item.rank || "",
+        status:item.status || "",
+        detail,
+        at:new Date().toISOString()
+      });
+      setAudit(list.slice(0,350));
+    }
+
+    function protectedDelete(){
+      const password = prompt(t("passwordPrompt"));
+      if(password === null) return false;
+      if(password !== PASSWORD_DELETE){
+        alert(t("wrongPassword"));
+        return false;
+      }
+      return confirm(t("confirmProtectedDelete"));
+    }
+
+    /* =========================================================
+       LINGUA, NAVIGAZIONE E OPZIONI
+       ========================================================= */
+
+    function applyI18n(){
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        el.textContent = t(el.dataset.i18n);
+      });
+
+      document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        el.placeholder = t(el.dataset.i18nPlaceholder);
+      });
+
+      document.querySelectorAll("[data-lang]").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.lang === lang);
+      });
+
+      buildSelects();
+      renderAll();
+    }
+
+    function buildSelects(){
+      const priorityValue = $("priority").value || "medium";
+      $("priority").innerHTML = optionHtml(VALUES.priorities, priorityValue);
+
+      const roleValue = $("role").value || "trainLead";
+      $("role").innerHTML = optionHtml(VALUES.roles, roleValue);
+
+      const statusValue = $("status").value || "assigned";
+      $("status").innerHTML = optionHtml(VALUES.statuses, statusValue);
+
+      const filterValue = $("agendaStatusFilter").value || "";
+      $("agendaStatusFilter").innerHTML = `<option value="">${escapeHtml(t("allStatuses"))}</option>` + optionHtml(VALUES.statuses, filterValue);
+      $("agendaStatusFilter").value = filterValue;
+
+      const dayFilter = $("agendaDayFilter").value || "all";
+      $("agendaDayFilter").innerHTML = optionHtml(VALUES.dayFilters, dayFilter);
+      $("agendaDayFilter").value = dayFilter;
+
+      const leaderSex = $("leaderSex").value || "notSet";
+      $("leaderSex").innerHTML = optionHtml(VALUES.sexes, leaderSex);
+      $("leaderSex").value = leaderSex;
+
+      const playerSex = $("playerSex").value || "notSet";
+      $("playerSex").innerHTML = optionHtml(VALUES.sexes, playerSex);
+      $("playerSex").value = playerSex;
+
+      const playerStatus = $("playerStatus").value || "active";
+      $("playerStatus").innerHTML = optionHtml(VALUES.playerStatuses, playerStatus);
+      $("playerStatus").value = playerStatus;
+
+      updateLeaderDutyOptions($("leaderDuty").value);
+      renderLeaderSelectOptions();
+    }
+
+    function updateLeaderDutyOptions(preferred){
+      const rank = $("leaderRank").value || "R4";
+      if(rank === "R5"){
+        $("leaderDuty").innerHTML = `<option value="${R5_DUTY}">${R5_DUTY}</option>`;
+        $("leaderDuty").value = R5_DUTY;
+        $("leaderDuty").disabled = true;
+        return;
+      }
+
+      $("leaderDuty").disabled = false;
+      $("leaderDuty").innerHTML = R4_DUTIES.map(value => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join("");
+      $("leaderDuty").value = R4_DUTIES.includes(preferred) ? preferred : "Non definito";
+    }
+
+    function showPage(page){
+      currentPage = page;
+      document.body.classList.remove("page-agenda", "page-history", "page-directory");
+      document.body.classList.add("page-" + page);
+
+      document.querySelectorAll(".page").forEach(section => {
+        section.classList.toggle("active", section.id === "page-" + page);
+      });
+
+      document.querySelectorAll("[data-page]").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.page === page);
+      });
+
+      history.replaceState(null, "", "#" + page);
+      renderAll();
+    }
+
+    /* =========================================================
+       FORM AGENDA
+       ========================================================= */
+
+    function resetAssignmentForm(){
+      editingAssignmentId = null;
+      $("day").value = todayISO();
+      $("slot").value = "";
+      $("priority").value = "medium";
+      $("assignedBy").value = "";
+      $("playerName").value = "";
+      $("role").value = "trainLead";
+      $("status").value = "assigned";
+      $("notes").value = "";
+      $("saveAssignmentBtn").textContent = t("saveAssignment");
+    }
+
+    function getAssignmentFromForm(){
+      const leader = getLeaders().find(l => l.id === $("assignedBy").value) || {};
+      const previous = getAssignments().find(a => a.id === editingAssignmentId) || {};
+      return {
+        id:editingAssignmentId || uid(),
+        day:$("day").value,
+        slot:$("slot").value,
+        priority:$("priority").value,
+        assignedById:leader.id || "",
+        assignedByName:leader.name || "",
+        assignedByRank:leader.rank || "",
+        player:$("playerName").value.trim(),
+        role:$("role").value,
+        status:$("status").value,
+        notes:$("notes").value.trim(),
+        createdAt:previous.createdAt || new Date().toISOString(),
+        updatedAt:new Date().toISOString()
+      };
+    }
+
+    function setAssignmentForm(item){
+      editingAssignmentId = item.id;
+      $("day").value = item.day || todayISO();
+      $("slot").value = item.slot || "";
+      $("priority").value = item.priority || "medium";
+      $("assignedBy").value = item.assignedById || "";
+      $("playerName").value = item.player || "";
+      $("role").value = item.role || "trainLead";
+      $("status").value = item.status || "assigned";
+      $("notes").value = item.notes || "";
+      $("saveAssignmentBtn").textContent = t("updateAssignment");
+      showPage("agenda");
+      window.scrollTo({top:0, behavior:"smooth"});
+    }
+
+    function saveAssignment(){
+      const item = getAssignmentFromForm();
+      if(!item.day){
+        alert(t("missingDay"));
+        return;
+      }
+
+      const list = getAssignments();
+      const index = list.findIndex(a => a.id === item.id);
+
+      if(index >= 0){
+        list[index] = item;
+        addAudit("updated", item);
+      }else{
+        list.push(item);
+        addAudit("created", item);
+      }
+
+      setAssignments(list);
+
+      // Se il player è scritto manualmente e non esiste, lo aggiungo come attivo.
+      if(item.player){
+        const players = getPlayers();
+        const exists = players.some(p => p.name.toLowerCase() === item.player.toLowerCase());
+        if(!exists){
+          players.push({id:uid(), name:item.player, sex:"notSet", status:"active", createdAt:new Date().toISOString(), updatedAt:new Date().toISOString()});
+          setPlayers(players);
+        }
+      }
+
+      resetAssignmentForm();
+      renderAll();
+    }
+
+    function deleteAssignment(id){
+      if(!confirm(t("confirmDelete"))) return;
+      const list = getAssignments();
+      const item = list.find(a => a.id === id);
+      setAssignments(list.filter(a => a.id !== id));
+      if(item) addAudit("removed", item);
+      renderAll();
+    }
+
+    function completeAssignment(id){
+      const list = getAssignments();
+      const index = list.findIndex(a => a.id === id);
+      if(index < 0) return;
+      list[index].status = "done";
+      list[index].updatedAt = new Date().toISOString();
+      setAssignments(list);
+      addAudit("completed", list[index]);
+      renderAll();
+    }
+
+    /* =========================================================
+       RUBRICA R4/R5
+       ========================================================= */
+
+    function resetLeaderForm(){
+      editingLeaderId = null;
+      $("leaderName").value = "";
+      $("leaderRank").value = "R4";
+      $("leaderSex").value = "notSet";
+      updateLeaderDutyOptions("Non definito");
+      $("leaderContact").value = "";
+      $("leaderNote").value = "";
+      $("saveLeaderBtn").textContent = t("saveContact");
+    }
+
+    function saveLeader(){
+      const name = $("leaderName").value.trim();
+      if(!name){
+        alert(t("missingName"));
+        return;
+      }
+
+      const list = getLeaders();
+      const index = list.findIndex(l => l.id === editingLeaderId);
+      const rank = $("leaderRank").value;
+      const item = {
+        id:editingLeaderId || uid(),
+        name,
+        rank,
+        sex:$("leaderSex").value,
+        duty:normalizeDuty(rank, $("leaderDuty").value),
+        contact:$("leaderContact").value.trim(),
+        note:$("leaderNote").value.trim()
+      };
+
+      if(index >= 0) list[index] = item;
+      else list.push(item);
+
+      setLeaders(list);
+      addAudit("contactSaved", item);
+      resetLeaderForm();
+      renderAll();
+    }
+
+    function editLeader(id){
+      const item = getLeaders().find(l => l.id === id);
+      if(!item) return;
+      editingLeaderId = id;
+      $("leaderName").value = item.name;
+      $("leaderRank").value = item.rank;
+      $("leaderSex").value = item.sex || "notSet";
+      updateLeaderDutyOptions(item.duty);
+      $("leaderContact").value = item.contact || "";
+      $("leaderNote").value = item.note || "";
+      $("saveLeaderBtn").textContent = t("updateAssignment");
+      showPage("directory");
+    }
+
+    function deleteLeader(id){
+      setLeaders(getLeaders().filter(l => l.id !== id));
+      renderAll();
+    }
+
+    /* =========================================================
+       RUBRICA GIOCATORI
+       ========================================================= */
+
+    function resetPlayerForm(){
+      editingPlayerId = null;
+      $("playerBookName").value = "";
+      $("playerSex").value = "notSet";
+      $("playerStatus").value = "active";
+      $("savePlayerBtn").textContent = t("savePlayer");
+    }
+
+    function savePlayer(){
+      const name = $("playerBookName").value.trim();
+      if(!name){
+        alert(t("missingName"));
+        return;
+      }
+
+      const list = getPlayers();
+      const index = editingPlayerId
+        ? list.findIndex(p => p.id === editingPlayerId)
+        : list.findIndex(p => p.name.toLowerCase() === name.toLowerCase());
+
+      const previous = index >= 0 ? list[index] : {};
+      const item = {
+        id:previous.id || uid(),
+        name,
+        sex:$("playerSex").value,
+        status:$("playerStatus").value,
+        createdAt:previous.createdAt || new Date().toISOString(),
+        updatedAt:new Date().toISOString()
+      };
+
+      if(index >= 0) list[index] = item;
+      else list.push(item);
+
+      setPlayers(list);
+      addAudit("playerSaved", item);
+      resetPlayerForm();
+      renderAll();
+    }
+
+    function editPlayer(id){
+      const item = getPlayers().find(p => p.id === id);
+      if(!item) return;
+      editingPlayerId = id;
+      $("playerBookName").value = item.name;
+      $("playerSex").value = item.sex || "notSet";
+      $("playerStatus").value = item.status || "active";
+      $("savePlayerBtn").textContent = t("savePlayer");
+      showPage("directory");
+    }
+
+    function setPlayerStatus(id, status){
+      const list = getPlayers().map(p => p.id === id ? {...p, status, updatedAt:new Date().toISOString()} : p);
+      setPlayers(list);
+      renderAll();
+    }
+
+    function hardDeletePlayer(id){
+      if(!confirm(t("confirmForever"))) return;
+      setPlayers(getPlayers().filter(p => p.id !== id));
+      renderAll();
+    }
+
+    /* =========================================================
+       STORICO, EXPORT E IMPORT
+       ========================================================= */
+
+    function deleteHistoryRecord(id){
+      if(!protectedDelete()) return;
+      setAssignments(getAssignments().filter(a => a.id !== id));
+      renderAll();
+    }
+
+    function deleteAuditRecord(id){
+      if(!protectedDelete()) return;
+      setAudit(getAudit().filter(a => a.id !== id));
+      renderAll();
+    }
+
+    function exportJson(){
+      const payload = {
+        app:"Agenda Treno 4ITA",
+        version:"definitiva-1",
+        exportedAt:new Date().toISOString(),
+        assignments:getAssignments(),
+        leaders:getLeaders(),
+        players:getPlayers(),
+        audit:getAudit()
+      };
+
+      const blob = new Blob([JSON.stringify(payload, null, 2)], {type:"application/json"});
+      downloadBlob(blob, "agenda-treno-4ita.json");
+    }
+
+    async function importJson(file){
+      if(!file) return;
+      try{
+        const payload = JSON.parse(await file.text());
+        if(Array.isArray(payload.assignments)) setAssignments(payload.assignments);
+        if(Array.isArray(payload.leaders)) setLeaders(payload.leaders);
+        if(Array.isArray(payload.players)) setPlayers(payload.players);
+        if(Array.isArray(payload.audit)) setAudit(payload.audit);
+        alert(t("importDone"));
+        renderAll();
+      }catch(error){
+        alert(t("invalidFile"));
+      }
+    }
+
+    function exportCsv(){
+      const rows = filteredHistory();
+      const header = ["day","slot","player","assignedBy","rank","role","priority","status","notes","createdAt","updatedAt"];
+      const csv = [header.join(",")].concat(rows.map(row => [
+        row.day,row.slot,row.player,row.assignedByName,row.assignedByRank,t(row.role),t(row.priority),t(row.status),row.notes,row.createdAt,row.updatedAt
+      ].map(csvEscape).join(","))).join("\n");
+
+      downloadBlob(new Blob([csv], {type:"text/csv;charset=utf-8"}), "storico-agenda-treno-4ita.csv");
+    }
+
+    function downloadBlob(blob, filename){
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      link.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function clearAgenda(){
+      if(!confirm(t("confirmClear"))) return;
+      setAssignments([]);
+      addAudit("agendaCleared", {name:"Agenda", status:""});
+      renderAll();
+    }
+
+    /* =========================================================
+       RENDERING
+       ========================================================= */
+
+    function renderLeaderSelectOptions(){
+      const leaders = getLeaders().sort((a,b)=>(a.rank + a.name).localeCompare(b.rank + b.name));
+      const selected = $("assignedBy").value || "";
+      $("assignedBy").innerHTML = `<option value="">${escapeHtml(t("selectLeader"))}</option>` + leaders.map(l => `<option value="${escapeHtml(l.id)}">${escapeHtml(l.name)} (${l.rank})</option>`).join("");
+      $("assignedBy").value = selected;
+
+      const selectedHistory = $("historyLeaderFilter").value || "";
+      $("historyLeaderFilter").innerHTML = `<option value="">${escapeHtml(t("allLeaders"))}</option>` + leaders.map(l => `<option value="${escapeHtml(l.id)}">${escapeHtml(l.name)} (${l.rank})</option>`).join("");
+      $("historyLeaderFilter").value = selectedHistory;
+    }
+
+    function renderStats(){
+      const all = getAssignments();
+      $("statTotal").textContent = all.length;
+      $("statOpen").textContent = all.filter(a => a.status !== "done").length;
+      $("statDone").textContent = all.filter(a => a.status === "done").length;
+      $("statIssue").textContent = all.filter(a => a.status === "issue").length;
+      $("statLeaders").textContent = getLeaders().length;
+    }
+
+    function assignmentText(item){
+      return [item.day,item.slot,item.player,item.assignedByName,item.assignedByRank,t(item.role),t(item.priority),t(item.status),item.notes].join(" ").toLowerCase();
+    }
+
+    function filteredAgenda(){
+      const q = $("agendaSearch").value.trim().toLowerCase();
+      const status = $("agendaStatusFilter").value;
+      const dayFilter = $("agendaDayFilter").value || "all";
+      const today = todayISO();
+      const tomorrow = todayISO(1);
+      const weekEnd = todayISO(7);
+
+      return getAssignments()
+        .filter(a => !q || assignmentText(a).includes(q))
+        .filter(a => !status || a.status === status)
+        .filter(a => {
+          if(dayFilter === "today") return a.day === today;
+          if(dayFilter === "tomorrow") return a.day === tomorrow;
+          if(dayFilter === "week") return a.day >= today && a.day <= weekEnd;
+          return true;
+        })
+        .sort((a,b)=>(a.day + a.slot).localeCompare(b.day + b.slot));
+    }
+
+    function filteredHistory(){
+      const q = $("historySearch").value.trim().toLowerCase();
+      const from = $("historyFrom").value;
+      const to = $("historyTo").value;
+      const leaderId = $("historyLeaderFilter").value;
+
+      return getAssignments()
+        .filter(a => !q || assignmentText(a).includes(q))
+        .filter(a => !from || a.day >= from)
+        .filter(a => !to || a.day <= to)
+        .filter(a => !leaderId || a.assignedById === leaderId)
+        .sort((a,b)=>(b.day + b.slot).localeCompare(a.day + a.slot));
+    }
+
+    function statusClass(value){ return "p-" + (value || "assigned"); }
+    function priorityClass(value){ return "priority-" + (value || "medium"); }
+
+    function rowCells(item, mode){
+      return `
+        <td><strong>${escapeHtml(fmtDate(item.day))}</strong><span class="tiny">${escapeHtml(item.day || "-")}</span></td>
+        <td>${escapeHtml(item.slot || "-")}</td>
+        <td><strong>${escapeHtml(item.player || "-")}</strong></td>
+        <td>${item.assignedByName ? `<span class="pill rank-${escapeHtml((item.assignedByRank || "R4").toLowerCase())}">${escapeHtml(item.assignedByName)} · ${escapeHtml(item.assignedByRank)}</span>` : `<span class="tiny">-</span>`}</td>
+        <td>${escapeHtml(t(item.role))}</td>
+        <td><span class="strong ${priorityClass(item.priority)}">${escapeHtml(t(item.priority))}</span></td>
+        <td><span class="pill ${statusClass(item.status)}">${escapeHtml(t(item.status))}</span></td>
+        <td><span class="tiny">${escapeHtml(item.notes || "-")}</span></td>
+        ${mode === "history" ? `<td><span class="tiny">${escapeHtml(fmtDateTime(item.updatedAt))}</span></td>` : ""}
+      `;
+    }
+
+    function renderAgenda(){
+      const rows = filteredAgenda();
+      $("agendaCount").textContent = String(rows.length).padStart(2,"0");
+
+      if(!rows.length){
+        $("agendaTable").innerHTML = `<div class="empty">${escapeHtml(t("emptyAgenda"))}</div>`;
+        return;
+      }
+
+      $("agendaTable").innerHTML = `
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>${t("day")}</th><th>${t("slot")}</th><th>${t("assignedPlayer")}</th><th>${t("assignedBy")}</th>
+                <th>${t("role")}</th><th>${t("priority")}</th><th>${t("status")}</th><th>${t("notes")}</th><th>${t("actions")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows.map(item => `
+                <tr>
+                  ${rowCells(item, "agenda")}
+                  <td>
+                    <div class="actions">
+                      <button class="btn secondary small" onclick="editAssignment('${escapeHtml(item.id)}')">${escapeHtml(t("edit"))}</button>
+                      <button class="btn ok small" onclick="completeAssignment('${escapeHtml(item.id)}')">${escapeHtml(t("complete"))}</button>
+                      <button class="btn danger small" onclick="deleteAssignment('${escapeHtml(item.id)}')">${escapeHtml(t("delete"))}</button>
+                    </div>
+                  </td>
+                </tr>`).join("")}
+            </tbody>
+          </table>
+        </div>`;
+    }
+
+    function renderCandidates(){
+      const candidates = getPlayers()
+        .filter(p => p.status !== "deleted")
+        .sort((a,b)=>{
+          const order = {active:0, blacklist:1};
+          return (order[a.status] - order[b.status]) || a.name.localeCompare(b.name);
+        });
+
+      $("playersList").innerHTML = candidates.map(p => `<option value="${escapeHtml(p.name)}">${escapeHtml(p.status === "blacklist" ? "Black list" : t("active"))}</option>`).join("");
+
+      if(!candidates.length){
+        $("candidateStrip").innerHTML = `<div class="empty" style="padding:10px 0 0;text-align:left">${escapeHtml(t("emptyCandidates"))}</div>`;
+        return;
+      }
+
+      $("candidateStrip").innerHTML = candidates.map(p => `<span class="candidate ${p.status === "blacklist" ? "name-blacklist" : "name-active"}">${escapeHtml(p.name)}</span>`).join("");
+    }
+
+    function renderHistory(){
+      const rows = filteredHistory();
+
+      if(!rows.length){
+        $("historyTable").innerHTML = `<div class="empty">${escapeHtml(t("emptyAgenda"))}</div>`;
+      }else{
+        $("historyTable").innerHTML = `
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>${t("day")}</th><th>${t("slot")}</th><th>${t("assignedPlayer")}</th><th>${t("assignedBy")}</th>
+                  <th>${t("role")}</th><th>${t("priority")}</th><th>${t("status")}</th><th>${t("notes")}</th><th>Update</th><th>${t("actions")}</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rows.map(item => `
+                  <tr>
+                    ${rowCells(item, "history")}
+                    <td><button class="btn danger small" onclick="deleteHistoryRecord('${escapeHtml(item.id)}')">${escapeHtml(t("deleteRecord"))}</button></td>
+                  </tr>`).join("")}
+              </tbody>
+            </table>
+          </div>`;
+      }
+
+      renderAudit();
+    }
+
+    function renderAudit(){
+      const list = getAudit();
+      if(!list.length){
+        $("auditList").innerHTML = `<div class="empty">${escapeHtml(t("emptyAudit"))}</div>`;
+        return;
+      }
+
+      $("auditList").innerHTML = list.map(log => `
+        <div class="log">
+          <div class="when">${escapeHtml(fmtDateTime(log.at))}</div>
+          <div>
+            <h3>${escapeHtml(t(log.action) || log.action)} · ${escapeHtml(log.player || "-")}</h3>
+            <p>${escapeHtml(log.day || "-")} ${escapeHtml(log.slot || "")} · ${escapeHtml(log.assignedByName || "-")} ${escapeHtml(log.assignedByRank || "")}</p>
+            ${log.detail ? `<p class="tiny">${escapeHtml(log.detail)}</p>` : ""}
+          </div>
+          <div>${log.status ? `<span class="pill ${statusClass(log.status)}">${escapeHtml(t(log.status))}</span>` : ""}</div>
+          <button class="btn danger small" onclick="deleteAuditRecord('${escapeHtml(log.id)}')">${escapeHtml(t("deleteLog"))}</button>
+        </div>`).join("");
+    }
+
+    function renderLeaders(){
+      const list = getLeaders().sort((a,b)=>(a.rank + a.name).localeCompare(b.rank + b.name));
+
+      if(!list.length){
+        $("leadersList").innerHTML = `<div class="empty">${escapeHtml(t("emptyLeaders"))}</div>`;
+        return;
+      }
+
+      $("leadersList").innerHTML = list.map(item => `
+        <div class="contact">
+          <div>
+            <strong class="${item.rank === "R5" ? "leader-r5" : "leader-r4"}">${escapeHtml(item.name)}</strong>
+            <span class="pill rank-${item.rank.toLowerCase()}">${escapeHtml(item.rank)}</span>
+            <small>${escapeHtml(t("sex"))}: ${escapeHtml(t(item.sex))}</small>
+            <small>${escapeHtml(t("duty"))}: ${escapeHtml(item.duty || "-")}</small>
+            <small>${escapeHtml(t("contact"))}: ${escapeHtml(item.contact || "-")}</small>
+            <small>${escapeHtml(item.note || "")}</small>
+          </div>
+          <div class="tools">
+            <button class="btn secondary small" onclick="editLeader('${escapeHtml(item.id)}')">${escapeHtml(t("edit"))}</button>
+            <button class="btn danger small" onclick="deleteLeader('${escapeHtml(item.id)}')">${escapeHtml(t("delete"))}</button>
+          </div>
+        </div>`).join("");
+    }
+
+    function playerNameClass(status){
+      if(status === "blacklist") return "name-blacklist";
+      if(status === "deleted") return "name-deleted";
+      return "name-active";
+    }
+
+    function renderPlayers(){
+      const order = {active:0, blacklist:1, deleted:2};
+      const list = getPlayers().sort((a,b)=>(order[a.status] - order[b.status]) || a.name.localeCompare(b.name));
+
+      if(!list.length){
+        $("playersBookList").innerHTML = `<div class="empty">${escapeHtml(t("emptyPlayers"))}</div>`;
+        return;
+      }
+
+      $("playersBookList").innerHTML = list.map(item => {
+        let tools = "";
+        if(item.status === "deleted"){
+          tools = `
+            <button class="btn ok small" onclick="setPlayerStatus('${escapeHtml(item.id)}','active')">${escapeHtml(t("readmit"))}</button>
+            <button class="btn danger small" onclick="hardDeletePlayer('${escapeHtml(item.id)}')">${escapeHtml(t("deleteForever"))}</button>`;
+        }else if(item.status === "blacklist"){
+          tools = `
+            <button class="btn ok small" onclick="setPlayerStatus('${escapeHtml(item.id)}','active')">${escapeHtml(t("restore"))}</button>
+            <button class="btn danger small" onclick="setPlayerStatus('${escapeHtml(item.id)}','deleted')">${escapeHtml(t("softDelete"))}</button>`;
+        }else{
+          tools = `
+            <button class="btn secondary small" onclick="editPlayer('${escapeHtml(item.id)}')">${escapeHtml(t("edit"))}</button>
+            <button class="btn danger small" onclick="setPlayerStatus('${escapeHtml(item.id)}','blacklist')">${escapeHtml(t("putBlacklist"))}</button>
+            <button class="btn danger small" onclick="setPlayerStatus('${escapeHtml(item.id)}','deleted')">${escapeHtml(t("softDelete"))}</button>`;
+        }
+
+        return `
+          <div class="contact">
+            <div>
+              <strong class="${playerNameClass(item.status)}">${escapeHtml(item.name)}</strong>
+              <small>${escapeHtml(t("sex"))}: ${escapeHtml(t(item.sex))}</small>
+              <small>${escapeHtml(t("playerStatus"))}: ${escapeHtml(t(item.status))}</small>
+            </div>
+            <div class="tools">${tools}</div>
+          </div>`;
+      }).join("");
+    }
+
+    function renderAll(){
+      renderLeaderSelectOptions();
+      renderStats();
+      renderAgenda();
+      renderCandidates();
+      renderHistory();
+      renderLeaders();
+      renderPlayers();
+    }
+
+    /* =========================================================
+       EVENTI
+       ========================================================= */
+
+    document.querySelectorAll("[data-page]").forEach(btn => {
+      btn.addEventListener("click", () => showPage(btn.dataset.page));
+    });
+
+    document.querySelectorAll("[data-lang]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        lang = btn.dataset.lang;
+        localStorage.setItem(KEYS.lang, lang);
+        applyI18n();
+      });
+    });
+
+    $("saveAssignmentBtn").addEventListener("click", saveAssignment);
+    $("resetAssignmentBtn").addEventListener("click", resetAssignmentForm);
+    $("exportJsonBtn").addEventListener("click", exportJson);
+    $("importJsonBtn").addEventListener("click", () => $("importFile").click());
+    $("importFile").addEventListener("change", event => importJson(event.target.files[0]));
+    $("clearAgendaBtn").addEventListener("click", clearAgenda);
+    $("exportCsvBtn").addEventListener("click", exportCsv);
+
+    ["agendaSearch","agendaStatusFilter","agendaDayFilter","historySearch","historyFrom","historyTo","historyLeaderFilter"].forEach(id => {
+      $(id).addEventListener("input", renderAll);
+    });
+
+    $("leaderRank").addEventListener("change", () => updateLeaderDutyOptions());
+    $("saveLeaderBtn").addEventListener("click", saveLeader);
+    $("resetLeaderBtn").addEventListener("click", resetLeaderForm);
+
+    $("savePlayerBtn").addEventListener("click", savePlayer);
+    $("resetPlayerBtn").addEventListener("click", resetPlayerForm);
+
+    // Espongo alcune funzioni per i pulsanti generati dinamicamente.
+    window.editAssignment = id => setAssignmentForm(getAssignments().find(a => a.id === id));
+    window.completeAssignment = completeAssignment;
+    window.deleteAssignment = deleteAssignment;
+    window.deleteHistoryRecord = deleteHistoryRecord;
+    window.deleteAuditRecord = deleteAuditRecord;
+    window.editLeader = editLeader;
+    window.deleteLeader = deleteLeader;
+    window.editPlayer = editPlayer;
+    window.setPlayerStatus = setPlayerStatus;
+    window.hardDeletePlayer = hardDeletePlayer;
+
+    /* =========================================================
+       AVVIO
+       ========================================================= */
+
+    // Persisto eventuali strutture migrate e preparo una schermata pulita.
+    setLeaders(getLeaders());
+    setPlayers(getPlayers());
+
+    buildSelects();
+    resetAssignmentForm();
+    resetLeaderForm();
+    resetPlayerForm();
+    applyI18n();
+
+    const initialPage = location.hash.replace("#","");
+    if(["agenda","history","directory"].includes(initialPage)){
+      showPage(initialPage);
+    }
+  </script>
+</body>
+</html>
