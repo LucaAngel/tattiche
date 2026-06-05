@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:58:49.945Z",
+  "updatedAt": "2026-06-05T20:58:57.134Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -671,6 +671,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:58:49.628Z",
       "updatedAt": "2026-06-05T20:58:49.628Z"
+    },
+    {
+      "id": "mq1epu05-284u4da0",
+      "name": "tempesta 64",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:58:56.933Z",
+      "updatedAt": "2026-06-05T20:58:56.933Z"
     }
   ]
 }
