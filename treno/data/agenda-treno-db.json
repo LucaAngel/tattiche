@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:54:35.651Z",
+  "updatedAt": "2026-06-05T20:54:57.112Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -503,6 +503,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:54:35.418Z",
       "updatedAt": "2026-06-05T20:54:35.418Z"
+    },
+    {
+      "id": "mq1ekosi-55iabm81",
+      "name": "Luca",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:54:56.898Z",
+      "updatedAt": "2026-06-05T20:54:56.898Z"
     }
   ]
 }
