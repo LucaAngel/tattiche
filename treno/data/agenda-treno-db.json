@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T17:58:01.191Z",
+  "updatedAt": "2026-06-05T17:58:16.974Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -57,9 +57,24 @@
       "status": "active",
       "createdAt": "2026-06-05T17:58:00.256Z",
       "updatedAt": "2026-06-05T17:58:00.256Z"
+    },
+    {
+      "id": "mq189gv3-bv6fxvk8",
+      "name": "Pippo 70",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T17:58:15.711Z",
+      "updatedAt": "2026-06-05T17:58:15.711Z"
     }
   ],
   "audit": [
+    {
+      "id": "mq189gv3-wnarg4l8",
+      "at": "2026-06-05T17:58:15.711Z",
+      "admin": "4ita",
+      "action": "creazione giocatore",
+      "detail": "Pippo 70"
+    },
     {
       "id": "mq1894xt-u2xf5nlj",
       "at": "2026-06-05T17:58:00.257Z",
