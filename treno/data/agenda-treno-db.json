@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:48:47.161Z",
+  "updatedAt": "2026-06-05T20:48:59.981Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -223,6 +223,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:48:46.956Z",
       "updatedAt": "2026-06-05T20:48:46.956Z"
+    },
+    {
+      "id": "mq1ed18k-e95koc4o",
+      "name": "LuKiNo",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:48:59.780Z",
+      "updatedAt": "2026-06-05T20:48:59.780Z"
     }
   ]
 }
