@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:02:06.643Z",
+  "updatedAt": "2026-06-05T21:02:17.346Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -879,6 +879,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:02:06.392Z",
       "updatedAt": "2026-06-05T21:02:06.392Z"
+    },
+    {
+      "id": "mq1eu4dt-xycsujii",
+      "name": "Hw1968",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:02:17.009Z",
+      "updatedAt": "2026-06-05T21:02:17.009Z"
     }
   ]
 }
