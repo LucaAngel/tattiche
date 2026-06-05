@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:01:11.525Z",
+  "updatedAt": "2026-06-05T21:01:18.938Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -815,6 +815,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:01:11.250Z",
       "updatedAt": "2026-06-05T21:01:11.250Z"
+    },
+    {
+      "id": "mq1esvd8-1a4ze0e6",
+      "name": "Satsuman",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:01:18.668Z",
+      "updatedAt": "2026-06-05T21:01:18.668Z"
     }
   ]
 }
