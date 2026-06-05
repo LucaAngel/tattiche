@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T18:03:44.507Z",
+  "updatedAt": "2026-06-05T18:03:57.794Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -101,6 +101,13 @@
     }
   ],
   "audit": [
+    {
+      "id": "mq18gs2e-7gynvbua",
+      "at": "2026-06-05T18:03:56.822Z",
+      "admin": "4ita",
+      "action": "eliminazione log",
+      "detail": "mq18gle4-2nvyj7s2"
+    },
     {
       "id": "mq18ghrr-iy2pw5q3",
       "at": "2026-06-05T18:03:43.479Z",
