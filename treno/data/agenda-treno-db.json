@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:59:04.450Z",
+  "updatedAt": "2026-06-05T20:59:11.188Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -687,6 +687,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:59:04.242Z",
       "updatedAt": "2026-06-05T20:59:04.242Z"
+    },
+    {
+      "id": "mq1eq4sl-ikqjtayz",
+      "name": "massimomassimo",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:59:10.917Z",
+      "updatedAt": "2026-06-05T20:59:10.917Z"
     }
   ]
 }
