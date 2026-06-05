@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:52:52.543Z",
+  "updatedAt": "2026-06-05T20:53:02.355Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -407,6 +407,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:52:52.338Z",
       "updatedAt": "2026-06-05T20:52:52.338Z"
+    },
+    {
+      "id": "mq1ei86k-espc56ip",
+      "name": "GonZozi7",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:53:02.061Z",
+      "updatedAt": "2026-06-05T20:53:02.061Z"
     }
   ]
 }
