@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T19:42:07.236Z",
+  "updatedAt": "2026-06-05T19:46:16.887Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -47,6 +47,34 @@
       "notes": "",
       "createdAt": "2026-06-05T19:42:06.983Z",
       "updatedAt": "2026-06-05T19:42:06.983Z"
+    },
+    {
+      "id": "mq19j5c1-7jopy6p4",
+      "day": "2026-06-05",
+      "slot": "21:30",
+      "priority": "medium",
+      "leaderId": "",
+      "leaderName": "",
+      "playerName": "Manuelsfg92",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-05T18:33:46.945Z",
+      "updatedAt": "2026-06-05T19:07:51.886Z"
+    },
+    {
+      "id": "mq1c4dji-k0oaes7n",
+      "day": "2026-06-02",
+      "slot": "18:30",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "Andreathor",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-05T19:46:16.590Z",
+      "updatedAt": "2026-06-05T19:46:16.590Z"
     }
   ],
   "leaders": [
