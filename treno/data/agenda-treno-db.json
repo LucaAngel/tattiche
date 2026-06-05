@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:00:45.433Z",
+  "updatedAt": "2026-06-05T21:00:52.792Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -783,6 +783,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:00:45.174Z",
       "updatedAt": "2026-06-05T21:00:45.174Z"
+    },
+    {
+      "id": "mq1esb8o-9gbwptuk",
+      "name": "stella cantik",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T21:00:52.584Z",
+      "updatedAt": "2026-06-05T21:00:52.584Z"
     }
   ]
 }
