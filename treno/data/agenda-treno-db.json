@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:55:25.569Z",
+  "updatedAt": "2026-06-05T20:55:35.184Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -535,6 +535,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:55:25.275Z",
       "updatedAt": "2026-06-05T20:55:25.275Z"
+    },
+    {
+      "id": "mq1eli5q-dwtsxuy0",
+      "name": "Snipyo",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:55:34.958Z",
+      "updatedAt": "2026-06-05T20:55:34.958Z"
     }
   ]
 }
