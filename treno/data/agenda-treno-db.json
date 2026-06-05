@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:01:18.938Z",
+  "updatedAt": "2026-06-05T21:01:24.335Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -823,6 +823,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:01:18.668Z",
       "updatedAt": "2026-06-05T21:01:18.668Z"
+    },
+    {
+      "id": "mq1eszk2-3qipg3y3",
+      "name": "Nell0620",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T21:01:24.098Z",
+      "updatedAt": "2026-06-05T21:01:24.098Z"
     }
   ]
 }
