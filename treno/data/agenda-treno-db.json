@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:52:36.229Z",
+  "updatedAt": "2026-06-05T20:52:47.029Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -391,6 +391,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:52:35.833Z",
       "updatedAt": "2026-06-05T20:52:35.833Z"
+    },
+    {
+      "id": "mq1ehtuz-kmclk470",
+      "name": "black palpatine",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:52:43.499Z",
+      "updatedAt": "2026-06-05T20:52:43.499Z"
     }
   ]
 }
