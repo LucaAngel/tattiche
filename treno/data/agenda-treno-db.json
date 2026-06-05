@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:10:19.133Z",
+  "updatedAt": "2026-06-05T21:10:39.182Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -145,6 +145,20 @@
       "notes": "",
       "createdAt": "2026-06-05T21:10:18.903Z",
       "updatedAt": "2026-06-05T21:10:18.903Z"
+    },
+    {
+      "id": "mq1f4vo7-k95y6rxp",
+      "day": "2026-05-27",
+      "slot": "18:00",
+      "priority": "medium",
+      "leaderId": "mq18a950-uu4yzysy",
+      "leaderName": "IronFocus (R4)",
+      "playerName": "MagoBetReal",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-05T21:10:38.935Z",
+      "updatedAt": "2026-06-05T21:10:38.935Z"
     }
   ],
   "leaders": [
