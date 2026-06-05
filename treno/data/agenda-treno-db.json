@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:50:51.606Z",
+  "updatedAt": "2026-06-05T20:51:01.021Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -295,6 +295,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:50:51.386Z",
       "updatedAt": "2026-06-05T20:50:51.386Z"
+    },
+    {
+      "id": "mq1efmmx-yu2qy366",
+      "name": "michela163",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:51:00.825Z",
+      "updatedAt": "2026-06-05T20:51:00.825Z"
     }
   ]
 }
