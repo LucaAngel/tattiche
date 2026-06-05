@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:53:44.797Z",
+  "updatedAt": "2026-06-05T20:53:52.239Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -455,6 +455,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:53:44.537Z",
       "updatedAt": "2026-06-05T20:53:44.537Z"
+    },
+    {
+      "id": "mq1ejapo-49xmx40s",
+      "name": "Pier Trap",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:53:51.996Z",
+      "updatedAt": "2026-06-05T20:53:51.996Z"
     }
   ]
 }
