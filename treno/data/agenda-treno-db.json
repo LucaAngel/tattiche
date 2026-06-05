@@ -1,12 +1,32 @@
 {
   "version": 1,
-  "updatedAt": "",
-  "updatedBy": "",
+  "updatedAt": "2026-06-05T17:56:15.361Z",
+  "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
   },
   "assignments": [],
-  "leaders": [],
+  "leaders": [
+    {
+      "id": "mq186v38-4gajl3ws",
+      "name": "Presidente Florix",
+      "rank": "R5",
+      "sex": "male",
+      "role": "Leader",
+      "contact": "",
+      "notes": "",
+      "createdAt": "2026-06-05T17:56:14.180Z",
+      "updatedAt": "2026-06-05T17:56:14.180Z"
+    }
+  ],
   "players": [],
-  "audit": []
+  "audit": [
+    {
+      "id": "mq186v39-7tzvu346",
+      "at": "2026-06-05T17:56:14.181Z",
+      "admin": "4ita",
+      "action": "creazione contatto R4/R5",
+      "detail": "Presidente Florix"
+    }
+  ]
 }
