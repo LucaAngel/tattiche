@@ -1,12 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T17:58:16.974Z",
+  "updatedAt": "2026-06-05T17:58:39.538Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
   },
   "assignments": [],
   "leaders": [
+    {
+      "id": "mq189yic-1hlsvjza",
+      "name": "Donitrob",
+      "rank": "R4",
+      "sex": "male",
+      "role": "Recruiter",
+      "contact": "",
+      "notes": "",
+      "createdAt": "2026-06-05T17:58:38.580Z",
+      "updatedAt": "2026-06-05T17:58:38.580Z"
+    },
     {
       "id": "mq187k2v-je6or98r",
       "name": "LuKiNo",
@@ -68,6 +79,13 @@
     }
   ],
   "audit": [
+    {
+      "id": "mq189yid-q6idzke7",
+      "at": "2026-06-05T17:58:38.581Z",
+      "admin": "4ita",
+      "action": "creazione contatto R4/R5",
+      "detail": "Donitrob"
+    },
     {
       "id": "mq189gv3-wnarg4l8",
       "at": "2026-06-05T17:58:15.711Z",
