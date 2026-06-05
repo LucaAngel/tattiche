@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:09:54.073Z",
+  "updatedAt": "2026-06-05T21:10:19.133Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -131,6 +131,20 @@
       "notes": "",
       "createdAt": "2026-06-05T21:09:53.693Z",
       "updatedAt": "2026-06-05T21:09:53.693Z"
+    },
+    {
+      "id": "mq1f4g7r-1hy593kc",
+      "day": "2026-05-28",
+      "slot": "19:30",
+      "priority": "medium",
+      "leaderId": "mq187acb-9x6b6irp",
+      "leaderName": "Toposeduto (R4)",
+      "playerName": "Falcor MBA",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-05T21:10:18.903Z",
+      "updatedAt": "2026-06-05T21:10:18.903Z"
     }
   ],
   "leaders": [
