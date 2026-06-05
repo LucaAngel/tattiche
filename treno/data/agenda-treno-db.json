@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:51:44.015Z",
+  "updatedAt": "2026-06-05T20:51:53.552Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -343,6 +343,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:51:43.793Z",
       "updatedAt": "2026-06-05T20:51:43.793Z"
+    },
+    {
+      "id": "mq1egr5v-4roqao4s",
+      "name": "kikucijo",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:51:53.347Z",
+      "updatedAt": "2026-06-05T20:51:53.347Z"
     }
   ]
 }
