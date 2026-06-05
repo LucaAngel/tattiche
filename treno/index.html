@@ -21,13 +21,125 @@
     .nav button.active,.lang button.active{background:linear-gradient(180deg,#f4c84a,#a77820);color:#15130f;font-weight:800;border-color:#ffd66a}.lang{display:flex;gap:6px}.lang button{padding:7px 10px;font-size:.82rem}
     .wrap{max-width:1480px;margin:0 auto;padding:22px clamp(12px,3vw,28px) 42px}.hero{display:grid;grid-template-columns:180px 1fr;gap:22px;align-items:center;margin:16px 0 22px}.logoBox{background:linear-gradient(145deg,rgba(244,200,74,.11),rgba(138,210,255,.06));border:1px solid rgba(244,200,74,.24);box-shadow:var(--shadow);border-radius:28px;padding:16px;display:grid;place-items:center}.logoBox img{width:min(100%,150px);height:auto;display:block}.logoSmall{display:flex;align-items:center;gap:12px;margin-bottom:16px}.logoSmall img{width:58px;height:58px;object-fit:contain;border-radius:14px;border:1px solid rgba(244,200,74,.25);padding:4px;background:#181611}.title h1{margin:0;color:var(--gold);font-size:clamp(1.7rem,5vw,3.5rem);line-height:1}.title p{margin:.7rem 0 0;color:var(--muted);max-width:850px}.badgeRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.badge{border:1px solid rgba(244,200,74,.2);background:rgba(244,200,74,.08);color:var(--gold);border-radius:999px;padding:6px 10px;font-size:.83rem}.page{display:none}.page.active{display:block}.grid{display:grid;gap:16px}.grid.two{grid-template-columns:1fr 1fr}.grid.ops{grid-template-columns:440px 1fr}.grid.rubrica{grid-template-columns:minmax(300px,430px) 1fr;align-items:start}.card{background:linear-gradient(180deg,rgba(43,40,33,.96),rgba(31,29,24,.96));border:1px solid rgba(244,200,74,.18);border-radius:var(--radius);box-shadow:var(--shadow);padding:var(--pad);overflow:hidden}.card h2,.card h3{margin:.1rem 0 1rem;color:var(--gold)}.card h2{font-size:1.25rem}.card h3{font-size:1.05rem}.muted{color:var(--muted)}.tiny{font-size:.82rem;color:var(--dim)}
     .formGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{color:#dccd9e;font-size:.86rem;font-weight:700}input,select,textarea{width:100%;border:1px solid rgba(244,200,74,.18);background:#15130f;color:var(--text);border-radius:12px;padding:10px 11px;outline:none}textarea{min-height:82px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(244,200,74,.12)}.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px}.primary{background:linear-gradient(180deg,#f4c84a,#a77820);color:#16120a;border-color:#ffd66a;font-weight:900}.danger{background:linear-gradient(180deg,#6a1e1e,#2a1111);border-color:rgba(255,71,71,.45);color:#ffd7d7}.soft{background:linear-gradient(180deg,#1f3846,#172229);border-color:rgba(138,210,255,.33);color:#ccefff}.ghost{background:#171511}.statusbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}.statusPill{border:1px solid rgba(138,210,255,.25);background:rgba(138,210,255,.08);color:#d9f3ff;border-radius:12px;padding:8px 10px;font-size:.86rem}.tokenOk{border-color:rgba(120,180,106,.5);background:rgba(120,180,106,.12);color:#d7ffd4}.tokenNo{border-color:rgba(255,71,71,.45);background:rgba(255,71,71,.1);color:#ffcccc}.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:16px}.stat{background:linear-gradient(145deg,rgba(244,200,74,.1),rgba(255,255,255,.02));border:1px solid rgba(244,200,74,.16);border-radius:16px;padding:13px}.stat strong{display:block;font-size:1.5rem;color:var(--gold)}.filters{display:grid;grid-template-columns:2fr 1fr 1fr 1fr auto;gap:10px;margin-bottom:12px}.scroll{overflow:auto;border-radius:14px;border:1px solid rgba(244,200,74,.13)}table{width:100%;border-collapse:collapse;min-width:760px;background:rgba(20,18,14,.45)}th,td{padding:11px 10px;border-bottom:1px solid rgba(244,200,74,.1);text-align:left;vertical-align:top}th{position:sticky;top:0;background:#27231b;color:var(--gold);z-index:1;font-size:.83rem;text-transform:uppercase;letter-spacing:.04em}tr:hover td{background:rgba(244,200,74,.04)}.tag{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;font-size:.78rem;font-weight:800}.tag.high{background:rgba(255,71,71,.14);color:#ff9a9a}.tag.medium{background:rgba(244,200,74,.13);color:#ffd86b}.tag.low{background:rgba(138,210,255,.12);color:#bfeaff}.tag.todo{background:rgba(184,173,146,.12);color:#d8cfb4}.tag.assigned{background:rgba(138,210,255,.14);color:#bfeaff}.tag.completed{background:rgba(120,180,106,.16);color:#b8f0aa}.tag.problem{background:rgba(255,71,71,.17);color:#ff9a9a}.r4{color:var(--amber);font-weight:900}.r5{color:var(--blue);font-weight:900}.playerActive{color:var(--green);font-weight:700}.playerBlack{color:#ff3030;font-weight:950;font-family:Georgia,serif;letter-spacing:.02em}.playerDeleted{color:#777;text-decoration:line-through}.footer{margin-top:24px;color:var(--dim);text-align:center;font-size:.82rem}.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(244,200,74,.25),transparent);margin:18px 0}.hidden{display:none!important}.adminBox{margin-bottom:16px}.kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#111;border:1px solid #333;padding:2px 5px;border-radius:6px;color:#f7d56d}.empty{padding:24px;text-align:center;color:var(--muted)}
-
-    /* Storico a tutta larghezza: il registro modifiche non viene più mostrato in pagina. */
-    .historyWideShell{width:calc(100vw - clamp(24px,6vw,56px));margin-left:50%;transform:translateX(-50%)}
-    .historyCard{width:100%;max-width:none}.historyCard .filters{grid-template-columns:2fr 1fr 1fr 1fr auto!important}.historyCard .scroll{max-height:70vh}.historyCard table{min-width:1120px}
     @media(max-width:980px){.hero{grid-template-columns:1fr;text-align:center}.logoBox{max-width:220px;margin:0 auto}.grid.ops,.grid.two,.grid.rubrica{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:1fr 1fr}.topbar{align-items:flex-start;flex-direction:column}.nav{justify-content:flex-start}.lang{align-self:flex-end}}
-    @media(max-width:980px){.historyWideShell{width:100%}.historyCard .filters{grid-template-columns:1fr 1fr!important}}
-    @media(max-width:620px){.wrap{padding-inline:10px}.formGrid,.filters{grid-template-columns:1fr}.historyCard .filters{grid-template-columns:1fr!important}.stats{grid-template-columns:1fr}.actions button{width:100%}.brand{white-space:normal}.card{padding:13px;border-radius:15px}th,td{padding:9px 8px}.logoSmall{align-items:flex-start}.topbar{gap:8px}.nav,.lang{width:100%}.nav button{flex:1}.lang button{flex:1}}
+    @media(max-width:620px){.wrap{padding-inline:10px}.formGrid,.filters{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.actions button{width:100%}.brand{white-space:normal}.card{padding:13px;border-radius:15px}th,td{padding:9px 8px}.logoSmall{align-items:flex-start}.topbar{gap:8px}.nav,.lang{width:100%}.nav button{flex:1}.lang button{flex:1}}
+
+    /* =========================================================
+       RESPONSIVE V3 — PC / tablet / smartphone
+       Obiettivo: evitare lo scroll orizzontale della pagina e
+       mantenere leggibilità con font/padding scalati.
+       Le tabelle, quando necessario, scorrono solo dentro il loro box.
+       ========================================================= */
+    html{
+      max-width:100%;
+      overflow-x:hidden;
+      font-size:clamp(14px, .65vw + 11.5px, 16px);
+    }
+    body{
+      max-width:100%;
+      overflow-x:hidden;
+      font-size:clamp(.92rem, .25vw + .86rem, 1rem);
+    }
+    img,svg,video,canvas{max-width:100%;height:auto}
+    .topbar,.wrap,.page,.grid,.card,.scroll,.statusbar,.hero,.logoSmall,.title,.brand{min-width:0}
+    .topbar{width:100%}
+    .brand{overflow-wrap:anywhere}
+    .brand span:last-child{min-width:0}
+    .wrap{width:100%;max-width:1480px}
+    .grid.ops{grid-template-columns:minmax(300px,440px) minmax(0,1fr)}
+    .grid.rubrica{grid-template-columns:minmax(280px,430px) minmax(0,1fr)}
+    .formGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .filters{grid-template-columns:minmax(170px,2fr) repeat(3,minmax(110px,1fr)) auto}
+    .card{min-width:0}
+    .scroll{
+      max-width:100%;
+      overflow-x:auto;
+      overflow-y:auto;
+      -webkit-overflow-scrolling:touch;
+      overscroll-behavior-x:contain;
+    }
+    table{max-width:none}
+    th,td{line-height:1.28}
+    td{overflow-wrap:anywhere}
+    td .actions{gap:6px;margin-top:0}
+    td .actions button{padding:7px 9px;font-size:.82rem}
+    .historyWideShell{
+      width:min(100%, calc(100vw - clamp(16px,4vw,42px)));
+      margin-left:50%;
+      transform:translateX(-50%);
+    }
+    .historyCard{width:100%;max-width:none}
+    .historyCard .filters{grid-template-columns:minmax(170px,2fr) repeat(3,minmax(110px,1fr)) auto!important}
+    .historyCard .scroll{max-height:70vh}
+    .historyCard table{min-width:900px}
+
+    @media(max-width:1180px){
+      .grid.ops{grid-template-columns:minmax(280px,380px) minmax(0,1fr)}
+      .stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+    }
+
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr;text-align:center}
+      .logoBox{max-width:200px;margin:0 auto}
+      .grid.ops,.grid.two,.grid.rubrica{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .filters,.historyCard .filters{grid-template-columns:1fr 1fr!important}
+      .topbar{align-items:flex-start;flex-direction:column}
+      .nav{justify-content:flex-start}
+      .lang{align-self:flex-end}
+      .historyWideShell{width:100%;margin-left:0;transform:none}
+    }
+
+    @media(max-width:760px){
+      html{font-size:14px}
+      .topbar{padding:10px 8px;gap:8px}
+      .wrap{padding:14px 8px 30px}
+      .hero{gap:12px;margin:10px 0 14px}
+      .logoBox{border-radius:20px;padding:10px;max-width:150px}
+      .logoBox img{max-width:110px}
+      .logoSmall{gap:9px}
+      .logoSmall img{width:44px;height:44px;border-radius:11px}
+      .title h1,.logoSmall h1{font-size:clamp(1.25rem,7vw,1.8rem)}
+      .title p,.muted,.tiny{font-size:.86rem}
+      .badgeRow{gap:5px}
+      .badge{font-size:.72rem;padding:4px 8px}
+      .card{padding:11px;border-radius:14px}
+      .card h2{font-size:1.02rem}
+      .formGrid,.filters,.historyCard .filters{grid-template-columns:1fr!important;gap:8px}
+      .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+      .stat{padding:10px;border-radius:12px}
+      .stat strong{font-size:1.2rem}
+      label{font-size:.78rem}
+      input,select,textarea{font-size:16px;padding:8px 9px;border-radius:10px}
+      textarea{min-height:72px}
+      .nav,.lang,.actions{gap:6px}
+      .nav,.lang{width:100%}
+      .nav button,.lang button{flex:1 1 auto}
+      .nav button,.lang button,.ghost,.primary,.danger,.soft{font-size:.82rem;padding:8px 9px}
+      .actions button,.actions label{min-width:0}
+      table{min-width:620px;font-size:.78rem}
+      .historyCard table{min-width:680px}
+      .rubrica table{min-width:560px}
+      th,td{padding:7px 6px}
+      td .actions{flex-direction:column;align-items:stretch}
+      td .actions button{width:100%;font-size:.76rem;padding:6px 7px}
+      .scroll{border-radius:10px}
+      .footer{font-size:.72rem}
+    }
+
+    @media(max-width:420px){
+      .wrap{padding-inline:6px}
+      .topbar{padding-inline:6px}
+      .brand{font-size:.9rem;letter-spacing:.02em}
+      .brand small{font-size:.62rem}
+      .brand-dot{width:10px;height:10px}
+      .stats{grid-template-columns:1fr}
+      .card{padding:10px}
+      .nav button,.lang button,.ghost,.primary,.danger,.soft{font-size:.78rem;padding:7px 8px}
+      table{min-width:560px;font-size:.74rem}
+      .historyCard table{min-width:640px}
+    }
+
   </style>
 </head>
 <body>
@@ -71,7 +183,7 @@
         <div class="logoBox"><img src="assets/4ita_logo.png" alt="Logo alleanza 4ITA" onerror="this.style.display='none';this.parentElement.innerHTML='<strong>4ITA</strong>'"></div>
         <div class="title">
           <h1 data-i18n="agendaTitle">Agenda Treno 4ITA</h1>
-          <p data-i18n="agendaSub">Gestione operativa condivisa degli slot Treno: assegnazioni, responsabili R4/R5, stato turni e storico assegnazioni.</p>
+          <p data-i18n="agendaSub">Gestione operativa condivisa degli slot Treno: assegnazioni, responsabili R4/R5, stato turni e storico modifiche.</p>
           <div class="badgeRow"><span class="badge">GitHub Pages</span><span class="badge">Login R4/R5</span><span class="badge">JSON condiviso</span><span class="badge">PC / Tablet / Smartphone</span></div>
         </div>
       </div>
@@ -84,7 +196,7 @@
             <input type="hidden" id="assignmentId">
             <div class="formGrid">
               <div class="field"><label for="day" data-i18n="day">Giorno</label><input id="day" type="date" required></div>
-              <div class="field"><label for="slot" data-i18n="slot">Ora/slot</label><input id="slot" type="text" placeholder="20:00 / Slot 1" required></div>
+              <div class="field"><label for="slot" data-i18n="slot">Ora/slot</label><select id="slot" required></select></div>
               <div class="field"><label for="priority" data-i18n="priority">Priorità</label><select id="priority"><option value="high">Alta</option><option value="medium" selected>Media</option><option value="low">Bassa</option></select></div>
               <div class="field"><label for="status" data-i18n="status">Stato</label><select id="status"><option value="todo">Da assegnare</option><option value="assigned">Assegnato</option><option value="completed">Completato</option><option value="problem">Problema</option></select></div>
               <div class="field"><label for="leader" data-i18n="assignedBy">Assegnato da R4/R5</label><select id="leader"></select></div>
@@ -121,12 +233,28 @@
       <div class="historyWideShell">
         <article class="card historyCard">
           <h2 data-i18n="assignmentHistory">Storico assegnazioni</h2>
-          <div class="filters" style="grid-template-columns:2fr 1fr 1fr 1fr auto">
+          <div class="filters">
             <input id="histText" type="search" placeholder="Cerca">
-            <input id="histFrom" type="date"><input id="histTo" type="date"><select id="histLeader"><option value="">R4/R5</option></select>
+            <input id="histFrom" type="date">
+            <input id="histTo" type="date">
+            <select id="histLeader"><option value="">R4/R5</option></select>
             <button class="soft" id="btnExportCsv" type="button">CSV</button>
           </div>
-          <div class="scroll"><table><thead><tr><th>Data</th><th>Slot</th><th>R4/R5</th><th data-i18n="player">Giocatore</th><th data-i18n="opRole">Ruolo operativo</th><th data-i18n="status">Stato</th><th>Note</th><th data-i18n="actions">Azioni</th></tr></thead><tbody id="historyRows"></tbody></table></div>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Data</th>
+                  <th>Slot</th>
+                  <th>R4/R5</th>
+                  <th data-i18n="player">Giocatore</th>
+                  <th data-i18n="status">Stato</th>
+                  <th data-i18n="actions">Azioni</th>
+                </tr>
+              </thead>
+              <tbody id="historyRows"></tbody>
+            </table>
+          </div>
         </article>
       </div>
     </section>
@@ -193,13 +321,13 @@
   const PASSWORD_DELETE = '0000';
   const I18N = {
     it: {
-      navAgenda:'Agenda',navHistory:'Storico',navContacts:'Rubrica Generale',adminTitle:'Accesso amministratore',adminHelp:'Il sito è visibile a tutti. Per modificare i dati accedi con user e password autorizzati.',adminUser:'Utente',adminPassword:'Password',enableAdmin:'Accedi e abilita modifica',reloadData:'Aggiorna dati',saveRemote:'Salva dati condivisi',logoutAdmin:'Esci',agendaTitle:'Agenda Treno 4ITA',agendaSub:'Gestione operativa condivisa degli slot Treno: assegnazioni, responsabili R4/R5, stato turni e storico assegnazioni.',newAssignment:'Nuova assegnazione',editAssignment:'Modifica assegnazione',day:'Giorno',slot:'Ora/slot',priority:'Priorità',status:'Stato',assignedBy:'Assegnato da R4/R5',assignedPlayer:'Giocatore assegnato',opRole:'Ruolo operativo',notes:'Note',saveTurn:'Salva turno',resetForm:'Pulisci form',agendaList:'Elenco agenda',allStates:'Tutti gli stati',allDates:'Tutte le date',today:'Oggi',tomorrow:'Domani',next7:'Prossimi 7 giorni',exportJson:'Export JSON',importJson:'Import JSON',clearAgenda:'Svuota agenda',player:'Giocatore',actions:'Azioni',historyTitle:'Storico',historySub:'Archivio assegnazioni registrate.',assignmentHistory:'Storico assegnazioni',auditLog:'Log interno',contactsSub:'Gestione R4/R5 e giocatori candidabili all’Agenda.',playerName:'Nome giocatore',sex:'Sesso',roleTask:'Ruolo/incarico',contact:'Contatto',saveContact:'Aggiungi/salva contatto',playersBook:'Rubrica giocatori',savePlayer:'Aggiungi/salva giocatore',total:'Turni totali',todo:'Da fare',completed:'Completati',problems:'Problemi',leaders:'R4/R5',adminRequired:'Accesso amministratore richiesto.',saved:'Dati condivisi salvati.',loaded:'Dati aggiornati.',wrongPassword:'Password errata.',confirmDelete:'Confermi eliminazione?',conflict:'Dati remoti cambiati: merge automatico eseguito.',readOnly:'Sola lettura',adminOn:'Admin attivo',offline:'Sola lettura'
+      navAgenda:'Agenda',navHistory:'Storico',navContacts:'Rubrica Generale',adminTitle:'Accesso amministratore',adminHelp:'Il sito è visibile a tutti. Per modificare i dati accedi con user e password autorizzati.',adminUser:'Utente',adminPassword:'Password',enableAdmin:'Accedi e abilita modifica',reloadData:'Aggiorna dati',saveRemote:'Salva dati condivisi',logoutAdmin:'Esci',agendaTitle:'Agenda Treno 4ITA',agendaSub:'Gestione operativa condivisa degli slot Treno: assegnazioni, responsabili R4/R5, stato turni e storico modifiche.',newAssignment:'Nuova assegnazione',editAssignment:'Modifica assegnazione',day:'Giorno',slot:'Ora/slot',priority:'Priorità',status:'Stato',assignedBy:'Assegnato da R4/R5',assignedPlayer:'Giocatore assegnato',opRole:'Ruolo operativo',notes:'Note',saveTurn:'Salva turno',resetForm:'Pulisci form',agendaList:'Elenco agenda',allStates:'Tutti gli stati',allDates:'Tutte le date',today:'Oggi',tomorrow:'Domani',next7:'Prossimi 7 giorni',exportJson:'Export JSON',importJson:'Import JSON',clearAgenda:'Svuota agenda',player:'Giocatore',actions:'Azioni',historyTitle:'Storico',historySub:'Assegnazioni registrate e registro modifiche.',assignmentHistory:'Storico assegnazioni',auditLog:'Registro modifiche',contactsSub:'Gestione R4/R5 e giocatori candidabili all’Agenda.',playerName:'Nome giocatore',sex:'Sesso',roleTask:'Ruolo/incarico',contact:'Contatto',saveContact:'Aggiungi/salva contatto',playersBook:'Rubrica giocatori',savePlayer:'Aggiungi/salva giocatore',total:'Turni totali',todo:'Da fare',completed:'Completati',problems:'Problemi',leaders:'R4/R5',adminRequired:'Accesso amministratore richiesto.',saved:'Dati condivisi salvati.',loaded:'Dati aggiornati.',wrongPassword:'Password errata.',confirmDelete:'Confermi eliminazione?',conflict:'Dati remoti cambiati: merge automatico eseguito.',readOnly:'Sola lettura',adminOn:'Admin attivo',offline:'Sola lettura'
     },
     en: {
-      navAgenda:'Agenda',navHistory:'History',navContacts:'General Contacts',adminTitle:'Admin access',adminHelp:'The site is visible to everyone. Only users with username and password can edit data.',adminUser:'User',adminPassword:'Password',enableAdmin:'Log in and enable editing',reloadData:'Refresh data',saveRemote:'Save shared data',logoutAdmin:'Log out',agendaTitle:'4ITA Treno Agenda',agendaSub:'Shared operational management for Treno slots, R4/R5 owners, turn status and audit history.',newAssignment:'New assignment',editAssignment:'Edit assignment',day:'Day',slot:'Time/slot',priority:'Priority',status:'Status',assignedBy:'Assigned by R4/R5',assignedPlayer:'Assigned player',opRole:'Operational role',notes:'Notes',saveTurn:'Save turn',resetForm:'Reset form',agendaList:'Agenda list',allStates:'All statuses',allDates:'All dates',today:'Today',tomorrow:'Tomorrow',next7:'Next 7 days',exportJson:'Export JSON',importJson:'Import JSON',clearAgenda:'Clear agenda',player:'Player',actions:'Actions',historyTitle:'History',historySub:'Registered assignment archive.',assignmentHistory:'Assignment history',auditLog:'Internal log',contactsSub:'Manage R4/R5 and players available for the Agenda.',playerName:'Player name',sex:'Sex',roleTask:'Role/task',contact:'Contact',saveContact:'Add/save contact',playersBook:'Players contacts',savePlayer:'Add/save player',total:'Total turns',todo:'To do',completed:'Completed',problems:'Problems',leaders:'R4/R5',adminRequired:'Admin access required.',saved:'Shared data saved.',loaded:'Data refreshed.',wrongPassword:'Wrong password.',confirmDelete:'Confirm deletion?',conflict:'Remote data changed: automatic merge completed.',readOnly:'Read only',adminOn:'Admin enabled',offline:'Offline / read only'
+      navAgenda:'Agenda',navHistory:'History',navContacts:'General Contacts',adminTitle:'Admin access',adminHelp:'The site is visible to everyone. Only users with username and password can edit data.',adminUser:'User',adminPassword:'Password',enableAdmin:'Log in and enable editing',reloadData:'Refresh data',saveRemote:'Save shared data',logoutAdmin:'Log out',agendaTitle:'4ITA Treno Agenda',agendaSub:'Shared operational management for Treno slots, R4/R5 owners, turn status and audit history.',newAssignment:'New assignment',editAssignment:'Edit assignment',day:'Day',slot:'Time/slot',priority:'Priority',status:'Status',assignedBy:'Assigned by R4/R5',assignedPlayer:'Assigned player',opRole:'Operational role',notes:'Notes',saveTurn:'Save turn',resetForm:'Reset form',agendaList:'Agenda list',allStates:'All statuses',allDates:'All dates',today:'Today',tomorrow:'Tomorrow',next7:'Next 7 days',exportJson:'Export JSON',importJson:'Import JSON',clearAgenda:'Clear agenda',player:'Player',actions:'Actions',historyTitle:'History',historySub:'Registered assignments and change log.',assignmentHistory:'Assignment history',auditLog:'Audit log',contactsSub:'Manage R4/R5 and players available for the Agenda.',playerName:'Player name',sex:'Sex',roleTask:'Role/task',contact:'Contact',saveContact:'Add/save contact',playersBook:'Players contacts',savePlayer:'Add/save player',total:'Total turns',todo:'To do',completed:'Completed',problems:'Problems',leaders:'R4/R5',adminRequired:'Admin access required.',saved:'Shared data saved.',loaded:'Data refreshed.',wrongPassword:'Wrong password.',confirmDelete:'Confirm deletion?',conflict:'Remote data changed: automatic merge completed.',readOnly:'Read only',adminOn:'Admin enabled',offline:'Offline / read only'
     },
     es: {
-      navAgenda:'Agenda',navHistory:'Histórico',navContacts:'Agenda General',adminTitle:'Acceso administrador',adminHelp:'El sitio es visible para todos. Solo quien accede con usuario y contraseña puede modificar datos.',adminUser:'Usuario',adminPassword:'Contraseña',enableAdmin:'Acceder y activar edición',reloadData:'Actualizar datos',saveRemote:'Guardar datos compartidos',logoutAdmin:'Salir',agendaTitle:'Agenda Treno 4ITA',agendaSub:'Gestión operativa compartida de slots Treno, responsables R4/R5, estado de turnos e histórico.',newAssignment:'Nueva asignación',editAssignment:'Editar asignación',day:'Día',slot:'Hora/slot',priority:'Prioridad',status:'Estado',assignedBy:'Asignado por R4/R5',assignedPlayer:'Jugador asignado',opRole:'Rol operativo',notes:'Notas',saveTurn:'Guardar turno',resetForm:'Limpiar formulario',agendaList:'Lista agenda',allStates:'Todos los estados',allDates:'Todas las fechas',today:'Hoy',tomorrow:'Mañana',next7:'Próximos 7 días',exportJson:'Exportar JSON',importJson:'Importar JSON',clearAgenda:'Vaciar agenda',player:'Jugador',actions:'Acciones',historyTitle:'Histórico',historySub:'Archivo de asignaciones registradas.',assignmentHistory:'Histórico asignaciones',auditLog:'Log interno',contactsSub:'Gestión R4/R5 y jugadores seleccionables para la Agenda.',playerName:'Nombre jugador',sex:'Sexo',roleTask:'Rol/tarea',contact:'Contacto',saveContact:'Añadir/guardar contacto',playersBook:'Agenda jugadores',savePlayer:'Añadir/guardar jugador',total:'Turnos totales',todo:'Pendientes',completed:'Completados',problems:'Problemas',leaders:'R4/R5',adminRequired:'Acceso administrador requerido.',saved:'Datos compartidos guardados.',loaded:'Datos actualizados.',wrongPassword:'Contraseña incorrecta.',confirmDelete:'¿Confirmas eliminación?',conflict:'Datos remotos cambiados: merge automático realizado.',readOnly:'Solo lectura',adminOn:'Admin activo',offline:'Offline / solo lectura'
+      navAgenda:'Agenda',navHistory:'Histórico',navContacts:'Agenda General',adminTitle:'Acceso administrador',adminHelp:'El sitio es visible para todos. Solo quien accede con usuario y contraseña puede modificar datos.',adminUser:'Usuario',adminPassword:'Contraseña',enableAdmin:'Acceder y activar edición',reloadData:'Actualizar datos',saveRemote:'Guardar datos compartidos',logoutAdmin:'Salir',agendaTitle:'Agenda Treno 4ITA',agendaSub:'Gestión operativa compartida de slots Treno, responsables R4/R5, estado de turnos e histórico.',newAssignment:'Nueva asignación',editAssignment:'Editar asignación',day:'Día',slot:'Hora/slot',priority:'Prioridad',status:'Estado',assignedBy:'Asignado por R4/R5',assignedPlayer:'Jugador asignado',opRole:'Rol operativo',notes:'Notas',saveTurn:'Guardar turno',resetForm:'Limpiar formulario',agendaList:'Lista agenda',allStates:'Todos los estados',allDates:'Todas las fechas',today:'Hoy',tomorrow:'Mañana',next7:'Próximos 7 días',exportJson:'Exportar JSON',importJson:'Importar JSON',clearAgenda:'Vaciar agenda',player:'Jugador',actions:'Acciones',historyTitle:'Histórico',historySub:'Asignaciones registradas y registro de cambios.',assignmentHistory:'Histórico asignaciones',auditLog:'Registro de cambios',contactsSub:'Gestión R4/R5 y jugadores seleccionables para la Agenda.',playerName:'Nombre jugador',sex:'Sexo',roleTask:'Rol/tarea',contact:'Contacto',saveContact:'Añadir/guardar contacto',playersBook:'Agenda jugadores',savePlayer:'Añadir/guardar jugador',total:'Turnos totales',todo:'Pendientes',completed:'Completados',problems:'Problemas',leaders:'R4/R5',adminRequired:'Acceso administrador requerido.',saved:'Datos compartidos guardados.',loaded:'Datos actualizados.',wrongPassword:'Contraseña incorrecta.',confirmDelete:'¿Confirmas eliminación?',conflict:'Datos remotos cambiados: merge automático realizado.',readOnly:'Solo lectura',adminOn:'Admin activo',offline:'Offline / solo lectura'
     }
   };
 
@@ -210,8 +338,7 @@
     adminPassword: '',
     remoteSha: '',
     db: emptyDb(),
-    dirty: false,
-    pendingLogLines: []
+    dirty: false
   };
 
   const $ = (sel, root = document) => root.querySelector(sel);
@@ -223,7 +350,7 @@
   const esc = v => String(v ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
 
   function emptyDb(){
-    return {version:1,updatedAt:'',updatedBy:'',settings:{defaultLang:'it'},assignments:[],leaders:[],players:[]};
+    return {version:1,updatedAt:'',updatedBy:'',settings:{defaultLang:'it'},assignments:[],leaders:[],players:[],audit:[]};
   }
 
   function normalizeDb(raw){
@@ -232,9 +359,11 @@
     db.assignments = Array.isArray(db.assignments) ? db.assignments : [];
     db.leaders = Array.isArray(db.leaders) ? db.leaders : [];
     db.players = Array.isArray(db.players) ? db.players.map(migratePlayer) : [];
+    db.audit = Array.isArray(db.audit) ? db.audit : [];
     db.assignments = dedupeById(db.assignments.map(a => ({id:a.id||uid(),day:a.day||todayIso(),slot:a.slot||'',priority:a.priority||'medium',leaderId:a.leaderId||'',leaderName:a.leaderName||'',playerName:a.playerName||'',opRole:a.opRole||'Responsabile Treno',status:a.status||'todo',notes:a.notes||'',createdAt:a.createdAt||now(),updatedAt:a.updatedAt||now()})));
     db.leaders = dedupeById(db.leaders.map(l => ({id:l.id||uid(),name:l.name||'',rank:l.rank==='R5'?'R5':'R4',sex:l.sex||'notSet',role:l.role||((l.rank==='R5')?'Leader':'Non definito'),contact:l.contact||'',notes:l.notes||'',createdAt:l.createdAt||now(),updatedAt:l.updatedAt||now()})));
     db.players = dedupeById(db.players);
+    db.audit = dedupeById(db.audit.map(a => ({id:a.id||uid(),at:a.at||now(),admin:a.admin||'',action:a.action||'',detail:a.detail||''})));
     return db;
   }
 
@@ -257,7 +386,8 @@
       settings: Object.assign({}, remote.settings || {}, local.settings || {}),
       assignments: dedupeById([...(remote.assignments||[]), ...(local.assignments||[])]),
       leaders: dedupeById([...(remote.leaders||[]), ...(local.leaders||[])]),
-      players: dedupeById([...(remote.players||[]), ...(local.players||[])])
+      players: dedupeById([...(remote.players||[]), ...(local.players||[])]),
+      audit: dedupeById([...(remote.audit||[]), ...(local.audit||[])])
     });
   }
 
@@ -293,18 +423,6 @@
     return {sha: payload.sha || '', db: normalizeDb(payload.db || payload)};
   }
 
-  function cleanDbForSave(db){
-    const clean = normalizeDb(db);
-    delete clean.audit;
-    return clean;
-  }
-
-  function makeLogLine(action, detail){
-    const at = new Date().toISOString();
-    const admin = state.adminUser || ADMIN_USER;
-    return `[${at}] admin=${admin} action="${String(action||'').replace(/"/g,"'")}" detail="${String(detail||'').replace(/"/g,"'")}"`;
-  }
-
   async function saveRemote(reason='Aggiorna Agenda Treno 4ITA'){
     if(!state.authenticated){ alert(t('adminRequired')); return false; }
     if(!CONFIG.saveEndpoint){
@@ -313,8 +431,8 @@
       return false;
     }
     try{
-      showStatus('Salvataggio e aggiornamento database...', true);
-      let dbToSave = cleanDbForSave(state.db);
+      showStatus('Sincronizzazione...', true);
+      let dbToSave = state.db;
       dbToSave.updatedAt = now();
       dbToSave.updatedBy = state.adminUser || ADMIN_USER;
       const res = await fetch(CONFIG.saveEndpoint, {
@@ -325,8 +443,7 @@
           password: state.adminPassword,
           message: reason,
           expectedSha: state.remoteSha || '',
-          db: dbToSave,
-          logLines: state.pendingLogLines.slice()
+          db: dbToSave
         })
       });
       if(res.status === 409){
@@ -337,18 +454,6 @@
       if(!res.ok) throw new Error(await res.text());
       const result = await res.json();
       state.remoteSha = result.sha || state.remoteSha;
-      if(result.db){
-        state.db = normalizeDb(result.db);
-      }else{
-        try{
-          const remote = await fetchRemoteViaApi();
-          state.remoteSha = remote.sha || state.remoteSha;
-          state.db = normalizeDb(remote.db);
-        }catch(refreshErr){
-          console.warn('Salvato, ma refresh remoto non riuscito', refreshErr);
-        }
-      }
-      state.pendingLogLines = [];
       state.dirty = false;
       showStatus(t('saved'), true);
       renderAll();
@@ -361,21 +466,17 @@
     }
   }
 
-  function addInternalLog(action, detail){
-    state.pendingLogLines.push(makeLogLine(action, detail));
+  function addAudit(action, detail){
+    state.db.audit.unshift({id:uid(),at:now(),admin:state.adminUser||'admin',action,detail});
+    state.db.audit = state.db.audit.slice(0, 1000);
   }
-
   async function mutate(action, detail, fn){
-    if(!state.authenticated){ alert(t('adminRequired')); return false; }
+    if(!state.authenticated){ alert(t('adminRequired')); return; }
     fn();
-    addInternalLog(action, detail);
+    addAudit(action, detail);
     state.dirty = true;
     renderAll();
-    const ok = await saveRemote(`Agenda Treno 4ITA: ${action}`);
-    if(!ok){
-      showStatus('Modifica locale non sincronizzata', false);
-    }
-    return ok;
+    await saveRemote(`Agenda Treno 4ITA: ${action}`);
   }
 
   function showStatus(msg, ok){
@@ -393,7 +494,7 @@
   }
 
   function renderAll(){
-    renderSelects(); renderStats(); renderAgenda(); renderHistory(); renderLeaders(); renderPlayers();
+    renderSelects(); renderStats(); renderAgenda(); renderHistory(); renderAudit(); renderLeaders(); renderPlayers();
   }
 
   function leaderLabel(id){
@@ -452,25 +553,48 @@
     return `<span class="${cls}">${esc(name||'')}</span>`;
   }
 
+  function populateSlotOptions(){
+    const slot = $('#slot');
+    if(!slot) return;
+    const selected = slot.value;
+    const options = ['<option value="">-- Seleziona orario --</option>'];
+    for(let h = 0; h < 24; h++){
+      for(const m of [0, 30]){
+        const value = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`;
+        options.push(`<option value="${value}">${value}</option>`);
+      }
+    }
+    slot.innerHTML = options.join('');
+    if(selected) ensureSlotOption(selected);
+  }
+
+  function ensureSlotOption(value){
+    const slot = $('#slot');
+    if(!slot || !value) return;
+    const exists = Array.from(slot.options).some(opt => opt.value === value);
+    if(!exists) slot.append(new Option(value, value));
+  }
+
   function readAssignmentForm(){
     const lid = $('#leader').value; const l = state.db.leaders.find(x=>x.id===lid);
     return {id:$('#assignmentId').value || uid(), day:$('#day').value || todayIso(), slot:$('#slot').value.trim(), priority:$('#priority').value, leaderId:lid, leaderName:l?`${l.name} (${l.rank})`:'', playerName:$('#player').value.trim(), opRole:$('#opRole').value, status:$('#status').value, notes:$('#notes').value.trim(), createdAt: now(), updatedAt: now()};
   }
   function fillAssignmentForm(a){
+    ensureSlotOption(a.slot);
     $('#assignmentId').value=a.id; $('#day').value=a.day; $('#slot').value=a.slot; $('#priority').value=a.priority; $('#leader').value=a.leaderId; $('#player').value=a.playerName; $('#opRole').value=a.opRole; $('#status').value=a.status; $('#notes').value=a.notes; $('#assignmentFormTitle').textContent=t('editAssignment'); window.scrollTo({top:0,behavior:'smooth'});
   }
-  function resetAssignmentForm(){ $('#assignmentForm').reset(); $('#assignmentId').value=''; $('#day').value=todayIso(); $('#priority').value='medium'; $('#status').value='todo'; $('#assignmentFormTitle').textContent=t('newAssignment'); }
+  function resetAssignmentForm(){ $('#assignmentForm').reset(); $('#assignmentId').value=''; $('#day').value=todayIso(); $('#slot').value=''; $('#priority').value='medium'; $('#status').value='todo'; $('#assignmentFormTitle').textContent=t('newAssignment'); }
 
   function renderHistory(){
     const text = ($('#histText').value||'').toLowerCase(); const from=$('#histFrom').value; const to=$('#histTo').value; const leader=$('#histLeader').value;
     let rows = state.db.assignments.filter(a => (!from || a.day>=from) && (!to || a.day<=to) && (!leader || a.leaderId===leader));
     if(text) rows = rows.filter(a => JSON.stringify(a).toLowerCase().includes(text));
     rows.sort((a,b)=>(b.day+b.slot).localeCompare(a.day+a.slot));
-    $('#historyRows').innerHTML = rows.length ? rows.map(a=>`<tr><td>${esc(a.day)}</td><td>${esc(a.slot)}</td><td>${esc(a.leaderName||leaderLabel(a.leaderId))}</td><td>${playerStyled(a.playerName)}</td><td>${esc(a.opRole||'')}</td><td>${statusTag(a.status)}</td><td>${esc(a.notes||'')}</td><td><button class="danger" onclick="AgendaApp.deleteHistoryRecord('${a.id}')">Elimina record</button></td></tr>`).join('') : `<tr><td colspan="8" class="empty">Nessun record</td></tr>`;
+    $('#historyRows').innerHTML = rows.length ? rows.map(a=>`<tr><td>${esc(a.day)}</td><td>${esc(a.slot)}</td><td>${esc(a.leaderName||leaderLabel(a.leaderId))}</td><td>${playerStyled(a.playerName)}</td><td>${statusTag(a.status)}</td><td><button class="danger" onclick="AgendaApp.deleteHistoryRecord('${a.id}')">Elimina record</button></td></tr>`).join('') : `<tr><td colspan="6" class="empty">Nessun record</td></tr>`;
   }
   function renderAudit(){
-    // Il log modifiche non viene più mostrato nella pagina.
-    // Le righe vengono inviate al Worker e accodate nel file treno/data/agenda-treno-log.txt.
+    // Il registro modifiche non viene più mostrato in pagina.
+    // Se il Worker supporta logLines, le modifiche possono essere archiviate lato server.
   }
 
   function updateLeaderRoleOptions(){
@@ -516,6 +640,7 @@
     completeAssignment(id){ mutate('completamento turno', id, ()=>{ const a=state.db.assignments.find(x=>x.id===id); if(a){a.status='completed';a.updatedAt=now();} }); },
     deleteAssignment(id){ if(!confirm(t('confirmDelete'))) return; mutate('eliminazione turno', id, ()=>{ state.db.assignments = state.db.assignments.filter(x=>x.id!==id); }); },
     deleteHistoryRecord(id){ if(!requireDeletePassword()) return; mutate('eliminazione storico', id, ()=>{ state.db.assignments = state.db.assignments.filter(x=>x.id!==id); }); },
+    deleteAudit(id){ if(!requireDeletePassword()) return; mutate('eliminazione log', id, ()=>{ state.db.audit = state.db.audit.filter(x=>x.id!==id); }); },
     editLeader(id){ const l=state.db.leaders.find(x=>x.id===id); if(!l) return; $('#leaderId').value=l.id; $('#leaderName').value=l.name; $('#leaderRank').value=l.rank; updateLeaderRoleOptions(); $('#leaderSex').value=l.sex; $('#leaderRole').value=l.role; $('#leaderContact').value=l.contact; $('#leaderNotes').value=l.notes; },
     deleteLeader(id){ if(!confirm(t('confirmDelete'))) return; mutate('eliminazione contatto R4/R5', id, ()=>{ state.db.leaders = state.db.leaders.filter(x=>x.id!==id); }); },
     editPlayer(id){ const p=state.db.players.find(x=>x.id===id); if(!p) return; $('#playerId').value=p.id; $('#playerName').value=p.name; $('#playerSex').value=p.sex; $('#playerStatus').value=p.status; },
@@ -547,11 +672,11 @@
     });
     $('#btnLogout').addEventListener('click', () => { state.authenticated=false; state.adminUser=''; state.adminPassword=''; $('#adminPassword').value=''; showStatus(t('offline'), false); });
     $('#btnReload').addEventListener('click', loadPublicData);
-    $('#btnForceSave').addEventListener('click', () => { addInternalLog('salvataggio manuale', 'forzato da pulsante'); saveRemote('Aggiorna Agenda Treno 4ITA'); });
+    $('#btnForceSave').addEventListener('click', () => saveRemote('Aggiorna Agenda Treno 4ITA'));
     $('#assignmentForm').addEventListener('submit', e => { e.preventDefault(); const item=readAssignmentForm(); if(!item.slot){return;} mutate($('#assignmentId').value?'aggiornamento turno':'creazione turno', `${item.day} ${item.slot}`, ()=>{ const idx=state.db.assignments.findIndex(x=>x.id===item.id); if(idx>=0){ item.createdAt=state.db.assignments[idx].createdAt; state.db.assignments[idx]=item; } else state.db.assignments.push(item); resetAssignmentForm(); }); });
     $('#btnResetAssignment').addEventListener('click', resetAssignmentForm);
     ['filterText','filterStatus','filterRange','histText','histFrom','histTo','histLeader'].forEach(id => $(`#${id}`).addEventListener('input', renderAll));
-    $('#btnExportJson').addEventListener('click', () => download(`agenda-treno-4ita-${todayIso()}.json`, JSON.stringify(cleanDbForSave(state.db),null,2)));
+    $('#btnExportJson').addEventListener('click', () => download(`agenda-treno-4ita-${todayIso()}.json`, JSON.stringify(state.db,null,2)));
     $('#btnExportCsv').addEventListener('click', () => download(`agenda-treno-4ita-${todayIso()}.csv`, toCsv(state.db.assignments), 'text/csv'));
     $('#importJson').addEventListener('change', async e => { const file=e.target.files[0]; if(!file) return; const txt=await file.text(); const imported=normalizeDb(JSON.parse(txt)); mutate('import JSON', file.name, ()=>{ state.db=mergeDb(imported,state.db); }); e.target.value=''; });
     $('#btnClearAgenda').addEventListener('click', () => { if(!requireDeletePassword()) return; mutate('svuotamento agenda', 'tutti i turni', ()=>{ state.db.assignments=[]; }); });
@@ -562,7 +687,7 @@
     $('#btnResetPlayer').addEventListener('click', resetPlayerForm);
   }
 
-  bind(); updateLeaderRoleOptions(); resetAssignmentForm(); setLanguage('it'); loadPublicData();
+  bind(); updateLeaderRoleOptions(); populateSlotOptions(); resetAssignmentForm(); setLanguage('it'); loadPublicData();
 })();
 </script>
 </body>
