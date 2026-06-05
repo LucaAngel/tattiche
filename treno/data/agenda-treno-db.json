@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:54:11.562Z",
+  "updatedAt": "2026-06-05T20:54:18.799Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -479,6 +479,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:54:11.309Z",
       "updatedAt": "2026-06-05T20:54:11.309Z"
+    },
+    {
+      "id": "mq1ejv8c-0iyay0hd",
+      "name": "VALENIGMA",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:54:18.588Z",
+      "updatedAt": "2026-06-05T20:54:18.588Z"
     }
   ]
 }
