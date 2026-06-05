@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T18:03:29.073Z",
+  "updatedAt": "2026-06-05T18:03:44.507Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -102,6 +102,13 @@
   ],
   "audit": [
     {
+      "id": "mq18ghrr-iy2pw5q3",
+      "at": "2026-06-05T18:03:43.479Z",
+      "admin": "4ita",
+      "action": "eliminazione log",
+      "detail": "mq186v39-7tzvu346"
+    },
+    {
       "id": "mq18g5vs-k6zsk1ny",
       "at": "2026-06-05T18:03:28.072Z",
       "admin": "4ita",
@@ -184,13 +191,6 @@
       "admin": "4ita",
       "action": "creazione contatto R4/R5",
       "detail": "Toposeduto"
-    },
-    {
-      "id": "mq186v39-7tzvu346",
-      "at": "2026-06-05T17:56:14.181Z",
-      "admin": "4ita",
-      "action": "creazione contatto R4/R5",
-      "detail": "Presidente Florix"
     }
   ]
 }
