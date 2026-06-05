@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:48:18.565Z",
+  "updatedAt": "2026-06-05T20:48:28.133Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -199,6 +199,14 @@
       "status": "active",
       "createdAt": "2026-06-05T19:48:02.974Z",
       "updatedAt": "2026-06-05T19:48:02.974Z"
+    },
+    {
+      "id": "mq1eccnt-boloxxyh",
+      "name": "Donitrob",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:48:27.929Z",
+      "updatedAt": "2026-06-05T20:48:27.929Z"
     }
   ]
 }
