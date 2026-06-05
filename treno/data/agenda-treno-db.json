@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:03:07.598Z",
+  "updatedAt": "2026-06-05T21:03:15.239Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -951,6 +951,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:03:07.357Z",
       "updatedAt": "2026-06-05T21:03:07.357Z"
+    },
+    {
+      "id": "mq1evd4v-qarwgemx",
+      "name": "Esteh Anget",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:03:15.007Z",
+      "updatedAt": "2026-06-05T21:03:15.007Z"
     }
   ]
 }
