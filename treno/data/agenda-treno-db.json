@@ -1,26 +1,11 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T18:03:12.012Z",
+  "updatedAt": "2026-06-05T18:03:29.073Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
   },
-  "assignments": [
-    {
-      "id": "mq18bt52-iibtielw",
-      "day": "2026-06-03",
-      "slot": "21:00",
-      "priority": "high",
-      "leaderId": "mq187k2v-je6or98r",
-      "leaderName": "LuKiNo (R4)",
-      "playerName": "Pippo 70",
-      "opRole": "Responsabile Treno",
-      "status": "completed",
-      "notes": "",
-      "createdAt": "2026-06-05T18:00:04.934Z",
-      "updatedAt": "2026-06-05T18:00:04.934Z"
-    }
-  ],
+  "assignments": [],
   "leaders": [
     {
       "id": "mq189yic-1hlsvjza",
@@ -116,6 +101,13 @@
     }
   ],
   "audit": [
+    {
+      "id": "mq18g5vs-k6zsk1ny",
+      "at": "2026-06-05T18:03:28.072Z",
+      "admin": "4ita",
+      "action": "svuotamento agenda",
+      "detail": "tutti i turni"
+    },
     {
       "id": "mq18fshj-hikqiksf",
       "at": "2026-06-05T18:03:10.711Z",
