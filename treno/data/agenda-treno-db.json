@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:00:59.575Z",
+  "updatedAt": "2026-06-05T21:01:05.701Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -799,6 +799,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:00:59.363Z",
       "updatedAt": "2026-06-05T21:00:59.363Z"
+    },
+    {
+      "id": "mq1esl5y-fc99vlor",
+      "name": "PierMario",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T21:01:05.446Z",
+      "updatedAt": "2026-06-05T21:01:05.446Z"
     }
   ]
 }
