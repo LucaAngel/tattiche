@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:10:39.182Z",
+  "updatedAt": "2026-06-05T21:11:03.659Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -159,6 +159,20 @@
       "notes": "",
       "createdAt": "2026-06-05T21:10:38.935Z",
       "updatedAt": "2026-06-05T21:10:38.935Z"
+    },
+    {
+      "id": "mq1f5ek2-y5nmbwv1",
+      "day": "2026-05-26",
+      "slot": "18:30",
+      "priority": "medium",
+      "leaderId": "mq18ansq-8j5rmn0m",
+      "leaderName": "Stewe2059 (R4)",
+      "playerName": "black palpatine",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-05T21:11:03.410Z",
+      "updatedAt": "2026-06-05T21:11:03.410Z"
     }
   ],
   "leaders": [
