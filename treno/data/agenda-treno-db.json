@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:57:49.929Z",
+  "updatedAt": "2026-06-05T20:57:55.483Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -615,6 +615,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:57:49.709Z",
       "updatedAt": "2026-06-05T20:57:49.709Z"
+    },
+    {
+      "id": "mq1eoifn-29a0dw4d",
+      "name": "SKIFUKR",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:57:55.283Z",
+      "updatedAt": "2026-06-05T20:57:55.283Z"
     }
   ]
 }
