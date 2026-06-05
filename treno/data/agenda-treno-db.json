@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:59:58.634Z",
+  "updatedAt": "2026-06-05T21:00:05.212Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -735,6 +735,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:59:58.337Z",
       "updatedAt": "2026-06-05T20:59:58.338Z"
+    },
+    {
+      "id": "mq1eragh-sm7agybn",
+      "name": "lapre2202",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T21:00:04.913Z",
+      "updatedAt": "2026-06-05T21:00:04.913Z"
     }
   ]
 }
