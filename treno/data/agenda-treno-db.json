@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:58:30.423Z",
+  "updatedAt": "2026-06-05T20:58:41.475Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -655,6 +655,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:58:30.131Z",
       "updatedAt": "2026-06-05T20:58:30.131Z"
+    },
+    {
+      "id": "mq1ephug-h7mtzdj8",
+      "name": "IulianT98",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:58:41.176Z",
+      "updatedAt": "2026-06-05T20:58:41.176Z"
     }
   ]
 }
