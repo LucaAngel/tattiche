@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:53:52.239Z",
+  "updatedAt": "2026-06-05T20:54:02.726Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -463,6 +463,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:53:51.996Z",
       "updatedAt": "2026-06-05T20:53:51.996Z"
+    },
+    {
+      "id": "mq1ejir4-rhkmamr7",
+      "name": "Jojo1599",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T20:54:02.416Z",
+      "updatedAt": "2026-06-05T20:54:02.416Z"
     }
   ]
 }
