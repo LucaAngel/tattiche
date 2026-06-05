@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:57:43.651Z",
+  "updatedAt": "2026-06-05T20:57:49.929Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -607,6 +607,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:57:43.428Z",
       "updatedAt": "2026-06-05T20:57:43.428Z"
+    },
+    {
+      "id": "mq1eoe4t-j75iapyp",
+      "name": "Didim13",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:57:49.709Z",
+      "updatedAt": "2026-06-05T20:57:49.709Z"
     }
   ]
 }
