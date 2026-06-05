@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:50:27.022Z",
+  "updatedAt": "2026-06-05T20:50:36.016Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -271,6 +271,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:50:26.807Z",
       "updatedAt": "2026-06-05T20:50:26.807Z"
+    },
+    {
+      "id": "mq1ef3bm-yhiqxhji",
+      "name": "MASAKRATORR",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:50:35.794Z",
+      "updatedAt": "2026-06-05T20:50:35.794Z"
     }
   ]
 }
