@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:48:13.304Z",
+  "updatedAt": "2026-06-05T20:48:18.565Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -102,17 +102,6 @@
       "notes": "",
       "createdAt": "2026-06-05T17:58:38.580Z",
       "updatedAt": "2026-06-05T17:58:38.580Z"
-    },
-    {
-      "id": "mq1ec15b-4y19v1em",
-      "name": "Donitrob",
-      "rank": "R4",
-      "sex": "male",
-      "role": "Recruiter",
-      "contact": "",
-      "notes": "",
-      "createdAt": "2026-06-05T20:48:13.007Z",
-      "updatedAt": "2026-06-05T20:48:13.007Z"
     },
     {
       "id": "mq18a950-uu4yzysy",
