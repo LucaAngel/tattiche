@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:56:49.954Z",
+  "updatedAt": "2026-06-05T20:57:05.243Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -567,6 +567,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:56:49.683Z",
       "updatedAt": "2026-06-05T20:56:49.683Z"
+    },
+    {
+      "id": "mq1enfle-0jq99mm6",
+      "name": "Comandante 211142120",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T20:57:04.946Z",
+      "updatedAt": "2026-06-05T20:57:04.946Z"
     }
   ]
 }
