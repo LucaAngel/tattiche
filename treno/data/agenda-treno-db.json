@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:59:11.188Z",
+  "updatedAt": "2026-06-05T20:59:18.096Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -695,6 +695,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:59:10.917Z",
       "updatedAt": "2026-06-05T20:59:10.917Z"
+    },
+    {
+      "id": "mq1eqa60-j6b9qq3l",
+      "name": "Simone984",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:59:17.880Z",
+      "updatedAt": "2026-06-05T20:59:17.880Z"
     }
   ]
 }
