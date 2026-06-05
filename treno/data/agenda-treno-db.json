@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:57:22.761Z",
+  "updatedAt": "2026-06-05T20:57:35.903Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -591,6 +591,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:57:22.547Z",
       "updatedAt": "2026-06-05T20:57:22.547Z"
+    },
+    {
+      "id": "mq1eo3b8-asdqnk18",
+      "name": "Taneleer Tivan",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:57:35.684Z",
+      "updatedAt": "2026-06-05T20:57:35.684Z"
     }
   ]
 }
