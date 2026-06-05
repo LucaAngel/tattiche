@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:02:26.430Z",
+  "updatedAt": "2026-06-05T21:02:31.697Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -903,6 +903,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:02:26.143Z",
       "updatedAt": "2026-06-05T21:02:26.143Z"
+    },
+    {
+      "id": "mq1eufjn-c1bqppng",
+      "name": "bobovieri32",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:02:31.475Z",
+      "updatedAt": "2026-06-05T21:02:31.475Z"
     }
   ]
 }
