@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:53:32.064Z",
+  "updatedAt": "2026-06-05T20:53:37.989Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -439,6 +439,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:53:31.778Z",
       "updatedAt": "2026-06-05T20:53:31.778Z"
+    },
+    {
+      "id": "mq1eizr7-k0aryaz3",
+      "name": "ValiCc",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:53:37.795Z",
+      "updatedAt": "2026-06-05T20:53:37.795Z"
     }
   ]
 }
