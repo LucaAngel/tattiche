@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:52:19.506Z",
+  "updatedAt": "2026-06-05T20:52:27.077Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -375,6 +375,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:52:19.281Z",
       "updatedAt": "2026-06-05T20:52:19.281Z"
+    },
+    {
+      "id": "mq1ehh1g-iaqvbz8b",
+      "name": "EddieFi",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:52:26.884Z",
+      "updatedAt": "2026-06-05T20:52:26.884Z"
     }
   ]
 }
