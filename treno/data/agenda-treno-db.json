@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:51:01.021Z",
+  "updatedAt": "2026-06-05T20:51:11.755Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -303,6 +303,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:51:00.825Z",
       "updatedAt": "2026-06-05T20:51:00.825Z"
+    },
+    {
+      "id": "mq1efuuw-i50r15rq",
+      "name": "DELTA",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:51:11.480Z",
+      "updatedAt": "2026-06-05T20:51:11.480Z"
     }
   ]
 }
