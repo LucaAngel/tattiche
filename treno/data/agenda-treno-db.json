@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:58:15.309Z",
+  "updatedAt": "2026-06-05T20:58:23.004Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -639,6 +639,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:58:14.982Z",
       "updatedAt": "2026-06-05T20:58:14.982Z"
+    },
+    {
+      "id": "mq1ep3nn-7karl347",
+      "name": "Lofita Ardilla",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:58:22.787Z",
+      "updatedAt": "2026-06-05T20:58:22.787Z"
     }
   ]
 }
