@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:06:38.609Z",
+  "updatedAt": "2026-06-05T21:06:44.193Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -180,9 +180,9 @@
       "id": "mq189gv3-bv6fxvk8",
       "name": "Pippo 70",
       "sex": "male",
-      "status": "active",
+      "status": "deleted",
       "createdAt": "2026-06-05T17:58:15.711Z",
-      "updatedAt": "2026-06-05T21:06:38.189Z"
+      "updatedAt": "2026-06-05T21:06:43.973Z"
     },
     {
       "id": "mq1c66gu-9ekqr1xm",
