@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:02:20.678Z",
+  "updatedAt": "2026-06-05T21:02:26.430Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -895,6 +895,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:02:20.420Z",
       "updatedAt": "2026-06-05T21:02:20.421Z"
+    },
+    {
+      "id": "mq1eubfj-d444ct7n",
+      "name": "noname8888",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:02:26.143Z",
+      "updatedAt": "2026-06-05T21:02:26.143Z"
     }
   ]
 }
