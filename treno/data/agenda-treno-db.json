@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:01:38.067Z",
+  "updatedAt": "2026-06-05T21:01:44.519Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -847,6 +847,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:01:37.757Z",
       "updatedAt": "2026-06-05T21:01:37.757Z"
+    },
+    {
+      "id": "mq1etezq-5w890se1",
+      "name": "Noemi1221",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T21:01:44.102Z",
+      "updatedAt": "2026-06-05T21:01:44.102Z"
     }
   ]
 }
