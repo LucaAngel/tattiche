@@ -1,12 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T17:56:34.923Z",
+  "updatedAt": "2026-06-05T17:56:47.698Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
   },
   "assignments": [],
   "leaders": [
+    {
+      "id": "mq187k2v-je6or98r",
+      "name": "LuKiNo",
+      "rank": "R4",
+      "sex": "male",
+      "role": "Non definito",
+      "contact": "",
+      "notes": "",
+      "createdAt": "2026-06-05T17:56:46.567Z",
+      "updatedAt": "2026-06-05T17:56:46.567Z"
+    },
     {
       "id": "mq187acb-9x6b6irp",
       "name": "Toposeduto",
@@ -32,6 +43,13 @@
   ],
   "players": [],
   "audit": [
+    {
+      "id": "mq187k2w-ty1lfecr",
+      "at": "2026-06-05T17:56:46.568Z",
+      "admin": "4ita",
+      "action": "creazione contatto R4/R5",
+      "detail": "LuKiNo"
+    },
     {
       "id": "mq187acc-t5vue9sl",
       "at": "2026-06-05T17:56:33.948Z",
