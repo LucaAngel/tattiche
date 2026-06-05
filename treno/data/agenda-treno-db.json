@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:54:02.726Z",
+  "updatedAt": "2026-06-05T20:54:11.562Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -471,6 +471,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:54:02.416Z",
       "updatedAt": "2026-06-05T20:54:02.416Z"
+    },
+    {
+      "id": "mq1ejpm5-0paz9gl0",
+      "name": "GIORGIO SCANDERBERG",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:54:11.309Z",
+      "updatedAt": "2026-06-05T20:54:11.309Z"
     }
   ]
 }
