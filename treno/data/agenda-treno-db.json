@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:48:59.981Z",
+  "updatedAt": "2026-06-05T20:49:09.618Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -231,6 +231,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:48:59.780Z",
       "updatedAt": "2026-06-05T20:48:59.780Z"
+    },
+    {
+      "id": "mq1ed8mu-951kqj7v",
+      "name": "Stewe2059",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:49:09.367Z",
+      "updatedAt": "2026-06-05T20:49:09.367Z"
     }
   ]
 }
