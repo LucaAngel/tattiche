@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T18:33:48.276Z",
+  "updatedAt": "2026-06-05T19:07:53.361Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -43,10 +43,10 @@
       "leaderName": "",
       "playerName": "Manuelsfg92",
       "opRole": "Responsabile Treno",
-      "status": "todo",
+      "status": "completed",
       "notes": "",
       "createdAt": "2026-06-05T18:33:46.945Z",
-      "updatedAt": "2026-06-05T18:33:46.945Z"
+      "updatedAt": "2026-06-05T19:07:51.886Z"
     }
   ],
   "leaders": [
