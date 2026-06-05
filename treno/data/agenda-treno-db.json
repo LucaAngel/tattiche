@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:01:50.361Z",
+  "updatedAt": "2026-06-05T21:01:57.671Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -863,6 +863,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:01:50.110Z",
       "updatedAt": "2026-06-05T21:01:50.110Z"
+    },
+    {
+      "id": "mq1etp7l-jdq8ubht",
+      "name": "Gargrinch",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:01:57.345Z",
+      "updatedAt": "2026-06-05T21:01:57.346Z"
     }
   ]
 }
