@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:51:53.552Z",
+  "updatedAt": "2026-06-05T20:52:00.815Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -351,6 +351,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:51:53.347Z",
       "updatedAt": "2026-06-05T20:51:53.347Z"
+    },
+    {
+      "id": "mq1egwrq-vy1no7nq",
+      "name": "Alexis015",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:52:00.614Z",
+      "updatedAt": "2026-06-05T20:52:00.614Z"
     }
   ]
 }
