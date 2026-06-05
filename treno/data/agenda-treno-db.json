@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:59:49.756Z",
+  "updatedAt": "2026-06-05T20:59:58.634Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -727,6 +727,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:59:49.411Z",
       "updatedAt": "2026-06-05T20:59:49.411Z"
+    },
+    {
+      "id": "mq1er5dt-9bd0qu3h",
+      "name": "GinepriO",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:59:58.337Z",
+      "updatedAt": "2026-06-05T20:59:58.338Z"
     }
   ]
 }
