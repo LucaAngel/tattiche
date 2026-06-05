@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:51:37.957Z",
+  "updatedAt": "2026-06-05T20:51:44.015Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -335,6 +335,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:51:37.658Z",
       "updatedAt": "2026-06-05T20:51:37.658Z"
+    },
+    {
+      "id": "mq1egjsh-8tdme6h3",
+      "name": "Kibln",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:51:43.793Z",
+      "updatedAt": "2026-06-05T20:51:43.793Z"
     }
   ]
 }
