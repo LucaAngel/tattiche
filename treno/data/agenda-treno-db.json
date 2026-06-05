@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:55:04.945Z",
+  "updatedAt": "2026-06-05T20:55:12.340Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -519,6 +519,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:55:04.647Z",
       "updatedAt": "2026-06-05T20:55:04.647Z"
+    },
+    {
+      "id": "mq1el0gz-o8243epn",
+      "name": "francy212",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:55:12.035Z",
+      "updatedAt": "2026-06-05T20:55:12.035Z"
     }
   ]
 }
