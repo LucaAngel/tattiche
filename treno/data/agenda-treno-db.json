@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:59:26.584Z",
+  "updatedAt": "2026-06-05T20:59:40.691Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -711,6 +711,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:59:26.275Z",
       "updatedAt": "2026-06-05T20:59:26.275Z"
+    },
+    {
+      "id": "mq1eqrj3-uchh79d7",
+      "name": "Sultàn II",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T20:59:40.383Z",
+      "updatedAt": "2026-06-05T20:59:40.383Z"
     }
   ]
 }
