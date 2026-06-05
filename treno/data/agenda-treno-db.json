@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:56:00.441Z",
+  "updatedAt": "2026-06-05T20:56:49.954Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -559,6 +559,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:56:00.240Z",
       "updatedAt": "2026-06-05T20:56:00.240Z"
+    },
+    {
+      "id": "mq1en3tf-wfrxdnei",
+      "name": "Lhom Che Bhok",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:56:49.683Z",
+      "updatedAt": "2026-06-05T20:56:49.683Z"
     }
   ]
 }
