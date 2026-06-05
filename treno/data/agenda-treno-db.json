@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T17:56:47.698Z",
+  "updatedAt": "2026-06-05T17:57:41.950Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -41,8 +41,24 @@
       "updatedAt": "2026-06-05T17:56:14.180Z"
     }
   ],
-  "players": [],
+  "players": [
+    {
+      "id": "mq188put-djxllxca",
+      "name": "lapre2022",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T17:57:40.709Z",
+      "updatedAt": "2026-06-05T17:57:40.709Z"
+    }
+  ],
   "audit": [
+    {
+      "id": "mq188puu-ozsqa3h0",
+      "at": "2026-06-05T17:57:40.710Z",
+      "admin": "4ita",
+      "action": "creazione giocatore",
+      "detail": "lapre2022"
+    },
     {
       "id": "mq187k2w-ty1lfecr",
       "at": "2026-06-05T17:56:46.568Z",
