@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:48:39.959Z",
+  "updatedAt": "2026-06-05T20:48:47.161Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -215,6 +215,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:48:39.748Z",
       "updatedAt": "2026-06-05T20:48:39.748Z"
+    },
+    {
+      "id": "mq1ecrcc-re68nmwj",
+      "name": "Toposeduto",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:48:46.956Z",
+      "updatedAt": "2026-06-05T20:48:46.956Z"
     }
   ]
 }
