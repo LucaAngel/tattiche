@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:03:15.239Z",
+  "updatedAt": "2026-06-05T21:03:19.833Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -959,6 +959,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:03:15.007Z",
       "updatedAt": "2026-06-05T21:03:15.007Z"
+    },
+    {
+      "id": "mq1evgm4-zvdmht64",
+      "name": "Chiba",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:03:19.516Z",
+      "updatedAt": "2026-06-05T21:03:19.516Z"
     }
   ]
 }
