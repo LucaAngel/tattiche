@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:52:08.378Z",
+  "updatedAt": "2026-06-05T20:52:19.506Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -367,6 +367,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:52:08.159Z",
       "updatedAt": "2026-06-05T20:52:08.159Z"
+    },
+    {
+      "id": "mq1ehb69-einac8ii",
+      "name": "Mat737",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:52:19.281Z",
+      "updatedAt": "2026-06-05T20:52:19.281Z"
     }
   ]
 }
