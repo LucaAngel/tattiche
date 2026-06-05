@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:57:05.243Z",
+  "updatedAt": "2026-06-05T20:57:13.679Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -575,6 +575,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:57:04.946Z",
       "updatedAt": "2026-06-05T20:57:04.946Z"
+    },
+    {
+      "id": "mq1enm5i-n2of5l8b",
+      "name": "Mitch Dix",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:57:13.446Z",
+      "updatedAt": "2026-06-05T20:57:13.446Z"
     }
   ]
 }
