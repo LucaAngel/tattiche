@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:58:57.134Z",
+  "updatedAt": "2026-06-05T20:59:04.450Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -679,6 +679,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:58:56.933Z",
       "updatedAt": "2026-06-05T20:58:56.933Z"
+    },
+    {
+      "id": "mq1epzn6-tltpin1f",
+      "name": "Andi ST74",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:59:04.242Z",
+      "updatedAt": "2026-06-05T20:59:04.242Z"
     }
   ]
 }
