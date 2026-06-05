@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T17:58:53.340Z",
+  "updatedAt": "2026-06-05T17:59:12.328Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -39,6 +39,17 @@
       "notes": "",
       "createdAt": "2026-06-05T17:56:46.567Z",
       "updatedAt": "2026-06-05T17:56:46.567Z"
+    },
+    {
+      "id": "mq18ansq-8j5rmn0m",
+      "name": "Stewe2059",
+      "rank": "R4",
+      "sex": "male",
+      "role": "Maggiordomo",
+      "contact": "",
+      "notes": "",
+      "createdAt": "2026-06-05T17:59:11.354Z",
+      "updatedAt": "2026-06-05T17:59:11.354Z"
     },
     {
       "id": "mq187acb-9x6b6irp",
@@ -90,6 +101,13 @@
     }
   ],
   "audit": [
+    {
+      "id": "mq18ansr-ne014xhf",
+      "at": "2026-06-05T17:59:11.355Z",
+      "admin": "4ita",
+      "action": "creazione contatto R4/R5",
+      "detail": "Stewe2059"
+    },
     {
       "id": "mq18a951-b73fr06f",
       "at": "2026-06-05T17:58:52.357Z",
