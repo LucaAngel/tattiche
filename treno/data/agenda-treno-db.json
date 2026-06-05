@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:57:13.679Z",
+  "updatedAt": "2026-06-05T20:57:22.761Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -583,6 +583,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:57:13.446Z",
       "updatedAt": "2026-06-05T20:57:13.446Z"
+    },
+    {
+      "id": "mq1ent6b-9dxam7m9",
+      "name": "GENERAL NAD",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:57:22.547Z",
+      "updatedAt": "2026-06-05T20:57:22.547Z"
     }
   ]
 }
