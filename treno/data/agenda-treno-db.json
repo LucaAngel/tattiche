@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:58:03.392Z",
+  "updatedAt": "2026-06-05T20:58:15.309Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -631,6 +631,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:58:03.169Z",
       "updatedAt": "2026-06-05T20:58:03.169Z"
+    },
+    {
+      "id": "mq1eoxmu-8f74nv9j",
+      "name": "Hamez 74",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T20:58:14.982Z",
+      "updatedAt": "2026-06-05T20:58:14.982Z"
     }
   ]
 }
