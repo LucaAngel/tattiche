@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:49:09.618Z",
+  "updatedAt": "2026-06-05T20:49:15.881Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -239,6 +239,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:49:09.367Z",
       "updatedAt": "2026-06-05T20:49:09.367Z"
+    },
+    {
+      "id": "mq1eddcv-0sr0rron",
+      "name": "IronFocus",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:49:15.487Z",
+      "updatedAt": "2026-06-05T20:49:15.487Z"
     }
   ]
 }
