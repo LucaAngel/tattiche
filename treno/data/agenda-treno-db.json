@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:51:28.351Z",
+  "updatedAt": "2026-06-05T20:51:37.957Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -327,6 +327,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:51:28.152Z",
       "updatedAt": "2026-06-05T20:51:28.152Z"
+    },
+    {
+      "id": "mq1egf22-usbj1gei",
+      "name": "Norman s key",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T20:51:37.658Z",
+      "updatedAt": "2026-06-05T20:51:37.658Z"
     }
   ]
 }
