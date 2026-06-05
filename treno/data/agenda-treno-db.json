@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:58:23.004Z",
+  "updatedAt": "2026-06-05T20:58:30.423Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -647,6 +647,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:58:22.787Z",
       "updatedAt": "2026-06-05T20:58:22.787Z"
+    },
+    {
+      "id": "mq1ep9bn-elyzszh2",
+      "name": "Loreboi",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:58:30.131Z",
+      "updatedAt": "2026-06-05T20:58:30.131Z"
     }
   ]
 }
