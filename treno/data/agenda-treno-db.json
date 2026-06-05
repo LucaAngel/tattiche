@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:52:27.077Z",
+  "updatedAt": "2026-06-05T20:52:36.229Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -383,6 +383,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:52:26.884Z",
       "updatedAt": "2026-06-05T20:52:26.884Z"
+    },
+    {
+      "id": "mq1ehny1-qxxmwmdi",
+      "name": "Anto Branca",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:52:35.833Z",
+      "updatedAt": "2026-06-05T20:52:35.833Z"
     }
   ]
 }
