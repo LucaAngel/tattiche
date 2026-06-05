@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:03:19.833Z",
+  "updatedAt": "2026-06-05T21:03:27.415Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -967,6 +967,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:03:19.516Z",
       "updatedAt": "2026-06-05T21:03:19.516Z"
+    },
+    {
+      "id": "mq1evmjg-ylgrma96",
+      "name": "Gsm77",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:03:27.196Z",
+      "updatedAt": "2026-06-05T21:03:27.196Z"
     }
   ]
 }
