@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:00:39.178Z",
+  "updatedAt": "2026-06-05T21:00:45.433Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -775,6 +775,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:00:38.840Z",
       "updatedAt": "2026-06-05T21:00:38.840Z"
+    },
+    {
+      "id": "mq1es5iu-fn2pl8f1",
+      "name": "Javcru",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T21:00:45.174Z",
+      "updatedAt": "2026-06-05T21:00:45.174Z"
     }
   ]
 }
