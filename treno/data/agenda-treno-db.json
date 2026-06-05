@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:50:19.746Z",
+  "updatedAt": "2026-06-05T20:50:27.022Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -263,6 +263,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:50:19.343Z",
       "updatedAt": "2026-06-05T20:50:19.343Z"
+    },
+    {
+      "id": "mq1eewdz-hzxn2qqj",
+      "name": "dragonlear",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:50:26.807Z",
+      "updatedAt": "2026-06-05T20:50:26.807Z"
     }
   ]
 }
