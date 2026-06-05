@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:01:57.671Z",
+  "updatedAt": "2026-06-05T21:02:06.643Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -871,6 +871,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:01:57.345Z",
       "updatedAt": "2026-06-05T21:01:57.346Z"
+    },
+    {
+      "id": "mq1etw6w-hitsbso2",
+      "name": "Base Black Cobra",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T21:02:06.392Z",
+      "updatedAt": "2026-06-05T21:02:06.392Z"
     }
   ]
 }
