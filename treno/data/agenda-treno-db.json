@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:50:14.035Z",
+  "updatedAt": "2026-06-05T20:50:19.746Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -255,6 +255,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:50:13.746Z",
       "updatedAt": "2026-06-05T20:50:13.746Z"
+    },
+    {
+      "id": "mq1eeqmn-ktm3mp9u",
+      "name": "spumino",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:50:19.343Z",
+      "updatedAt": "2026-06-05T20:50:19.343Z"
     }
   ]
 }
