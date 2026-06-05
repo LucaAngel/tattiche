@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:57:35.903Z",
+  "updatedAt": "2026-06-05T20:57:43.651Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -599,6 +599,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:57:35.684Z",
       "updatedAt": "2026-06-05T20:57:35.684Z"
+    },
+    {
+      "id": "mq1eo9ac-cmx95pyt",
+      "name": "VickyFlo",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:57:43.428Z",
+      "updatedAt": "2026-06-05T20:57:43.428Z"
     }
   ]
 }
