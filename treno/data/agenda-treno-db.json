@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:54:18.799Z",
+  "updatedAt": "2026-06-05T20:54:27.133Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -487,6 +487,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:54:18.588Z",
       "updatedAt": "2026-06-05T20:54:18.588Z"
+    },
+    {
+      "id": "mq1ek1nx-273ewrqj",
+      "name": "Thismashiiiit",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T20:54:26.925Z",
+      "updatedAt": "2026-06-05T20:54:26.925Z"
     }
   ]
 }
