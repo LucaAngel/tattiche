@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:02:17.346Z",
+  "updatedAt": "2026-06-05T21:02:20.678Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -887,6 +887,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:02:17.009Z",
       "updatedAt": "2026-06-05T21:02:17.009Z"
+    },
+    {
+      "id": "mq1eu70k-ij7be4wj",
+      "name": "buli44",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:02:20.420Z",
+      "updatedAt": "2026-06-05T21:02:20.421Z"
     }
   ]
 }
