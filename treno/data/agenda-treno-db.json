@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:55:35.184Z",
+  "updatedAt": "2026-06-05T20:55:43.045Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -543,6 +543,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:55:34.958Z",
       "updatedAt": "2026-06-05T20:55:34.958Z"
+    },
+    {
+      "id": "mq1elo8n-x6hsuniu",
+      "name": "ILBOTTA",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:55:42.839Z",
+      "updatedAt": "2026-06-05T20:55:42.839Z"
     }
   ]
 }
