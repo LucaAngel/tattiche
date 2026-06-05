@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T19:46:59.437Z",
+  "updatedAt": "2026-06-05T19:47:40.964Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -183,6 +183,14 @@
       "status": "active",
       "createdAt": "2026-06-05T17:58:15.711Z",
       "updatedAt": "2026-06-05T17:58:15.711Z"
+    },
+    {
+      "id": "mq1c66gu-9ekqr1xm",
+      "name": "Andreathor",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T19:47:40.734Z",
+      "updatedAt": "2026-06-05T19:47:40.734Z"
     }
   ]
 }
