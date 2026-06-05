@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:02:41.495Z",
+  "updatedAt": "2026-06-05T21:02:47.277Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -919,6 +919,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:02:41.236Z",
       "updatedAt": "2026-06-05T21:02:41.236Z"
+    },
+    {
+      "id": "mq1eurkk-tz5kw3rk",
+      "name": "Alessia Wow",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T21:02:47.060Z",
+      "updatedAt": "2026-06-05T21:02:47.060Z"
     }
   ]
 }
