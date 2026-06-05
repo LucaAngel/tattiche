@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:58:41.475Z",
+  "updatedAt": "2026-06-05T20:58:49.945Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -663,6 +663,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:58:41.176Z",
       "updatedAt": "2026-06-05T20:58:41.176Z"
+    },
+    {
+      "id": "mq1epod8-vu6hhyb0",
+      "name": "MagoBetReal",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:58:49.628Z",
+      "updatedAt": "2026-06-05T20:58:49.628Z"
     }
   ]
 }
