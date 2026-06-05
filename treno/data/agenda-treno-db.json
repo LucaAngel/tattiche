@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:52:00.815Z",
+  "updatedAt": "2026-06-05T20:52:08.378Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -359,6 +359,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:52:00.614Z",
       "updatedAt": "2026-06-05T20:52:00.614Z"
+    },
+    {
+      "id": "mq1eh2lb-mnmmupid",
+      "name": "VictorCeck",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:52:08.159Z",
+      "updatedAt": "2026-06-05T20:52:08.159Z"
     }
   ]
 }
