@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:02:47.277Z",
+  "updatedAt": "2026-06-05T21:02:53.186Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -927,6 +927,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:02:47.060Z",
       "updatedAt": "2026-06-05T21:02:47.060Z"
+    },
+    {
+      "id": "mq1euw3y-frgr1r1d",
+      "name": "botyone",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T21:02:52.942Z",
+      "updatedAt": "2026-06-05T21:02:52.942Z"
     }
   ]
 }
