@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T17:57:41.950Z",
+  "updatedAt": "2026-06-05T17:58:01.191Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -49,9 +49,24 @@
       "status": "active",
       "createdAt": "2026-06-05T17:57:40.709Z",
       "updatedAt": "2026-06-05T17:57:40.709Z"
+    },
+    {
+      "id": "mq1894xs-ls6gij2i",
+      "name": "Manuelsfg92",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T17:58:00.256Z",
+      "updatedAt": "2026-06-05T17:58:00.256Z"
     }
   ],
   "audit": [
+    {
+      "id": "mq1894xt-u2xf5nlj",
+      "at": "2026-06-05T17:58:00.257Z",
+      "admin": "4ita",
+      "action": "creazione giocatore",
+      "detail": "Manuelsfg92"
+    },
     {
       "id": "mq188puu-ozsqa3h0",
       "at": "2026-06-05T17:57:40.710Z",
