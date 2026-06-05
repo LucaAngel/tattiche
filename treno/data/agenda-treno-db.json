@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T19:46:16.887Z",
+  "updatedAt": "2026-06-05T19:46:59.437Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -75,6 +75,20 @@
       "notes": "",
       "createdAt": "2026-06-05T19:46:16.590Z",
       "updatedAt": "2026-06-05T19:46:16.590Z"
+    },
+    {
+      "id": "mq1c5afg-4irg6int",
+      "day": "2026-06-01",
+      "slot": "20:00",
+      "priority": "medium",
+      "leaderId": "mq187acb-9x6b6irp",
+      "leaderName": "Toposeduto (R4)",
+      "playerName": "Donitrob",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-05T19:46:59.212Z",
+      "updatedAt": "2026-06-05T19:46:59.212Z"
     }
   ],
   "leaders": [
