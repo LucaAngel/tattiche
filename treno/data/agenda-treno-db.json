@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:53:02.355Z",
+  "updatedAt": "2026-06-05T20:53:11.069Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -415,6 +415,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:53:02.061Z",
       "updatedAt": "2026-06-05T20:53:02.061Z"
+    },
+    {
+      "id": "mq1eiez7-c87ttvzf",
+      "name": "bolo ng",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:53:10.867Z",
+      "updatedAt": "2026-06-05T20:53:10.867Z"
     }
   ]
 }
