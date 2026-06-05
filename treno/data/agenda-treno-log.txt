@@ -1,0 +1,2 @@
+# Log interno Agenda Treno 4ITA
+# Il file viene aggiornato dal Cloudflare Worker a ogni operazione confermata.
