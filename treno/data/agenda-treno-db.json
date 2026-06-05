@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:59:40.691Z",
+  "updatedAt": "2026-06-05T20:59:49.756Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -719,6 +719,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:59:40.383Z",
       "updatedAt": "2026-06-05T20:59:40.383Z"
+    },
+    {
+      "id": "mq1eqyhv-gp3ueyng",
+      "name": "Marcopigna",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:59:49.411Z",
+      "updatedAt": "2026-06-05T20:59:49.411Z"
     }
   ]
 }
