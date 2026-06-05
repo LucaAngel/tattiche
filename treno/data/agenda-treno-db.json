@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:12:45.418Z",
+  "updatedAt": "2026-06-05T21:13:27.160Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -215,6 +215,34 @@
       "notes": "",
       "createdAt": "2026-06-05T21:12:16.181Z",
       "updatedAt": "2026-06-05T21:12:16.181Z"
+    },
+    {
+      "id": "mq1f7lgw-ylln0ccg",
+      "day": "2026-05-22",
+      "slot": "18:00",
+      "priority": "medium",
+      "leaderId": "mq18ansq-8j5rmn0m",
+      "leaderName": "Stewe2059 (R4)",
+      "playerName": "Mat737",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-05T21:12:45.680Z",
+      "updatedAt": "2026-06-05T21:12:45.680Z"
+    },
+    {
+      "id": "mq1f8h6a-paffz8wb",
+      "day": "2026-05-21",
+      "slot": "14:30",
+      "priority": "medium",
+      "leaderId": "mq18ansq-8j5rmn0m",
+      "leaderName": "Stewe2059 (R4)",
+      "playerName": "kikucijo",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-05T21:13:26.770Z",
+      "updatedAt": "2026-06-05T21:13:26.770Z"
     }
   ],
   "leaders": [
