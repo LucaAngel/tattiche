@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:00:12.659Z",
+  "updatedAt": "2026-06-05T21:00:19.304Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -751,6 +751,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:00:12.410Z",
       "updatedAt": "2026-06-05T21:00:12.410Z"
+    },
+    {
+      "id": "mq1erld8-skbz3inl",
+      "name": "DonNic",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T21:00:19.052Z",
+      "updatedAt": "2026-06-05T21:00:19.052Z"
     }
   ]
 }
