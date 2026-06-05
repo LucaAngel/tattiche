@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:53:11.069Z",
+  "updatedAt": "2026-06-05T20:53:19.960Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -423,6 +423,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:53:10.867Z",
       "updatedAt": "2026-06-05T20:53:10.867Z"
+    },
+    {
+      "id": "mq1eilt2-zgoq9k34",
+      "name": "PorcOROsso",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:53:19.718Z",
+      "updatedAt": "2026-06-05T20:53:19.718Z"
     }
   ]
 }
