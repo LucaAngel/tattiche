@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:54:57.112Z",
+  "updatedAt": "2026-06-05T20:55:04.945Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -511,6 +511,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:54:56.898Z",
       "updatedAt": "2026-06-05T20:54:56.898Z"
+    },
+    {
+      "id": "mq1ekurr-ecxm7d4m",
+      "name": "Necrous",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:55:04.647Z",
+      "updatedAt": "2026-06-05T20:55:04.647Z"
     }
   ]
 }
