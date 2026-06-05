@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:57:55.483Z",
+  "updatedAt": "2026-06-05T20:58:03.392Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -623,6 +623,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:57:55.283Z",
       "updatedAt": "2026-06-05T20:57:55.283Z"
+    },
+    {
+      "id": "mq1eooip-0uguryn6",
+      "name": "BurningSpirit",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:58:03.169Z",
+      "updatedAt": "2026-06-05T20:58:03.169Z"
     }
   ]
 }
