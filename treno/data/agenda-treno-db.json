@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:52:47.029Z",
+  "updatedAt": "2026-06-05T20:52:52.543Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -399,6 +399,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:52:43.499Z",
       "updatedAt": "2026-06-05T20:52:43.499Z"
+    },
+    {
+      "id": "mq1ei0oi-rx55qy33",
+      "name": "jesslex",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:52:52.338Z",
+      "updatedAt": "2026-06-05T20:52:52.338Z"
     }
   ]
 }
