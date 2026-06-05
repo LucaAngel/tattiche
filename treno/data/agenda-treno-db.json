@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:48:28.133Z",
+  "updatedAt": "2026-06-05T20:48:39.959Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -207,6 +207,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:48:27.929Z",
       "updatedAt": "2026-06-05T20:48:27.929Z"
+    },
+    {
+      "id": "mq1ecls4-j1vc5l1t",
+      "name": "Presidente Florix",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:48:39.748Z",
+      "updatedAt": "2026-06-05T20:48:39.748Z"
     }
   ]
 }
