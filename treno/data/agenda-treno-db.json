@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:01:05.701Z",
+  "updatedAt": "2026-06-05T21:01:11.525Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -807,6 +807,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:01:05.446Z",
       "updatedAt": "2026-06-05T21:01:05.446Z"
+    },
+    {
+      "id": "mq1espn6-ecq2xr85",
+      "name": "Jeppe1985",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:01:11.250Z",
+      "updatedAt": "2026-06-05T21:01:11.250Z"
     }
   ]
 }
