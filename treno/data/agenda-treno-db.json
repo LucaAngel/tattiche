@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:53:19.960Z",
+  "updatedAt": "2026-06-05T20:53:32.064Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -431,6 +431,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:53:19.718Z",
       "updatedAt": "2026-06-05T20:53:19.718Z"
+    },
+    {
+      "id": "mq1eiv42-8bz3zf2l",
+      "name": "Oscar FdG",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:53:31.778Z",
+      "updatedAt": "2026-06-05T20:53:31.778Z"
     }
   ]
 }
