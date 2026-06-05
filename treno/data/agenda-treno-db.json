@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:03:27.415Z",
+  "updatedAt": "2026-06-05T21:03:36.912Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -975,6 +975,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:03:27.196Z",
       "updatedAt": "2026-06-05T21:03:27.196Z"
+    },
+    {
+      "id": "mq1evtuo-q97zzg5c",
+      "name": "BATTMANNN",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T21:03:36.672Z",
+      "updatedAt": "2026-06-05T21:03:36.672Z"
     }
   ]
 }
