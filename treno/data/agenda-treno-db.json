@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:59:18.096Z",
+  "updatedAt": "2026-06-05T20:59:26.584Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -703,6 +703,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:59:17.880Z",
       "updatedAt": "2026-06-05T20:59:17.880Z"
+    },
+    {
+      "id": "mq1eqgn7-8egrnh4f",
+      "name": "panjhoel",
+      "sex": "female",
+      "status": "active",
+      "createdAt": "2026-06-05T20:59:26.275Z",
+      "updatedAt": "2026-06-05T20:59:26.275Z"
     }
   ]
 }
