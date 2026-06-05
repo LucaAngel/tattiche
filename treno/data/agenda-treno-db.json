@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T19:47:40.964Z",
+  "updatedAt": "2026-06-05T19:48:03.179Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -191,6 +191,14 @@
       "status": "active",
       "createdAt": "2026-06-05T19:47:40.734Z",
       "updatedAt": "2026-06-05T19:47:40.734Z"
+    },
+    {
+      "id": "mq1c6nmm-hm0l3cp3",
+      "name": "Ren84gp",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T19:48:02.974Z",
+      "updatedAt": "2026-06-05T19:48:02.974Z"
     }
   ]
 }
