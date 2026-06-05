@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:01:44.519Z",
+  "updatedAt": "2026-06-05T21:01:50.361Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -855,6 +855,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:01:44.102Z",
       "updatedAt": "2026-06-05T21:01:44.102Z"
+    },
+    {
+      "id": "mq1etjmm-xccz9bn0",
+      "name": "Tom2606",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T21:01:50.110Z",
+      "updatedAt": "2026-06-05T21:01:50.110Z"
     }
   ]
 }
