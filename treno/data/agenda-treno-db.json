@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T18:00:29.471Z",
+  "updatedAt": "2026-06-05T18:01:04.721Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -33,6 +33,20 @@
       "notes": "",
       "createdAt": "2026-06-05T18:00:28.442Z",
       "updatedAt": "2026-06-05T18:00:28.442Z"
+    },
+    {
+      "id": "mq18d27k-2to0s88x",
+      "day": "2026-06-05",
+      "slot": "21:30",
+      "priority": "medium",
+      "leaderId": "",
+      "leaderName": "",
+      "playerName": "Manuelsfg92",
+      "opRole": "Responsabile Treno",
+      "status": "assigned",
+      "notes": "",
+      "createdAt": "2026-06-05T18:01:03.345Z",
+      "updatedAt": "2026-06-05T18:01:03.345Z"
     }
   ],
   "leaders": [
@@ -130,6 +144,13 @@
     }
   ],
   "audit": [
+    {
+      "id": "mq18d27l-hsoioxua",
+      "at": "2026-06-05T18:01:03.345Z",
+      "admin": "4ita",
+      "action": "creazione turno",
+      "detail": "2026-06-05 21:30"
+    },
     {
       "id": "mq18cba2-ldrrhivf",
       "at": "2026-06-05T18:00:28.442Z",
