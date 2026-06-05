@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:02:31.697Z",
+  "updatedAt": "2026-06-05T21:02:41.495Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -911,6 +911,14 @@
       "status": "active",
       "createdAt": "2026-06-05T21:02:31.475Z",
       "updatedAt": "2026-06-05T21:02:31.475Z"
+    },
+    {
+      "id": "mq1eun2s-dc3yx81c",
+      "name": "Ov3rDos3",
+      "sex": "notSet",
+      "status": "active",
+      "createdAt": "2026-06-05T21:02:41.236Z",
+      "updatedAt": "2026-06-05T21:02:41.236Z"
     }
   ]
 }
