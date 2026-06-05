@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T20:53:37.989Z",
+  "updatedAt": "2026-06-05T20:53:44.797Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -447,6 +447,14 @@
       "status": "active",
       "createdAt": "2026-06-05T20:53:37.795Z",
       "updatedAt": "2026-06-05T20:53:37.795Z"
+    },
+    {
+      "id": "mq1ej4yh-2p3qn8t7",
+      "name": "Terracilandia",
+      "sex": "male",
+      "status": "active",
+      "createdAt": "2026-06-05T20:53:44.537Z",
+      "updatedAt": "2026-06-05T20:53:44.537Z"
     }
   ]
 }
