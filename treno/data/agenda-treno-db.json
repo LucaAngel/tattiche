@@ -1,11 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T18:04:05.194Z",
+  "updatedAt": "2026-06-05T18:32:21.667Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
   },
-  "assignments": [],
+  "assignments": [
+    {
+      "id": "mq19hami-slf6hzxr",
+      "day": "2026-06-03",
+      "slot": "23:00",
+      "priority": "medium",
+      "leaderId": "mq187k2v-je6or98r",
+      "leaderName": "LuKiNo (R4)",
+      "playerName": "Pippo 70",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-05T18:32:20.490Z",
+      "updatedAt": "2026-06-05T18:32:20.490Z"
+    }
+  ],
   "leaders": [
     {
       "id": "mq189yic-1hlsvjza",
@@ -98,106 +113,6 @@
       "status": "active",
       "createdAt": "2026-06-05T17:58:15.711Z",
       "updatedAt": "2026-06-05T17:58:15.711Z"
-    }
-  ],
-  "audit": [
-    {
-      "id": "mq18gxsd-k13lqi8c",
-      "at": "2026-06-05T18:04:04.237Z",
-      "admin": "4ita",
-      "action": "eliminazione log",
-      "detail": "mq18gs2e-7gynvbua"
-    },
-    {
-      "id": "mq18ghrr-iy2pw5q3",
-      "at": "2026-06-05T18:03:43.479Z",
-      "admin": "4ita",
-      "action": "eliminazione log",
-      "detail": "mq186v39-7tzvu346"
-    },
-    {
-      "id": "mq18g5vs-k6zsk1ny",
-      "at": "2026-06-05T18:03:28.072Z",
-      "admin": "4ita",
-      "action": "svuotamento agenda",
-      "detail": "tutti i turni"
-    },
-    {
-      "id": "mq18fshj-hikqiksf",
-      "at": "2026-06-05T18:03:10.711Z",
-      "admin": "4ita",
-      "action": "eliminazione turno",
-      "detail": "mq18cba2-n79tmuo3"
-    },
-    {
-      "id": "mq18cba2-ldrrhivf",
-      "at": "2026-06-05T18:00:28.442Z",
-      "admin": "4ita",
-      "action": "creazione turno",
-      "detail": "2026-06-04 23:00"
-    },
-    {
-      "id": "mq18bt53-moiwktuo",
-      "at": "2026-06-05T18:00:04.935Z",
-      "admin": "4ita",
-      "action": "creazione turno",
-      "detail": "2026-06-03 21:00"
-    },
-    {
-      "id": "mq18ansr-ne014xhf",
-      "at": "2026-06-05T17:59:11.355Z",
-      "admin": "4ita",
-      "action": "creazione contatto R4/R5",
-      "detail": "Stewe2059"
-    },
-    {
-      "id": "mq18a951-b73fr06f",
-      "at": "2026-06-05T17:58:52.357Z",
-      "admin": "4ita",
-      "action": "creazione contatto R4/R5",
-      "detail": "IronFocus"
-    },
-    {
-      "id": "mq189yid-q6idzke7",
-      "at": "2026-06-05T17:58:38.581Z",
-      "admin": "4ita",
-      "action": "creazione contatto R4/R5",
-      "detail": "Donitrob"
-    },
-    {
-      "id": "mq189gv3-wnarg4l8",
-      "at": "2026-06-05T17:58:15.711Z",
-      "admin": "4ita",
-      "action": "creazione giocatore",
-      "detail": "Pippo 70"
-    },
-    {
-      "id": "mq1894xt-u2xf5nlj",
-      "at": "2026-06-05T17:58:00.257Z",
-      "admin": "4ita",
-      "action": "creazione giocatore",
-      "detail": "Manuelsfg92"
-    },
-    {
-      "id": "mq188puu-ozsqa3h0",
-      "at": "2026-06-05T17:57:40.710Z",
-      "admin": "4ita",
-      "action": "creazione giocatore",
-      "detail": "lapre2022"
-    },
-    {
-      "id": "mq187k2w-ty1lfecr",
-      "at": "2026-06-05T17:56:46.568Z",
-      "admin": "4ita",
-      "action": "creazione contatto R4/R5",
-      "detail": "LuKiNo"
-    },
-    {
-      "id": "mq187acc-t5vue9sl",
-      "at": "2026-06-05T17:56:33.948Z",
-      "admin": "4ita",
-      "action": "creazione contatto R4/R5",
-      "detail": "Toposeduto"
     }
   ]
 }
