@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-06T18:05:03.161Z",
+  "updatedAt": "2026-06-06T18:05:13.536Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -281,10 +281,10 @@
       "leaderName": "LuKiNo (R4)",
       "playerName": "kikucijo",
       "opRole": "Responsabile Treno",
-      "status": "todo",
+      "status": "completed",
       "notes": "",
       "createdAt": "2026-06-06T17:23:23.162Z",
-      "updatedAt": "2026-06-06T17:23:23.162Z"
+      "updatedAt": "2026-06-06T18:05:12.598Z"
     }
   ],
   "leaders": [
