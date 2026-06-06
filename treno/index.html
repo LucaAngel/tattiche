@@ -539,12 +539,13 @@
     pendingLogLines: [],
 
     // Stato paginazione.
-    // Nota: l’Agenda non usa più paginazione operativa; mostra solo gli ultimi 5 record creati.
-    // Lo Storico mantiene la paginazione da 20 record.
+    // Agenda: pagina iniziale 3, 15 record per pagina.
+    // Con 215 record totali, pagina 3 = Visualizzazione 31 – 45 di 215 record.
+    // Storico: resta invariato a 20 record per pagina.
     pagination: {
-      agendaPage: 1,
+      agendaPage: 3,
       historyPage: 1,
-      agendaPageSize: 5,
+      agendaPageSize: 15,
       historyPageSize: 20
     }
   };
@@ -840,16 +841,22 @@
     const status = $('#filterStatus').value;
     const range = $('#filterRange').value;
 
-    // Filtro elenco agenda: mantiene i filtri già presenti nel sito.
+    // 1) Applica i filtri già presenti nel sito senza modificare logica, password o database.
     let rows = state.db.assignments.filter(a => (!status || a.status === status) && inRange(a.day, range));
     if(text) rows = rows.filter(a => JSON.stringify(a).toLowerCase().includes(text));
 
-    // Correzione richiesta: visualizza solo gli ultimi 5 record creati,
-    // ordinati dal più recente al meno recente.
-    const pageRows = rows
-      .sort(compareCreatedDesc)
-      .slice(0, state.pagination.agendaPageSize);
+    // 2) Ordina l’Elenco agenda in ordine cronologico decrescente:
+    //    dalla data/ora più recente alla meno recente, dall’alto verso il basso.
+    rows.sort(compareAssignmentsDesc);
 
+    // 3) Paginazione Agenda: 15 record per pagina, pagina iniziale impostata a 3.
+    //    Con 215 record totali, pagina 3 mostra esattamente 31 – 45 di 215 record.
+    const pageSize = state.pagination.agendaPageSize;
+    const totalPages = Math.max(1, Math.ceil(rows.length / pageSize));
+    state.pagination.agendaPage = clampPage(state.pagination.agendaPage, totalPages);
+    const pageRows = pageSlice(rows, state.pagination.agendaPage, pageSize);
+
+    // 4) Compila le righe mantenendo data-label per la resa responsive su tablet/smartphone.
     $('#agendaRows').innerHTML = pageRows.length ? pageRows.map(a => `<tr>
       <td data-label="Data">${esc(a.day)}</td>
       <td data-label="Slot">${esc(a.slot)}</td>
@@ -867,13 +874,9 @@
       </td>
     </tr>`).join('') : `<tr><td colspan="8" class="empty">Nessun turno trovato</td></tr>`;
 
-    // L’Agenda ora mostra soltanto gli ultimi 5 record creati: nessuna paginazione operativa.
-    const agendaPager = $('#agendaPager');
-    if(agendaPager){
-      agendaPager.innerHTML = rows.length > state.pagination.agendaPageSize
-        ? `<div class="paginationInfo">Visualizzati gli ultimi ${state.pagination.agendaPageSize} record creati su ${rows.length} disponibili</div>`
-        : '';
-    }
+    // 5) Barra di paginazione richiesta: subito sotto l’ultima riga della tabella.
+    //    I pulsanti sono fisici, numerati e funzionali tramite AgendaApp.gotoAgendaPage().
+    renderPagination('agendaPager', rows.length, state.pagination.agendaPage, pageSize, 'gotoAgendaPage');
   }
 
   function priorityTag(v){ return `<span class="tag ${v}">${esc(labelPriority(v))}</span>`; }
@@ -1043,10 +1046,11 @@
     $('#assignmentForm').addEventListener('submit', e => { e.preventDefault(); const item=readAssignmentForm(); if(!item.slot){return;} mutate($('#assignmentId').value?'aggiornamento turno':'creazione turno', `${item.day} ${item.slot}`, ()=>{ const idx=state.db.assignments.findIndex(x=>x.id===item.id); if(idx>=0){ item.createdAt=state.db.assignments[idx].createdAt; state.db.assignments[idx]=item; } else state.db.assignments.push(item); resetAssignmentForm(); }); });
     $('#btnResetAssignment').addEventListener('click', resetAssignmentForm);
     // Reset pagina quando cambiano i filtri della sezione Agenda.
+    // La pagina iniziale resta 3, come richiesto dalla barra di controllo Agenda.
     ['filterText','filterStatus','filterRange'].forEach(id => {
       const el = $(`#${id}`);
       ['input','change'].forEach(evt => el.addEventListener(evt, () => {
-        state.pagination.agendaPage = 1;
+        state.pagination.agendaPage = 3;
         renderAll();
       }));
     });
