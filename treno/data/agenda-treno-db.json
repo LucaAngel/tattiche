@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T21:14:40.400Z",
+  "updatedAt": "2026-06-06T16:59:13.940Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -47,20 +47,6 @@
       "notes": "",
       "createdAt": "2026-06-05T19:42:06.983Z",
       "updatedAt": "2026-06-05T19:42:06.983Z"
-    },
-    {
-      "id": "mq19j5c1-7jopy6p4",
-      "day": "2026-06-05",
-      "slot": "21:30",
-      "priority": "medium",
-      "leaderId": "",
-      "leaderName": "",
-      "playerName": "Manuelsfg92",
-      "opRole": "Responsabile Treno",
-      "status": "completed",
-      "notes": "",
-      "createdAt": "2026-06-05T18:33:46.945Z",
-      "updatedAt": "2026-06-05T19:07:51.886Z"
     },
     {
       "id": "mq1c4dji-k0oaes7n",
