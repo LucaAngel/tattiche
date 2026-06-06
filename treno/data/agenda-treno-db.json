@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-06T18:04:58.651Z",
+  "updatedAt": "2026-06-06T18:05:03.161Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -285,20 +285,6 @@
       "notes": "",
       "createdAt": "2026-06-06T17:23:23.162Z",
       "updatedAt": "2026-06-06T17:23:23.162Z"
-    },
-    {
-      "id": "mq2mhi7z-wcf7fqus",
-      "day": "2026-06-07",
-      "slot": "20:30",
-      "priority": "medium",
-      "leaderId": "mq187k2v-je6or98r",
-      "leaderName": "LuKiNo (R4)",
-      "playerName": "Ren84gp",
-      "opRole": "Responsabile Treno",
-      "status": "todo",
-      "notes": "",
-      "createdAt": "2026-06-06T17:24:11.519Z",
-      "updatedAt": "2026-06-06T17:24:11.519Z"
     }
   ],
   "leaders": [
