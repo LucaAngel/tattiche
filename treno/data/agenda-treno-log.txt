@@ -2,3 +2,4 @@
 # Il file viene aggiornato dal Cloudflare Worker a ogni operazione confermata.
 [2026-06-06T18:04:57.717Z] admin=4ita action="eliminazione turno" detail="mq2mid7g-gfl0wuqa"
 [2026-06-06T18:05:02.259Z] admin=4ita action="eliminazione turno" detail="mq2mhi7z-wcf7fqus"
+[2026-06-06T18:05:12.598Z] admin=4ita action="completamento turno" detail="mq2mggwp-b0rxpie7"
