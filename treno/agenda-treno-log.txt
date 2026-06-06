@@ -1,0 +1,2 @@
+# Agenda Treno 4ITA - log interno
+# Le nuove righe vengono accodate dal Worker Cloudflare.
