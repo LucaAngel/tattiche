@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-07T12:41:52.288Z",
+  "updatedAt": "2026-06-07T16:23:38.421Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -295,10 +295,10 @@
       "leaderName": "LuKiNo (R4)",
       "playerName": "black palpatine",
       "opRole": "Responsabile Treno",
-      "status": "todo",
+      "status": "completed",
       "notes": "",
       "createdAt": "2026-06-07T12:41:51.651Z",
-      "updatedAt": "2026-06-07T12:41:51.651Z"
+      "updatedAt": "2026-06-07T16:23:37.886Z"
     }
   ],
   "leaders": [
