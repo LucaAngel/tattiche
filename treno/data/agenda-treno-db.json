@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-06T18:05:13.536Z",
+  "updatedAt": "2026-06-07T12:41:52.288Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -285,6 +285,20 @@
       "notes": "",
       "createdAt": "2026-06-06T17:23:23.162Z",
       "updatedAt": "2026-06-06T18:05:12.598Z"
+    },
+    {
+      "id": "mq3rua03-yolmrxb5",
+      "day": "2026-06-07",
+      "slot": "19:300",
+      "priority": "medium",
+      "leaderId": "mq187k2v-je6or98r",
+      "leaderName": "LuKiNo (R4)",
+      "playerName": "black palpatine",
+      "opRole": "Responsabile Treno",
+      "status": "todo",
+      "notes": "",
+      "createdAt": "2026-06-07T12:41:51.651Z",
+      "updatedAt": "2026-06-07T12:41:51.651Z"
     }
   ],
   "leaders": [
