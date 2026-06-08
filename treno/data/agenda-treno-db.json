@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-07T16:23:38.421Z",
+  "updatedAt": "2026-06-08T20:00:27.565Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -299,6 +299,20 @@
       "notes": "",
       "createdAt": "2026-06-07T12:41:51.651Z",
       "updatedAt": "2026-06-07T16:23:37.886Z"
+    },
+    {
+      "id": "mq5my5ee-litz3ie9",
+      "day": "2026-06-08",
+      "slot": "20:30",
+      "priority": "medium",
+      "leaderId": "mq187k2v-je6or98r",
+      "leaderName": "LuKiNo (R4)",
+      "playerName": "Luca",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-08T20:00:26.582Z",
+      "updatedAt": "2026-06-08T20:00:26.582Z"
     }
   ],
   "leaders": [
