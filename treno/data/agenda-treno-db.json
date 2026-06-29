@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:34:37.747Z",
+  "updatedAt": "2026-06-29T18:35:01.240Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -509,6 +509,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:34:37.385Z",
       "updatedAt": "2026-06-29T18:34:37.385Z"
+    },
+    {
+      "id": "mqzk568p-4lj4q0xl",
+      "day": "2026-06-20",
+      "slot": "10.47",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "black palpatine",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:35:00.697Z",
+      "updatedAt": "2026-06-29T18:35:00.697Z"
     }
   ],
   "leaders": [
