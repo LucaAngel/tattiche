@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:35:54.958Z",
+  "updatedAt": "2026-06-29T18:36:28.570Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -551,6 +551,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:35:54.566Z",
       "updatedAt": "2026-06-29T18:35:54.566Z"
+    },
+    {
+      "id": "mqzk71n2-k0vlb0tc",
+      "day": "2026-06-22",
+      "slot": "18.17",
+      "priority": "medium",
+      "leaderId": "mq18ansq-8j5rmn0m",
+      "leaderName": "Stewe2059 (R4)",
+      "playerName": "Simone984",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:36:28.046Z",
+      "updatedAt": "2026-06-29T18:36:28.046Z"
     }
   ],
   "leaders": [
