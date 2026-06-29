@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:30:39.423Z",
+  "updatedAt": "2026-06-29T18:31:03.567Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -428,7 +428,7 @@
     },
     {
       "id": "mqzjzkdd-9ot5t8g7",
-      "day": "2026-06-29",
+      "day": "2026-06-13",
       "slot": "19.55",
       "priority": "medium",
       "leaderId": "mq187k2v-je6or98r",
@@ -438,7 +438,7 @@
       "status": "completed",
       "notes": "",
       "createdAt": "2026-06-29T18:30:39.073Z",
-      "updatedAt": "2026-06-29T18:30:39.073Z"
+      "updatedAt": "2026-06-29T18:31:03.180Z"
     }
   ],
   "leaders": [
