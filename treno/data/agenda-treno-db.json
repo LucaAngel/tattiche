@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:28:51.483Z",
+  "updatedAt": "2026-06-29T18:29:18.212Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -383,6 +383,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:28:51.062Z",
       "updatedAt": "2026-06-29T18:28:51.062Z"
+    },
+    {
+      "id": "mqzjxtkp-wuxjhhcj",
+      "day": "2026-06-09",
+      "slot": "19.30",
+      "priority": "medium",
+      "leaderId": "mq187k2v-je6or98r",
+      "leaderName": "LuKiNo (R4)",
+      "playerName": "BurningSpirit",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:29:17.689Z",
+      "updatedAt": "2026-06-29T18:29:17.689Z"
     }
   ],
   "leaders": [
