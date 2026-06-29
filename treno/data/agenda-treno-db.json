@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:32:57.014Z",
+  "updatedAt": "2026-06-29T18:33:25.093Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -467,6 +467,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:32:56.692Z",
       "updatedAt": "2026-06-29T18:32:56.692Z"
+    },
+    {
+      "id": "mqzk344z-2uolzp0t",
+      "day": "2026-06-29",
+      "slot": "18.10",
+      "priority": "medium",
+      "leaderId": "mq18ansq-8j5rmn0m",
+      "leaderName": "Stewe2059 (R4)",
+      "playerName": "Gargrinch",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:33:24.659Z",
+      "updatedAt": "2026-06-29T18:33:24.659Z"
     }
   ],
   "leaders": [
