@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:36:28.570Z",
+  "updatedAt": "2026-06-29T18:36:56.210Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -565,6 +565,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:36:28.046Z",
       "updatedAt": "2026-06-29T18:36:28.046Z"
+    },
+    {
+      "id": "mqzk7n2f-vhohtqjw",
+      "day": "2026-06-23",
+      "slot": "20.15",
+      "priority": "medium",
+      "leaderId": "mq18a950-uu4yzysy",
+      "leaderName": "IronFocus (R4)",
+      "playerName": "Tafsquad",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:36:55.815Z",
+      "updatedAt": "2026-06-29T18:36:55.815Z"
     }
   ],
   "leaders": [
