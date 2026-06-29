@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:37:22.023Z",
+  "updatedAt": "2026-06-29T18:37:47.329Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -593,6 +593,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:37:21.694Z",
       "updatedAt": "2026-06-29T18:37:21.694Z"
+    },
+    {
+      "id": "mqzk8qid-ohpcx4hf",
+      "day": "2026-06-26",
+      "slot": "20.45",
+      "priority": "medium",
+      "leaderId": "mq18a950-uu4yzysy",
+      "leaderName": "IronFocus (R4)",
+      "playerName": "ValiCc",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:37:46.933Z",
+      "updatedAt": "2026-06-29T18:37:46.933Z"
     }
   ],
   "leaders": [
