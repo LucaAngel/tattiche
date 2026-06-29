@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:32:26.257Z",
+  "updatedAt": "2026-06-29T18:32:57.014Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -453,6 +453,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:32:25.913Z",
       "updatedAt": "2026-06-29T18:32:25.913Z"
+    },
+    {
+      "id": "mqzk2ik4-6rg57chm",
+      "day": "2026-06-16",
+      "slot": "12.40",
+      "priority": "medium",
+      "leaderId": "mq18ansq-8j5rmn0m",
+      "leaderName": "Stewe2059 (R4)",
+      "playerName": "Taneleer Tivan",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:32:56.692Z",
+      "updatedAt": "2026-06-29T18:32:56.692Z"
     }
   ],
   "leaders": [
