@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:29:44.714Z",
+  "updatedAt": "2026-06-29T18:30:19.626Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -411,6 +411,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:29:44.368Z",
       "updatedAt": "2026-06-29T18:29:44.368Z"
+    },
+    {
+      "id": "mqzjz50s-lnkb5mj2",
+      "day": "2026-06-11",
+      "slot": "19.13",
+      "priority": "medium",
+      "leaderId": "mq187k2v-je6or98r",
+      "leaderName": "LuKiNo (R4)",
+      "playerName": "Yrug 28",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:30:19.181Z",
+      "updatedAt": "2026-06-29T18:30:19.181Z"
     }
   ],
   "leaders": [
