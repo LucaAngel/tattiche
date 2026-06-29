@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:38:08.811Z",
+  "updatedAt": "2026-06-29T18:38:37.080Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -621,6 +621,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:38:08.499Z",
       "updatedAt": "2026-06-29T18:38:08.499Z"
+    },
+    {
+      "id": "mqzk9suj-3d4gfz73",
+      "day": "2026-06-28",
+      "slot": "19.37",
+      "priority": "medium",
+      "leaderId": "mq18a950-uu4yzysy",
+      "leaderName": "IronFocus (R4)",
+      "playerName": "Donitrob",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:38:36.619Z",
+      "updatedAt": "2026-06-29T18:38:36.619Z"
     }
   ],
   "leaders": [
