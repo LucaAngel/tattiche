@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:33:37.342Z",
+  "updatedAt": "2026-06-29T18:34:01.036Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -481,6 +481,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:33:24.659Z",
       "updatedAt": "2026-06-29T18:33:36.898Z"
+    },
+    {
+      "id": "mqzk3vxi-zxj9yh0w",
+      "day": "2026-06-17",
+      "slot": "19.15",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "Mat737",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:34:00.678Z",
+      "updatedAt": "2026-06-29T18:34:00.678Z"
     }
   ],
   "leaders": [
