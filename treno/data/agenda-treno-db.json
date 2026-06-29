@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:29:18.212Z",
+  "updatedAt": "2026-06-29T18:29:44.714Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -397,6 +397,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:29:17.689Z",
       "updatedAt": "2026-06-29T18:29:17.689Z"
+    },
+    {
+      "id": "mqzjye5s-3j04cxga",
+      "day": "2026-06-10",
+      "slot": "15.40",
+      "priority": "medium",
+      "leaderId": "mq187k2v-je6or98r",
+      "leaderName": "LuKiNo (R4)",
+      "playerName": "DELTA",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:29:44.368Z",
+      "updatedAt": "2026-06-29T18:29:44.368Z"
     }
   ],
   "leaders": [
