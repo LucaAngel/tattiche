@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:30:19.626Z",
+  "updatedAt": "2026-06-29T18:30:39.423Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -425,6 +425,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:30:19.181Z",
       "updatedAt": "2026-06-29T18:30:19.181Z"
+    },
+    {
+      "id": "mqzjzkdd-9ot5t8g7",
+      "day": "2026-06-29",
+      "slot": "19.55",
+      "priority": "medium",
+      "leaderId": "mq187k2v-je6or98r",
+      "leaderName": "LuKiNo (R4)",
+      "playerName": "PorcOROsso",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:30:39.073Z",
+      "updatedAt": "2026-06-29T18:30:39.073Z"
     }
   ],
   "leaders": [
