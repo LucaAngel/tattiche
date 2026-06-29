@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T18:34:01.036Z",
+  "updatedAt": "2026-06-29T18:34:37.747Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -495,6 +495,20 @@
       "notes": "",
       "createdAt": "2026-06-29T18:34:00.678Z",
       "updatedAt": "2026-06-29T18:34:00.678Z"
+    },
+    {
+      "id": "mqzk4o95-sp6c9ohm",
+      "day": "2026-06-19",
+      "slot": "08.07",
+      "priority": "medium",
+      "leaderId": "mq18ansq-8j5rmn0m",
+      "leaderName": "Stewe2059 (R4)",
+      "playerName": "SKIFUKR",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-06-29T18:34:37.385Z",
+      "updatedAt": "2026-06-29T18:34:37.385Z"
     }
   ],
   "leaders": [
