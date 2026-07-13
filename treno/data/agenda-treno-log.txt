@@ -53,3 +53,4 @@
 [2026-07-13T21:10:05.065Z] admin="4ita" action="aggiornamento stato giocatore" detail="mq1eg7q0-e3vuf9qt -> blacklist"
 [2026-07-13T21:10:15.684Z] admin="4ita" action="aggiornamento stato giocatore" detail="mq1ehtuz-kmclk470 -> blacklist"
 [2026-07-13T21:10:34.697Z] admin="4ita" action="aggiornamento stato giocatore" detail="mq1eg14e-voc77b38 -> blacklist"
+[2026-07-13T21:11:00.815Z] admin="4ita" action="aggiornamento stato giocatore" detail="mq1ekosi-55iabm81 -> blacklist"
