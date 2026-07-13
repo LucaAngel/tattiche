@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:00:48.253Z",
+  "updatedAt": "2026-07-13T21:02:13.065Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -677,6 +677,20 @@
       "notes": "",
       "createdAt": "2026-07-01T21:06:28.549Z",
       "updatedAt": "2026-07-01T21:06:28.549Z"
+    },
+    {
+      "id": "mrjpkeat-ghxgsf9m",
+      "day": "2026-07-03",
+      "slot": "20",
+      "priority": "medium",
+      "leaderId": "mq18ansq-8j5rmn0m",
+      "leaderName": "Stewe2059 (R4)",
+      "playerName": "Shadowman",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-13T21:02:12.581Z",
+      "updatedAt": "2026-07-13T21:02:12.581Z"
     }
   ],
   "leaders": [
