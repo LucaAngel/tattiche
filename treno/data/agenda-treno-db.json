@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:04:22.195Z",
+  "updatedAt": "2026-07-13T21:04:45.493Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -747,6 +747,20 @@
       "notes": "",
       "createdAt": "2026-07-13T21:04:21.662Z",
       "updatedAt": "2026-07-13T21:04:21.662Z"
+    },
+    {
+      "id": "mrjpnnz9-35cxlpzl",
+      "day": "2026-07-13",
+      "slot": "20",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "Terracilandia",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-13T21:04:45.093Z",
+      "updatedAt": "2026-07-13T21:04:45.093Z"
     }
   ],
   "leaders": [
