@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:00:37.120Z",
+  "updatedAt": "2026-07-13T21:00:48.253Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -734,17 +734,6 @@
       "notes": "",
       "createdAt": "2026-06-05T17:59:11.354Z",
       "updatedAt": "2026-06-05T17:59:11.354Z"
-    },
-    {
-      "id": "mq187acb-9x6b6irp",
-      "name": "Toposeduto",
-      "rank": "R4",
-      "sex": "male",
-      "role": "Signore della guerra",
-      "contact": "",
-      "notes": "",
-      "createdAt": "2026-06-05T17:56:33.947Z",
-      "updatedAt": "2026-06-05T17:56:33.947Z"
     },
     {
       "id": "mq186v38-4gajl3ws",
