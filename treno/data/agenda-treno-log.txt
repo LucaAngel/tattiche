@@ -38,3 +38,4 @@
 [2026-06-30T21:34:35.112Z] admin="4ita" action="creazione turno" detail="2026-06-30 23:30"
 [2026-07-01T21:06:28.550Z] admin="4ita" action="creazione turno" detail="2026-07-01 23"
 [2026-07-13T21:00:13.670Z] admin="4ita" action="creazione giocatore" detail="Shadowman"
+[2026-07-13T21:00:36.710Z] admin="4ita" action="creazione contatto R4/R5" detail="PorcoRosso"
