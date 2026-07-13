@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:06:20.635Z",
+  "updatedAt": "2026-07-13T21:10:05.589Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -1036,9 +1036,9 @@
       "id": "mq1eg7q0-e3vuf9qt",
       "name": "Falcor MBA",
       "sex": "female",
-      "status": "active",
+      "status": "blacklist",
       "createdAt": "2026-06-05T20:51:28.152Z",
-      "updatedAt": "2026-06-05T20:51:28.152Z"
+      "updatedAt": "2026-07-13T21:10:05.065Z"
     },
     {
       "id": "mq1egf22-usbj1gei",
