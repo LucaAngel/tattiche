@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:03:45.526Z",
+  "updatedAt": "2026-07-13T21:04:22.195Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -733,6 +733,20 @@
       "notes": "",
       "createdAt": "2026-07-13T21:03:44.979Z",
       "updatedAt": "2026-07-13T21:03:44.979Z"
+    },
+    {
+      "id": "mrjpn5we-4piowt5w",
+      "day": "2026-07-07",
+      "slot": "12",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "Sultàn II",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-13T21:04:21.662Z",
+      "updatedAt": "2026-07-13T21:04:21.662Z"
     }
   ],
   "leaders": [
