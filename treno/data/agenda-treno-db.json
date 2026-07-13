@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:10:35.062Z",
+  "updatedAt": "2026-07-13T21:11:01.197Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -1220,9 +1220,9 @@
       "id": "mq1ekosi-55iabm81",
       "name": "Luca",
       "sex": "male",
-      "status": "active",
+      "status": "blacklist",
       "createdAt": "2026-06-05T20:54:56.898Z",
-      "updatedAt": "2026-06-05T20:54:56.898Z"
+      "updatedAt": "2026-07-13T21:11:00.815Z"
     },
     {
       "id": "mq1ekurr-ecxm7d4m",
