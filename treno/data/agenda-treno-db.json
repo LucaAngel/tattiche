@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:05:30.162Z",
+  "updatedAt": "2026-07-13T21:05:55.557Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -789,6 +789,20 @@
       "notes": "",
       "createdAt": "2026-07-13T21:05:29.703Z",
       "updatedAt": "2026-07-13T21:05:29.703Z"
+    },
+    {
+      "id": "mrjpp5wb-z5u6u8te",
+      "day": "2026-07-10",
+      "slot": "20",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "IronFocus",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-13T21:05:54.971Z",
+      "updatedAt": "2026-07-13T21:05:54.971Z"
     }
   ],
   "leaders": [
