@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:05:08.031Z",
+  "updatedAt": "2026-07-13T21:05:30.162Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -775,6 +775,20 @@
       "notes": "",
       "createdAt": "2026-07-13T21:05:07.516Z",
       "updatedAt": "2026-07-13T21:05:07.516Z"
+    },
+    {
+      "id": "mrjpomef-p8tqlici",
+      "day": "2026-07-13",
+      "slot": "20",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "Javcru",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-13T21:05:29.703Z",
+      "updatedAt": "2026-07-13T21:05:29.703Z"
     }
   ],
   "leaders": [
