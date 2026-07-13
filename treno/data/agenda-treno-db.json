@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:10:05.589Z",
+  "updatedAt": "2026-07-13T21:10:16.104Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -1108,9 +1108,9 @@
       "id": "mq1ehtuz-kmclk470",
       "name": "black palpatine",
       "sex": "female",
-      "status": "active",
+      "status": "blacklist",
       "createdAt": "2026-06-05T20:52:43.499Z",
-      "updatedAt": "2026-06-05T20:52:43.499Z"
+      "updatedAt": "2026-07-13T21:10:15.684Z"
     },
     {
       "id": "mq1ei0oi-rx55qy33",
