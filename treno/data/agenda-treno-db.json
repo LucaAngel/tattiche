@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:02:43.600Z",
+  "updatedAt": "2026-07-13T21:03:14.403Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -705,6 +705,20 @@
       "notes": "",
       "createdAt": "2026-07-13T21:02:43.110Z",
       "updatedAt": "2026-07-13T21:02:43.110Z"
+    },
+    {
+      "id": "mrjplpo7-v4gdb90i",
+      "day": "2026-07-04",
+      "slot": "20",
+      "priority": "medium",
+      "leaderId": "mq18ansq-8j5rmn0m",
+      "leaderName": "Stewe2059 (R4)",
+      "playerName": "VALENIGMA",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-13T21:03:13.975Z",
+      "updatedAt": "2026-07-13T21:03:13.975Z"
     }
   ],
   "leaders": [
