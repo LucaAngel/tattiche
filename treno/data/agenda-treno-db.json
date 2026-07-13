@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T21:00:14.210Z",
+  "updatedAt": "2026-07-13T21:00:37.120Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -712,6 +712,17 @@
       "notes": "",
       "createdAt": "2026-06-05T17:56:46.567Z",
       "updatedAt": "2026-06-05T17:56:46.567Z"
+    },
+    {
+      "id": "mrjpicbq-5dyur1jw",
+      "name": "PorcoRosso",
+      "rank": "R4",
+      "sex": "male",
+      "role": "Maggiordomo",
+      "contact": "",
+      "notes": "",
+      "createdAt": "2026-07-13T21:00:36.710Z",
+      "updatedAt": "2026-07-13T21:00:36.710Z"
     },
     {
       "id": "mq18ansq-8j5rmn0m",
