@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-16T22:16:00.995Z",
+  "updatedAt": "2026-07-16T22:16:25.562Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -845,6 +845,20 @@
       "notes": "",
       "createdAt": "2026-07-16T22:16:00.071Z",
       "updatedAt": "2026-07-16T22:16:00.071Z"
+    },
+    {
+      "id": "mro2jdiv-p3ph4pxw",
+      "day": "2026-07-15",
+      "slot": "20",
+      "priority": "medium",
+      "leaderId": "mq189yic-1hlsvjza",
+      "leaderName": "Donitrob (R4)",
+      "playerName": "Tafsquad",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-16T22:16:24.631Z",
+      "updatedAt": "2026-07-16T22:16:24.631Z"
     }
   ],
   "leaders": [
