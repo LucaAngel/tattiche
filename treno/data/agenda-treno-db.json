@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-16T22:16:25.562Z",
+  "updatedAt": "2026-07-16T22:17:03.525Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -859,6 +859,20 @@
       "notes": "",
       "createdAt": "2026-07-16T22:16:24.631Z",
       "updatedAt": "2026-07-16T22:16:24.631Z"
+    },
+    {
+      "id": "mro2k6xv-5161388j",
+      "day": "2026-07-16",
+      "slot": "22",
+      "priority": "medium",
+      "leaderId": "mq189yic-1hlsvjza",
+      "leaderName": "Donitrob (R4)",
+      "playerName": "Nell0620",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-16T22:17:02.755Z",
+      "updatedAt": "2026-07-16T22:17:02.755Z"
     }
   ],
   "leaders": [
