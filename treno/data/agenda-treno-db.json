@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28T22:26:33.165Z",
+  "updatedAt": "2026-07-28T22:26:59.253Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -901,6 +901,20 @@
       "notes": "",
       "createdAt": "2026-07-28T22:26:34.623Z",
       "updatedAt": "2026-07-28T22:26:34.623Z"
+    },
+    {
+      "id": "ms5878gl-7zlu15tb",
+      "day": "2026-07-20",
+      "slot": "20:23",
+      "priority": "medium",
+      "leaderId": "mrjpicbq-5dyur1jw",
+      "leaderName": "PorcoRosso (R4)",
+      "playerName": "Donitrob",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-28T22:27:00.885Z",
+      "updatedAt": "2026-07-28T22:27:00.885Z"
     }
   ],
   "leaders": [
