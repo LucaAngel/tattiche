@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28T22:26:59.253Z",
+  "updatedAt": "2026-07-28T22:27:31.358Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -915,6 +915,20 @@
       "notes": "",
       "createdAt": "2026-07-28T22:27:00.885Z",
       "updatedAt": "2026-07-28T22:27:00.885Z"
+    },
+    {
+      "id": "ms587x7g-3wxef7ti",
+      "day": "2026-07-21",
+      "slot": "19:27",
+      "priority": "medium",
+      "leaderId": "mq18ansq-8j5rmn0m",
+      "leaderName": "Stewe2059 (R4)",
+      "playerName": "IronFocus",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-28T22:27:32.956Z",
+      "updatedAt": "2026-07-28T22:27:32.956Z"
     }
   ],
   "leaders": [
