@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28T22:27:58.347Z",
+  "updatedAt": "2026-07-28T22:28:30.342Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -943,6 +943,20 @@
       "notes": "",
       "createdAt": "2026-07-28T22:28:00.055Z",
       "updatedAt": "2026-07-28T22:28:00.055Z"
+    },
+    {
+      "id": "ms5896os-l9lr7j3h",
+      "day": "2026-07-23",
+      "slot": "19:47",
+      "priority": "medium",
+      "leaderId": "mq18a950-uu4yzysy",
+      "leaderName": "IronFocus (R4)",
+      "playerName": "EddieFi",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-28T22:28:31.900Z",
+      "updatedAt": "2026-07-28T22:28:31.900Z"
     }
   ],
   "leaders": [
