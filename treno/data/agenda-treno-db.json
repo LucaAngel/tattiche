@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28T22:27:31.358Z",
+  "updatedAt": "2026-07-28T22:27:58.347Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -929,6 +929,20 @@
       "notes": "",
       "createdAt": "2026-07-28T22:27:32.956Z",
       "updatedAt": "2026-07-28T22:27:32.956Z"
+    },
+    {
+      "id": "ms588i47-cjvy98bh",
+      "day": "2026-07-22",
+      "slot": "18:41",
+      "priority": "medium",
+      "leaderId": "mq18a950-uu4yzysy",
+      "leaderName": "IronFocus (R4)",
+      "playerName": "VictorCeck",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-28T22:28:00.055Z",
+      "updatedAt": "2026-07-28T22:28:00.055Z"
     }
   ],
   "leaders": [
