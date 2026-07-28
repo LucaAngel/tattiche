@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28T22:28:30.342Z",
+  "updatedAt": "2026-07-28T22:28:54.204Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -957,6 +957,20 @@
       "notes": "",
       "createdAt": "2026-07-28T22:28:31.900Z",
       "updatedAt": "2026-07-28T22:28:31.900Z"
+    },
+    {
+      "id": "ms589p5n-qzvn641c",
+      "day": "2026-07-25",
+      "slot": "20:18",
+      "priority": "medium",
+      "leaderId": "mq18a950-uu4yzysy",
+      "leaderName": "IronFocus (R4)",
+      "playerName": "PorcOROsso",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-07-28T22:28:55.835Z",
+      "updatedAt": "2026-07-28T22:28:55.835Z"
     }
   ],
   "leaders": [
