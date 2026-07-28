@@ -63,3 +63,4 @@
 [2026-07-28T22:27:00.885Z] admin="4ita" action="creazione turno" detail="2026-07-20 20:23"
 [2026-07-28T22:27:32.956Z] admin="4ita" action="creazione turno" detail="2026-07-21 19:27"
 [2026-07-28T22:28:00.055Z] admin="4ita" action="creazione turno" detail="2026-07-22 18:41"
+[2026-07-28T22:28:31.900Z] admin="4ita" action="creazione turno" detail="2026-07-23 19:47"
