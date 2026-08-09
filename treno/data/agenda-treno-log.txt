@@ -71,3 +71,4 @@
 [2026-07-28T22:34:00.292Z] admin="4ita" action="creazione giocatore" detail="Jamessouuuu"
 [2026-07-28T22:35:33.914Z] admin="4ita" action="creazione giocatore" detail="Nedjinho"
 [2026-08-09T20:58:16.703Z] admin="4ita" action="creazione turno" detail="2026-07-09 19:15"
+[2026-08-09T20:58:59.769Z] admin="4ita" action="creazione turno" detail="2026-07-30 19:15"
