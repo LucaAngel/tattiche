@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-09T20:58:17.094Z",
+  "updatedAt": "2026-08-09T20:59:00.242Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -1013,6 +1013,20 @@
       "notes": "",
       "createdAt": "2026-08-09T20:58:16.703Z",
       "updatedAt": "2026-08-09T20:58:16.703Z"
+    },
+    {
+      "id": "msmac9ix-twqtqmzb",
+      "day": "2026-07-30",
+      "slot": "19:15",
+      "priority": "medium",
+      "leaderId": "mq189yic-1hlsvjza",
+      "leaderName": "Donitrob (R4)",
+      "playerName": "jesslex",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-08-09T20:58:59.769Z",
+      "updatedAt": "2026-08-09T20:58:59.769Z"
     }
   ],
   "leaders": [
