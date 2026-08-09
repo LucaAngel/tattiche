@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-09T21:03:30.901Z",
+  "updatedAt": "2026-08-09T21:03:49.407Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -1378,9 +1378,9 @@
       "id": "mq1eg14e-voc77b38",
       "name": "WildShadow",
       "sex": "female",
-      "status": "blacklist",
+      "status": "active",
       "createdAt": "2026-06-05T20:51:19.598Z",
-      "updatedAt": "2026-07-13T21:10:34.697Z"
+      "updatedAt": "2026-08-09T21:03:49.128Z"
     },
     {
       "id": "mq1eg7q0-e3vuf9qt",
