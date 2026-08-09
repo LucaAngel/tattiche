@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-09T21:01:22.769Z",
+  "updatedAt": "2026-08-09T21:01:58.351Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -1097,6 +1097,20 @@
       "notes": "",
       "createdAt": "2026-08-09T21:01:22.387Z",
       "updatedAt": "2026-08-09T21:01:22.387Z"
+    },
+    {
+      "id": "msmag2yw-6gu0ebdu",
+      "day": "2026-08-05",
+      "slot": "18:15",
+      "priority": "medium",
+      "leaderId": "mq18a950-uu4yzysy",
+      "leaderName": "IronFocus (R4)",
+      "playerName": "WildShadow",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-08-09T21:01:57.896Z",
+      "updatedAt": "2026-08-09T21:01:57.896Z"
     }
   ],
   "leaders": [
