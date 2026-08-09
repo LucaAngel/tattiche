@@ -83,3 +83,4 @@
 [2026-08-09T21:02:49.525Z] admin="4ita" action="creazione turno" detail="2026-08-09 14:00"
 [2026-08-09T21:03:13.993Z] admin="4ita" action="creazione turno" detail="2026-08-08 19:15"
 [2026-08-09T21:03:30.404Z] admin="4ita" action="creazione turno" detail="2026-08-09 19:15"
+[2026-08-09T21:03:49.128Z] admin="4ita" action="aggiornamento stato giocatore" detail="mq1eg14e-voc77b38 -> active"
