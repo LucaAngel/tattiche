@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-09T20:59:00.242Z",
+  "updatedAt": "2026-08-09T20:59:32.272Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -1027,6 +1027,20 @@
       "notes": "",
       "createdAt": "2026-08-09T20:58:59.769Z",
       "updatedAt": "2026-08-09T20:58:59.769Z"
+    },
+    {
+      "id": "msmacy70-zvivvgpa",
+      "day": "2026-07-31",
+      "slot": "19:15",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "Donitrob",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-08-09T20:59:31.740Z",
+      "updatedAt": "2026-08-09T20:59:31.740Z"
     }
   ],
   "leaders": [
