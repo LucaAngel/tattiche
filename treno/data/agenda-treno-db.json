@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-09T20:59:58.354Z",
+  "updatedAt": "2026-08-09T21:00:21.945Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -1055,6 +1055,20 @@
       "notes": "",
       "createdAt": "2026-08-09T20:59:58.039Z",
       "updatedAt": "2026-08-09T20:59:58.039Z"
+    },
+    {
+      "id": "msmae0kq-wecklexg",
+      "day": "2026-08-02",
+      "slot": "19:15",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "Presidente Florix",
+      "opRole": "Responsabile Treno",
+      "status": "todo",
+      "notes": "",
+      "createdAt": "2026-08-09T21:00:21.482Z",
+      "updatedAt": "2026-08-09T21:00:21.482Z"
     }
   ],
   "leaders": [
