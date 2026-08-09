@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-09T21:01:06.269Z",
+  "updatedAt": "2026-08-09T21:01:22.769Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -1083,6 +1083,20 @@
       "notes": "",
       "createdAt": "2026-08-09T21:01:05.684Z",
       "updatedAt": "2026-08-09T21:01:05.684Z"
+    },
+    {
+      "id": "msmafbkj-fi4mj9ph",
+      "day": "2026-08-04",
+      "slot": "19:15",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "DELTA",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-08-09T21:01:22.387Z",
+      "updatedAt": "2026-08-09T21:01:22.387Z"
     }
   ],
   "leaders": [
