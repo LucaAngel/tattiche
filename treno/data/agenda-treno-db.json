@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28T22:35:32.278Z",
+  "updatedAt": "2026-08-09T20:58:17.094Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -999,6 +999,20 @@
       "notes": "",
       "createdAt": "2026-07-28T22:29:41.336Z",
       "updatedAt": "2026-07-28T22:29:41.336Z"
+    },
+    {
+      "id": "msmabcan-eeepcn9r",
+      "day": "2026-07-09",
+      "slot": "19:15",
+      "priority": "medium",
+      "leaderId": "mq186v38-4gajl3ws",
+      "leaderName": "Presidente Florix (R5)",
+      "playerName": "MagoBetReal",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-08-09T20:58:16.703Z",
+      "updatedAt": "2026-08-09T20:58:16.703Z"
     }
   ],
   "leaders": [
