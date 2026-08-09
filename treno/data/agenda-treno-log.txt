@@ -78,3 +78,4 @@
 [2026-08-09T21:00:27.002Z] admin="4ita" action="completamento turno" detail="msmae0kq-wecklexg"
 [2026-08-09T21:01:05.684Z] admin="4ita" action="creazione turno" detail="2026-08-03 19:15"
 [2026-08-09T21:01:22.387Z] admin="4ita" action="creazione turno" detail="2026-08-04 19:15"
+[2026-08-09T21:01:57.896Z] admin="4ita" action="creazione turno" detail="2026-08-05 18:15"
