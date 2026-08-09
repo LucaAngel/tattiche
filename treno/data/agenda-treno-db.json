@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-09T21:01:58.351Z",
+  "updatedAt": "2026-08-09T21:02:21.874Z",
   "updatedBy": "4ita",
   "settings": {
     "defaultLang": "it"
@@ -1111,6 +1111,20 @@
       "notes": "",
       "createdAt": "2026-08-09T21:01:57.896Z",
       "updatedAt": "2026-08-09T21:01:57.896Z"
+    },
+    {
+      "id": "msmagl81-1ww4mqgj",
+      "day": "2026-08-06",
+      "slot": "19:15",
+      "priority": "medium",
+      "leaderId": "mq18a950-uu4yzysy",
+      "leaderName": "IronFocus (R4)",
+      "playerName": "BurningSpirit",
+      "opRole": "Responsabile Treno",
+      "status": "completed",
+      "notes": "",
+      "createdAt": "2026-08-09T21:02:21.553Z",
+      "updatedAt": "2026-08-09T21:02:21.553Z"
     }
   ],
   "leaders": [
